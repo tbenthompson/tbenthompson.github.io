@@ -6,7 +6,7 @@
     <description>Recent content in Homepage on T. Ben Thompson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Jul 2016 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jan 2018 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="http://tbenthompson.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -49,12 +49,23 @@ The Longmen Shan is the steepest topographic front at the India‐Asia collision
     </item>
     
     <item>
+      <title>Sneaky huge pages</title>
+      <link>http://tbenthompson.com/post/hugepages/</link>
+      <pubDate>Wed, 17 Jan 2018 00:00:00 -0500</pubDate>
+      
+      <guid>http://tbenthompson.com/post/hugepages/</guid>
+      <description>hu</description>
+    </item>
+    
+    <item>
       <title>Sparse N-body matrices</title>
       <link>http://tbenthompson.com/post/sparse_nbody/</link>
       <pubDate>Sat, 02 Jul 2016 00:00:00 -0400</pubDate>
       
       <guid>http://tbenthompson.com/post/sparse_nbody/</guid>
-      <description>This is a sparsity plot of a matrix representing an approximate n-body interaction. The black dots are non-zeros in the matrix. Imagine 2000 stars, each exerting some gravitational pull on each of the other stars. This gravitational interaction could be represented by a dense matrix: $$ A_{ij} = \frac{G m_i m_j}{|\mathbf{x}_i - \mathbf{x}_j|^2} $$ This works, but dense matrices can be slow when there are many stars. The cost of evaluating a matrix-vector product will scale like $O(n^2)$.</description>
+      <description>This is a sparsity plot of a matrix representing an approximate n-body interaction. The black dots are non-zeros in the matrix. Imagine 2000 stars, each exerting some gravitational pull on each of the other stars. This gravitational interaction could be represented by a dense matrix:
+$$ A_{ij} = \frac{G m_i m_j}{|\mathbf{x}_i - \mathbf{x}_j|^2} $$
+This works, but dense matrices can be slow when there are many stars. The cost of evaluating a matrix-vector product will scale like $O(n^2)$.</description>
     </item>
     
     <item>
