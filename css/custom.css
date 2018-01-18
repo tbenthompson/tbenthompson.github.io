@@ -6,6 +6,10 @@
     font-size: 24px;
 }
 
+h1.postlink {
+    margin-top: 10px;
+}
+
 .postlink a {
     margin-left: 15px;
     font-size: 18px;
