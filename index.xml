@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homepage on T. Ben Thompson</title>
+    <link>http://tbenthompson.com/</link>
+    <description>Recent content in Homepage on T. Ben Thompson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 Jul 2016 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="http://tbenthompson.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Research</title>
+      <link>http://tbenthompson.com/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://tbenthompson.com/research/</guid>
+      <description>Crustal stress estimation in the Himalayan wedge Quantitative estimates of crustal stress magnitude and orientation are hard to come by. On the other hand, geodesy is providing an increasingly accurate picture of global tectonic motions. Field and laboratory analyses contribute fault slip rates and exhumation rates. Seismology yields estimates of stress from moment tensor analyses. I am working to combine these data sources with geometrically accurate elastic boundary element models to estimate the crustal stress field and the driving forces behind those stresses &amp;ndash; for example, mantle tractions on the base of the crust.</description>
+    </item>
+    
+    <item>
+      <title>Tectosaur: Powerful and efficient boundary element software</title>
+      <link>http://tbenthompson.com/project/tectosaur/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://tbenthompson.com/project/tectosaur/</guid>
+      <description>Our tectonic and earthquake cycle research is supported by development of elastic boundary element software. This has required investigations into the best approaches for a wide range of computational and mathematical tasks: singular integration of Green&amp;rsquo;s functions, approximation of farfield Green&amp;rsquo;s function interactions with the fast multipole method, flexible treatment of equality and inequality constraints, and a big dose of computational geometry. These are a just a few of the components of this effort.</description>
+    </item>
+    
+    <item>
+      <title>Crustal stress estimation in the Himalayan wedge</title>
+      <link>http://tbenthompson.com/project/himalaya_stress/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://tbenthompson.com/project/himalaya_stress/</guid>
+      <description>Quantitative estimates of crustal stress magnitude and orientation are hard to come by. On the other hand, geodesy is providing an increasingly accurate picture of global tectonic motions. Field and laboratory analyses contribute fault slip rates and exhumation rates. Seismology yields estimates of stress from moment tensor analyses. I am working to combine these data sources with geometrically accurate elastic boundary element models to estimate the crustal stress field and the driving forces behind those stresses &amp;ndash; for example, mantle tractions on the base of the crust.</description>
+    </item>
+    
+    <item>
+      <title>Longmen Shan fault geometry and slip rates</title>
+      <link>http://tbenthompson.com/project/longmenshan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://tbenthompson.com/project/longmenshan/</guid>
+      <description>GRL article.
+The Longmen Shan is the steepest topographic front at the India‐Asia collision zone and the site of the Mw 7.9 Wenchuan earthquake. To explain the interseismic GPS velocities across the greater Longmen Shan region, we developed a boundary element model including earthquake cycle effects, topography, the westward dipping Beichuan Fault and a ∼20 km deep, shallowly dipping, detachment, inferred from observed afterslip and from structural considerations. Prior analyses which had neglected the detachment and earthquake cycle effects found shortening rates near zero.</description>
+    </item>
+    
+    <item>
+      <title>Sparse N-body matrices</title>
+      <link>http://tbenthompson.com/post/sparse_nbody/</link>
+      <pubDate>Sat, 02 Jul 2016 00:00:00 -0400</pubDate>
+      
+      <guid>http://tbenthompson.com/post/sparse_nbody/</guid>
+      <description>This is a sparsity plot of a matrix representing an approximate n-body interaction. The black dots are non-zeros in the matrix. Imagine 2000 stars, each exerting some gravitational pull on each of the other stars. This gravitational interaction could be represented by a dense matrix: $$ A_{ij} = \frac{G m_i m_j}{|\mathbf{x}_i - \mathbf{x}_j|^2} $$ This works, but dense matrices can be slow when there are many stars. The cost of evaluating a matrix-vector product will scale like $O(n^2)$.</description>
+    </item>
+    
+    <item>
+      <title>Older Stuff</title>
+      <link>http://tbenthompson.com/older_stuff/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://tbenthompson.com/older_stuff/</guid>
+      <description>This was all quite a while back! Judge me harshly. Especially about the incorrect tenses.
+Neotectonics of the Shargyn Basin, western Mongolia: My undergraduate thesis. Western Mongolia has experienced four of the largest strike-slip earthquakes in recorded history. The Gobi-Altai fault system is a 500km long left-lateral slip zone. The Altai fault system is a 1000km long right-lateral slip zone. Combined these fault systems accomodate 10-15% of the shortening in the Indo-Eurasian collision.</description>
+    </item>
+    
+  </channel>
+</rss>
