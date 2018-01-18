@@ -3,7 +3,7 @@
 }
 
 .mainpagelist {
-    font-size: 24px;
+    font-size: 172%;
 }
 
 h1.postlink {
@@ -12,11 +12,11 @@ h1.postlink {
 
 .postlink a {
     margin-left: 15px;
-    font-size: 18px;
+    font-size: 129%;
 }
 
 .accounts {
-    font-size: 15px;
+    font-size: 90%;
 }
 
 .content h1:not(:first-child), .content h2:not(:first-child), .content h3:not(:first-child), .content h4:not(:first-child), .content h5:not(:first-child), .content h6:not(:first-child), article+article {
