@@ -6,7 +6,7 @@
     <description>Recent content in Homepage on T. Ben Thompson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Jan 2018 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://tbenthompson.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -49,12 +49,12 @@ The Longmen Shan is the steepest topographic front at the India‐Asia collision
     </item>
     
     <item>
-      <title>Sneaky huge pages</title>
-      <link>http://tbenthompson.com/post/hugepages/</link>
-      <pubDate>Wed, 17 Jan 2018 00:00:00 -0500</pubDate>
+      <title>Sneaky (transparent) huge pages</title>
+      <link>http://tbenthompson.com/post/sneaky-transparent-huge-pages/</link>
+      <pubDate>Wed, 17 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://tbenthompson.com/post/hugepages/</guid>
-      <description>hu</description>
+      <guid>http://tbenthompson.com/post/sneaky-transparent-huge-pages/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
