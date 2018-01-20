@@ -3,11 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://tbenthompson.com/research/</loc>
+    <loc>http://tbenthompson.com/project/topography/</loc>
   </url>
   
   <url>
     <loc>http://tbenthompson.com/project/tectosaur/</loc>
+  </url>
+  
+  <url>
+    <loc>http://tbenthompson.com/project/taskloaf/</loc>
+  </url>
+  
+  <url>
+    <loc>http://tbenthompson.com/project/cppimport/</loc>
   </url>
   
   <url>
@@ -16,6 +24,23 @@
   
   <url>
     <loc>http://tbenthompson.com/project/longmenshan/</loc>
+  </url>
+  
+  <url>
+    <loc>http://tbenthompson.com/project/shargyn/</loc>
+  </url>
+  
+  <url>
+    <loc>http://tbenthompson.com/project/microscale/</loc>
+  </url>
+  
+  <url>
+    <loc>http://tbenthompson.com/project/therapycharts/</loc>
+    <lastmod>2010-01-01T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://tbenthompson.com/project/neuralnets/</loc>
   </url>
   
   <url>
@@ -30,11 +55,7 @@
   
   <url>
     <loc>http://tbenthompson.com/</loc>
-    <lastmod>2018-01-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tbenthompson.com/older_stuff/</loc>
+    <lastmod>2010-01-01T00:00:00-05:00</lastmod>
   </url>
   
   <url>
@@ -45,6 +66,7 @@
   
   <url>
     <loc>http://tbenthompson.com/project/</loc>
+    <lastmod>2010-01-01T00:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -6,18 +6,18 @@
     <description>Recent content in Homepage on T. Ben Thompson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Jan 2010 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="http://tbenthompson.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Research</title>
-      <link>http://tbenthompson.com/research/</link>
+      <title>The Earth isn’t flat: The large influence of topography on geodetic fault slip imaging.</title>
+      <link>http://tbenthompson.com/project/topography/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://tbenthompson.com/research/</guid>
-      <description>Crustal stress estimation in the Himalayan wedge Quantitative estimates of crustal stress magnitude and orientation are hard to come by. On the other hand, geodesy is providing an increasingly accurate picture of global tectonic motions. Field and laboratory analyses contribute fault slip rates and exhumation rates. Seismology yields estimates of stress from moment tensor analyses. I am working to combine these data sources with geometrically accurate elastic boundary element models to estimate the crustal stress field and the driving forces behind those stresses &amp;ndash; for example, mantle tractions on the base of the crust.</description>
+      <guid>http://tbenthompson.com/project/topography/</guid>
+      <description>To be submitted soon. More details then!</description>
     </item>
     
     <item>
@@ -27,6 +27,25 @@
       
       <guid>http://tbenthompson.com/project/tectosaur/</guid>
       <description>Our tectonic and earthquake cycle research is supported by development of elastic boundary element software. This has required investigations into the best approaches for a wide range of computational and mathematical tasks: singular integration of Green&amp;rsquo;s functions, approximation of farfield Green&amp;rsquo;s function interactions with the fast multipole method, flexible treatment of equality and inequality constraints, and a big dose of computational geometry. These are a just a few of the components of this effort.</description>
+    </item>
+    
+    <item>
+      <title>Taskloaf: Simplified distributed task parallelism</title>
+      <link>http://tbenthompson.com/project/taskloaf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://tbenthompson.com/project/taskloaf/</guid>
+      <description>Taskloaf GitHub page
+Task-based parallelism enables running complex parallel computations by describing them as a graph of tasks. Shared memory task-based parallelism has become an important tool as demonstrated by tools like Intel TBB, Cilk, and OpenMP v3. But, distributed memory task-based parallelism systems is still heavily researched to determine the most usable, efficient and scalable approach. Instead of waiting for the future holy grail of distributed task parallelism, I designed Taskloaf while visiting Oak Ridge National Lab in Fall 2015.</description>
+    </item>
+    
+    <item>
+      <title>cppimport: Import C&#43;&#43; files directly from Python!</title>
+      <link>http://tbenthompson.com/project/cppimport/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://tbenthompson.com/project/cppimport/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -49,6 +68,44 @@ The Longmen Shan is the steepest topographic front at the India‐Asia collision
     </item>
     
     <item>
+      <title>Neotectonics of the Shargyn Basin, western Mongolia</title>
+      <link>http://tbenthompson.com/project/shargyn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://tbenthompson.com/project/shargyn/</guid>
+      <description>My undergraduate thesis. Western Mongolia has experienced four of the largest strike-slip earthquakes in recorded history. The Gobi-Altai fault system is a 500km long left-lateral slip zone. The Altai fault system is a 1000km long right-lateral slip zone. Combined these fault systems accomodate 10-15% of the shortening in the Indo-Eurasian collision. At the intersection, complex kinematics have created a 150 x 100km basin, called the Shargyn Basin. I propose an explanation for the kinematics of the ongoing formation of the basin.</description>
+    </item>
+    
+    <item>
+      <title>Algorithms for Microscale Rock Deformation</title>
+      <link>http://tbenthompson.com/project/microscale/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://tbenthompson.com/project/microscale/</guid>
+      <description>github
+For an undergraduate research project, I worked with Alejandra to automate a procedure to quantify finite strain on a microscale. On a certain surface, a sample is etched (like a microprocessor) with spaced dots. Then, on a microscope photograph, the dot positions are recorded before and after deformation. However, tracking hundreds of thousands of these dots by hand is impossible. So, I worked on an algorithm to determine the deformation function between the initial and final images by tracking the dot positions.</description>
+    </item>
+    
+    <item>
+      <title>TherapyCharts</title>
+      <link>http://tbenthompson.com/project/therapycharts/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 -0500</pubDate>
+      
+      <guid>http://tbenthompson.com/project/therapycharts/</guid>
+      <description>homepage
+I worked for a while as the primary software developer for TherapyCharts, a web-based therapist records system. I developed a Python and PostgreSQL based backend and a ExtJS interface. I participated in two American Psychological Association conferences performing support and sales for TherapyCharts. TherapyCharts has now partnered with Wiley Publishing and is known as “Therascribe powered by TherapyCharts”.</description>
+    </item>
+    
+    <item>
+      <title>Machine Learning, Neural Networks, and Melanoma</title>
+      <link>http://tbenthompson.com/project/neuralnets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://tbenthompson.com/project/neuralnets/</guid>
+      <description>In high school, I was very interested in machine learning algorithms and investigated neural networks, support vector machines and unsupervised learning. I replicated various algorithms and tested their properties at different points in parameter space on the MNIST dataset which contains 60,000 handwritten numbers. Later, I used an unsupervised learning technique (Autoencoders, Hinton et. al 2006) to improve the performance of a support vector machine model in detecting Melanoma (skin cancer).</description>
+    </item>
+    
+    <item>
       <title>Sneaky (transparent) huge pages</title>
       <link>http://tbenthompson.com/post/sneaky-transparent-huge-pages/</link>
       <pubDate>Wed, 17 Jan 2018 00:00:00 +0000</pubDate>
@@ -66,16 +123,6 @@ The Longmen Shan is the steepest topographic front at the India‐Asia collision
       <description>This is a sparsity plot of a matrix representing an approximate n-body interaction. The black dots are non-zeros in the matrix. Imagine 2000 stars, each exerting some gravitational pull on each of the other stars. This gravitational interaction could be represented by a dense matrix:
 $$ A_{ij} = \frac{G m_i m_j}{|\mathbf{x}_i - \mathbf{x}_j|^2} $$
 This works, but dense matrices can be slow when there are many stars. The cost of evaluating a matrix-vector product will scale like $O(n^2)$.</description>
-    </item>
-    
-    <item>
-      <title>Older Stuff</title>
-      <link>http://tbenthompson.com/older_stuff/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://tbenthompson.com/older_stuff/</guid>
-      <description>This was all quite a while back! Judge me harshly. Especially about the incorrect tenses.
-Neotectonics of the Shargyn Basin, western Mongolia: My undergraduate thesis. Western Mongolia has experienced four of the largest strike-slip earthquakes in recorded history. The Gobi-Altai fault system is a 500km long left-lateral slip zone. The Altai fault system is a 1000km long right-lateral slip zone. Combined these fault systems accomodate 10-15% of the shortening in the Indo-Eurasian collision.</description>
     </item>
     
   </channel>

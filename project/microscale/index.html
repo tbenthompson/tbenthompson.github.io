@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<title>Longmen Shan fault geometry and slip rates | T. Ben Thompson</title>
+<title>Algorithms for Microscale Rock Deformation | T. Ben Thompson</title>
 
 
 <link rel="stylesheet" href="http://tbenthompson.com//css/style.css"/><link rel='stylesheet' href='/css/custom.css'>
@@ -45,14 +45,15 @@ MathJax.Hub.Config({
       
     </div>
     
-    <h1 class="title">Longmen Shan fault geometry and slip rates</h1>
+    <h1 class="title">Algorithms for Microscale Rock Deformation</h1>
     <div class="content">
-      <p><em><a href="http://onlinelibrary.wiley.com/doi/10.1002/2014GL062833/abstract" target="_blank">GRL article</a>.</em></p>
+      <p><a href="https://github.com/tbenthompson/microdeform" target="_blank">github</a></p>
 
-<p>The Longmen Shan is the steepest topographic front at the India‐Asia collision zone and the site of the Mw 7.9 Wenchuan earthquake. To explain the interseismic GPS velocities across the greater Longmen Shan region, we developed a boundary element model including earthquake cycle effects, topography, the westward dipping Beichuan Fault and a ∼20 km deep, shallowly dipping, detachment, inferred from observed afterslip and from structural considerations. Prior analyses which had neglected the detachment and earthquake cycle effects found shortening rates near zero. In contrast, we found that interseismic GPS data are consistent with a shortening rate of 5.7±1.5mm/yr and maximum surface slip‐deficit rate of 9.5±2.5mm/yr. This model unifies the interpretation of geodetic deformation throughout the earthquake cycle and suggests that the Longmen Shan is an active fold‐and‐thrust belt with Wenchuan‐like recurrence intervals as short as 600 years.</p>
+<p>For an undergraduate research project, I worked with <a href="https://scholar.google.com/citations?user=4uDVRD0AAAAJ&amp;hl=en" target="_blank">Alejandra</a> to automate a procedure to quantify finite strain on a microscale. On a certain surface, a sample is etched (like a microprocessor) with spaced dots. Then, on a microscope photograph, the dot positions are recorded before and after deformation. However, tracking hundreds of thousands of these dots by hand is impossible. So, I worked on an algorithm to determine the deformation function between the initial and final images by tracking the dot positions. In computer vision, this is called optical flow and is often formulated as a regularized least squares problem.</p>
 
-<p><img src="/images/longmenshan.png" />
-<em>A cross section of the Longmen Shan showing model-predicted velocities. Positive velocity is to the right/southwest.</em></p>
+<p><img src="/images/sample_centers.png"/></p>
+
+<p><em>Identifying the centers (red) of the etched dots.</em></p>
 
     </div>
 
