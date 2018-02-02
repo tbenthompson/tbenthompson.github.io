@@ -125,5 +125,15 @@ $$ A_{ij} = \frac{G m_i m_j}{|\mathbf{x}_i - \mathbf{x}_j|^2} $$
 This works, but dense matrices can be slow when there are many stars. The cost of evaluating a matrix-vector product will scale like $O(n^2)$.</description>
     </item>
     
+    <item>
+      <title>Setting up my website</title>
+      <link>http://tbenthompson.com/post/setting_up_website/</link>
+      <pubDate>Fri, 11 Dec 2015 00:00:00 -0500</pubDate>
+      
+      <guid>http://tbenthompson.com/post/setting_up_website/</guid>
+      <description>I have a website now. Since technical stuff is fun, I thought I&amp;rsquo;d share the way I set it up.
+The site is a set of statically served HTML pages. Hugo makes this really easy. Hugo is super fast and is written in Go. You can set up a few template pages and then write posts and pages in Markdown. Some layout is also done using Go templates. Running Hugo takes your templates and pages and concerts them into static HTML.</description>
+    </item>
+    
   </channel>
 </rss>
