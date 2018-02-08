@@ -6,10 +6,19 @@
     <description>Recent content in Posts on T. Ben Thompson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Feb 2018 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="http://tbenthompson.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>DRAFT! Automated testing for scientists and data analysts</title>
+      <link>http://tbenthompson.com/post/automated_testing_for_science/</link>
+      <pubDate>Wed, 07 Feb 2018 00:00:00 -0500</pubDate>
+      
+      <guid>http://tbenthompson.com/post/automated_testing_for_science/</guid>
+      <description>A lot of scientists and data analysts don&amp;rsquo;t use automatic test suites for verifying their code. And, I think that&amp;rsquo;s because it&amp;rsquo;s really hard. Almost all the introductions to automated testing that I&amp;rsquo;ve seen come from a more typical software engineering perspective. They assume you already know exactly what the output of your code should be. And the trouble with science is that that&amp;rsquo;s rarely the case. I mean, if you know the results ahead of time, we wouldn&amp;rsquo;t be doing science!</description>
+    </item>
     
     <item>
       <title>Sneaky (transparent) huge pages</title>
@@ -21,7 +30,7 @@
     </item>
     
     <item>
-      <title>Sparse N-body matrices</title>
+      <title>Sparse n-body matrices</title>
       <link>http://tbenthompson.com/post/sparse_nbody/</link>
       <pubDate>Sat, 02 Jul 2016 00:00:00 -0400</pubDate>
       
