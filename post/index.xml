@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>DRAFT! Automated testing for scientists and data analysts</title>
+      <title>Automated testing for scientists and data analysts</title>
       <link>http://tbenthompson.com/post/automated_testing_for_science/</link>
       <pubDate>Wed, 07 Feb 2018 00:00:00 -0500</pubDate>
       
       <guid>http://tbenthompson.com/post/automated_testing_for_science/</guid>
-      <description>A lot of scientists and data analysts don&amp;rsquo;t use automatic test suites for verifying their code. And, I think that&amp;rsquo;s because it&amp;rsquo;s really hard. Almost all the introductions to automated testing that I&amp;rsquo;ve seen come from a more typical software engineering perspective. They assume you already know exactly what the output of your code should be. And the trouble with science is that that&amp;rsquo;s rarely the case. I mean, if you know the results ahead of time, we wouldn&amp;rsquo;t be doing science!</description>
+      <description>A lot of scientists and data analysts don&amp;rsquo;t use automatic test suites for verifying their code. And I think that&amp;rsquo;s because it&amp;rsquo;s really hard. Almost all the introductions to automated testing that I&amp;rsquo;ve seen come from a more typical software engineering perspective. They assume you already know exactly what the output of your code should be. And the trouble with science is that that&amp;rsquo;s rarely the case. I mean, if you knew the results ahead of time, you wouldn&amp;rsquo;t be doing science!</description>
     </item>
     
     <item>
