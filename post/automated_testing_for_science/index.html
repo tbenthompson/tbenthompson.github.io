@@ -108,8 +108,9 @@ have exact solutions. Or, similarly, the motion of the Earth due to an planar ea
 <p>I think property testing is the most useful approach when the answer isn&rsquo;t known. Instead of check the final answer, we check a <em>property</em> of some final or intermediate part of the calculation. For example:</p>
 
 <ul>
-<li>Newton&rsquo;s method for root finding should take exactly one step to solve any linear system of equations. So, a simple property test might be to generate 100 random linear systems and check that all of them are solved. This is a sort of</li>
+<li>Newton&rsquo;s method for root finding should take exactly one step to solve any linear system of equations. So, a simple property test might be to generate 100 random linear systems and check that all of them are solved in one step. The difference from a special case is that we have a simple algorithm for generating many special cases.</li>
 <li>In the case of a finite element or boundary element model, the solution should converge with increasing mesh density.</li>
+<li>Running an idempotent function 100 times should leave the system in the same state as running it once.</li>
 <li>With an infinite penalty, ridge and lasso regressions return all zeros. With a penalty of zero, ridge and lasso regressions return the same answer as unregularized least squares.</li>
 </ul>
 
