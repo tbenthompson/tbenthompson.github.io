@@ -115,6 +115,16 @@ I worked for a while as the primary software developer for TherapyCharts, a web-
     </item>
     
     <item>
+      <title>My Python testing set up</title>
+      <link>http://tbenthompson.com/post/how_i_test/</link>
+      <pubDate>Thu, 22 Feb 2018 00:00:00 -0500</pubDate>
+      
+      <guid>http://tbenthompson.com/post/how_i_test/</guid>
+      <description>To follow up on the last post about testing for science and data analytics, I thought it&amp;rsquo;d be nice to talk about the specific tools I use for testing. I don&amp;rsquo;t claim this is the best way to do things, but it tends to work pretty well for small projects and teams.
+py.test The py.test tool is handy for running a suite of tests in python. It&amp;rsquo;s a very general tool for running all the tests in a project.</description>
+    </item>
+    
+    <item>
       <title>Automated testing for scientists and data analysts</title>
       <link>http://tbenthompson.com/post/automated_testing_for_science/</link>
       <pubDate>Wed, 07 Feb 2018 00:00:00 -0500</pubDate>

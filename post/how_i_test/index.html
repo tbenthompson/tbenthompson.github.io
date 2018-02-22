@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>My Python testing set up | T. Ben Thompson</title>
+
+
+<link rel="stylesheet" href="http://tbenthompson.com//css/style.css"/><link rel='stylesheet' href='/css/custom.css'>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114592151-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114592151-1');
+</script>
+
+</head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://tbenthompson.com/"><h1 class="title is-4">T. Ben Thompson</h1></a>
+      </div>
+      <div class="nav-right">
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        
+    <div class="subtitle is-6 is-pulled-right">
+      
+    </div>
+    
+    <h2 class="subtitle is-6">February 22, 2018</h2>
+    
+    <h1 class="title">My Python testing set up</h1>
+    <div class="content">
+      
+
+<p>To follow up on the last post about testing for science and data analytics, I thought it&rsquo;d be nice to talk about the specific tools I use for testing. I don&rsquo;t claim this is the best way to do things, but it tends to work pretty well for small projects and teams.</p>
+
+<h2 id="py-test">py.test</h2>
+
+<p>The py.test tool is handy for running a suite of tests in python. It&rsquo;s a very general tool for running all the tests in a project. It can do a lot of powerful things, but requires almost no boilerplate to get started with. The pattern I&rsquo;ve always followed is: Add a <code>tests</code> directory the root of the project. Name any test files in that directory <code>test_xyz.py</code> and then any tests within that file <code>def test_abc():</code>. py.test will find all of these automatically and run them. On several projects that I work on, I have tens or hundreds of tests that, in total, take less than a second to run. As a result, I simply run <code>py.test</code> every time I make a change.</p>
+
+<p>For more happiness, I add a <code>pytest.ini</code> file to the root of my project:</p>
+
+<pre><code>[pytest]
+addopts = -s --tb=short
+</code></pre>
+
+<p>The <code>-s</code> causes any text printed by my tests or code to appear on the screen. By default, py.test suppresses printing/logging to standard out. Personally, I don&rsquo;t like that while debugging.
+The <code>--tb=short</code> leads to shorter, more concise tracebacks in the case of test failures.</p>
+
+<p>There are a ton of other features available with py.test, like fixtures, fancy assertions and lots of plugins. Here&rsquo;s <a href="http://pythontesting.net/framework/pytest/pytest-introduction/" target="_blank">a more comprehensive intro to py.test</a></p>
+
+<h2 id="golden-master-tests">Golden master tests</h2>
+
+<p>Golden master testing doesn&rsquo;t really <strong>require</strong> any special infrastructure, but it can be nice to have a coordinated way to generate the keys and specify golden master tests. First, I set up a configuration option</p>
+
+<pre><code>def pytest_addoption(parser):
+    parser.addoption(
+        &quot;--save-golden-masters&quot;, action=&quot;store_true&quot;,
+        help=&quot;reset golden master benchmarks&quot;
+    )
+</code></pre>
+
+<p>Then, what you do with this depends on the project. In one project, where I&rsquo;m normally compare numpy arrays, I have a decorator that makes setting up a golden master test really simple.</p>
+
+<pre><code>def golden_master(digits = 6):
+    def decorator(test_fnc):
+        try:
+            save = pytest.config.getoption(&quot;--save-golden-masters&quot;)
+        except AttributeError as e:
+            save = False
+        @wraps(test_fnc)
+        def wrapper(request, *args, **kwargs):
+            result = test_fnc(request, *args, **kwargs)
+            test_name = request.node.name
+            filename = os.path.join('tests', 'golden_masters', test_name + '.npy')
+            if save:
+                np.save(filename, result)
+            correct = np.load(filename)
+            np.testing.assert_almost_equal(result, correct, digits)
+        return wrapper
+    return decorator
+</code></pre>
+
+<p>To use this:</p>
+
+<pre><code>@golden_master(4)
+def test_mycomplexfnc(request):
+    return mycomplexfnc()
+</code></pre>
+
+<p>When I run <code>py.test --save-golden-masters</code>, this will automatically save the result of the function to <code>tests/golden_masters/test_mycomplexfnc.npy</code>. Then, the next time I run <code>py.test</code>, the output of the <code>mycomplexfnc()</code> will be compared to 4 digits against the old saved version.</p>
+
+<p>Modifying this to work with pandas dataframes or other objects would be relatively simple. It could also be refactored to work with general objects without much effort, but, in my case, all the functions where I don&rsquo;t have anything better than a golden master test are functions that return arrays.</p>
+
+<h2 id="slow-tests">Slow tests</h2>
+
+<p>Sometimes I have tests that take a little while to run and I don&rsquo;t want them to run every single time I run <code>py.test</code>. So, I add an opt-in option for running slow tests, following the directions <a href="https://docs.pytest.org/en/latest/example/simple.html#control-skipping-of-tests-according-to-command-line-option" target="_blank">on the py.test docs</a>.</p>
+
+<h2 id="pdb-ipdb">pdb + ipdb</h2>
+
+<p>I thought I&rsquo;d just add a note about debuggers, since I&rsquo;m way more productive with a debugger at hand. When my tests fail and I can&rsquo;t figure out why, the first step is to use a debugger to really understand the code. The (P)ython (D)e(b)ugger. Also, the (IP)ython (D)e(b)ugger. These are super handy for dropping into some code to check values/step through the code/general debugging! It combines some of the playfulness of jupyter notebooks with python modules.</p>
+
+<p>Just add these two lines:</p>
+
+<pre><code>import ipdb
+ipdb.set_trace()
+</code></pre>
+
+<p>or</p>
+
+<pre><code>import pdb
+pdb.set_trace()
+</code></pre>
+
+<p>And then when those lines are run, execution will stop and I&rsquo;m dropped into a debugging prompt where I can step through the code, examine variable values and other nice things.</p>
+
+    </div>
+
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+    </div>
+  <div class="container has-text-centered">
+    <div class="accounts">
+        <a href="/cv.pdf">CV</a>, <a href="https://github.com/tbenthompson">GitHub</a>, <a href="https://www.linkedin.com/in/ben-thompson-645292125/">LinkedIn</a>, <a href="mailto:t.ben.thompson@gmail.com">Email</a>
+    </div>
+    <div class="accounts">
+    <a href="http://esantorella.com/">My wife is really smart!</a>
+    </div>
+
+  </div>
+</section>
+</body>
+</html>
+
