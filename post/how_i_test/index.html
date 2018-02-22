@@ -80,7 +80,7 @@ The <code>--tb=short</code> leads to shorter, more concise tracebacks in the cas
 
 <h2 id="golden-master-tests">Golden master tests</h2>
 
-<p>Golden master testing doesn&rsquo;t really <strong>require</strong> any special infrastructure, but it can be nice to have a coordinated way to generate the keys and specify golden master tests. First, I set up a configuration option</p>
+<p>Golden master testing doesn&rsquo;t really <strong>require</strong> any special infrastructure, but it can be nice to have a coordinated way to generate the keys and specify golden master tests. First, I set up a configuration option in <code>tests/conftest.py</code>. This is a special file that <code>py.test</code> uses to load plugins and configuration.</p>
 
 <pre><code>def pytest_addoption(parser):
     parser.addoption(
@@ -120,6 +120,8 @@ def test_mycomplexfnc(request):
 <p>When I run <code>py.test --save-golden-masters</code>, this will automatically save the result of the function to <code>tests/golden_masters/test_mycomplexfnc.npy</code>. Then, the next time I run <code>py.test</code>, the output of the <code>mycomplexfnc()</code> will be compared to 4 digits against the old saved version.</p>
 
 <p>Modifying this to work with pandas dataframes or other objects would be relatively simple. It could also be refactored to work with general objects without much effort, but, in my case, all the functions where I don&rsquo;t have anything better than a golden master test are functions that return arrays.</p>
+
+<p>Should you put the saved golden master test results in version control? I would say yes, since they are necessary for properly testing the code base.</p>
 
 <h2 id="slow-tests">Slow tests</h2>
 
