@@ -51,6 +51,15 @@ This works, but dense matrices can be slow when there are many stars. The cost o
     </item>
     
     <item>
+      <title>&#34;Serializing&#34; a function in C&#43;&#43;</title>
+      <link>http://tbenthompson.com/post/serialize_fnc_cpp/</link>
+      <pubDate>Wed, 23 Dec 2015 00:00:00 -0500</pubDate>
+      
+      <guid>http://tbenthompson.com/post/serialize_fnc_cpp/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
       <title>Setting up my website</title>
       <link>http://tbenthompson.com/post/setting_up_website/</link>
       <pubDate>Fri, 11 Dec 2015 00:00:00 -0500</pubDate>
