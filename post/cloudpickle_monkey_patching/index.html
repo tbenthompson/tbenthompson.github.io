@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Cloudpickle, serializing functions and monkey patching | T. Ben Thompson</title>
+
+
+<link rel="stylesheet" href="http://tbenthompson.com//css/style.css"/><link rel='stylesheet' href='/css/custom.css'>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114592151-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114592151-1');
+</script>
+
+</head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://tbenthompson.com/"><h1 class="title is-4">T. Ben Thompson</h1></a>
+      </div>
+      <div class="nav-right">
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        
+    <div class="subtitle is-6 is-pulled-right">
+      
+    </div>
+    
+    <h2 class="subtitle is-6">February 24, 2018</h2>
+    
+    <h1 class="title">Cloudpickle, serializing functions and monkey patching</h1>
+    <div class="content">
+      <p>I&rsquo;ve been using <code>cloudpickle</code> in the internals of <a href="https://github.com/tbenthompson/taskloaf" target="_blank">taskloaf</a> for a while since it allows serializing almost all functions and objects. That&rsquo;s really nice since it means I can pass arbitrary functions (tasks, jobs) from one worker to another across the network.</p>
+
+<p>Yesterday, I was curious about the internals of <code>cloudpickle</code> and whether a monkey-patched object would remain patched after being loaded remotely. I read a bit of the source, but figured just trying it was a good idea.</p>
+
+<p>I create a silly, meaningless class and then an instance of that class.</p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span><span style="color: #408080; font-style: italic"># Create a silly class and an object</span>
+<span style="color: #008000; font-weight: bold">class</span> <span style="color: #0000FF; font-weight: bold">Turkey</span>:
+    <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">hi</span>(<span style="color: #008000">self</span>):
+        <span style="color: #008000; font-weight: bold">return</span> <span style="color: #BA2121">&quot;hello&quot;</span>
+t <span style="color: #666666">=</span> Turkey()
+<span style="color: #008000; font-weight: bold">print</span>(t<span style="color: #666666">.</span>hi())
+</code></pre></div>
+
+<pre><code>hello
+</code></pre>
+
+<p>Then, I monkey patch the <code>hi</code> method to return 1 instead of 2. <code>types.MethodType</code> turns a free-standing function into a method that automatically receives the <code>self</code> parameter.</p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">types</span>
+<span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">hi2</span>(<span style="color: #008000">self</span>):
+    <span style="color: #008000; font-weight: bold">return</span> <span style="color: #BA2121">&quot;SQUAWK&quot;</span>
+t<span style="color: #666666">.</span>hi <span style="color: #666666">=</span> types<span style="color: #666666">.</span>MethodType(hi2, t)
+<span style="color: #008000; font-weight: bold">print</span>(t<span style="color: #666666">.</span>hi())
+</code></pre></div>
+
+<pre><code>SQUAWK
+</code></pre>
+
+<p>First, I&rsquo;ll try <code>pickle</code>. I dump the turkey to a binary blob and reload it.</p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">pickle</span>
+blob <span style="color: #666666">=</span> pickle<span style="color: #666666">.</span>dumps(t)
+t2 <span style="color: #666666">=</span> pickle<span style="color: #666666">.</span>loads(blob)
+<span style="color: #008000; font-weight: bold">print</span>(t2)
+</code></pre></div>
+
+<pre><code>---------------------------------------------------------------------------
+
+AttributeError                            Traceback (most recent call last)
+
+&lt;ipython-input-3-21cb01513bb4&gt; in &lt;module&gt;()
+      1 import pickle
+      2 blob = pickle.dumps(t)
+----&gt; 3 t2 = pickle.loads(blob)
+      4 print(t2)
+
+
+AttributeError: 'Turkey' object has no attribute 'hi2'
+</code></pre>
+
+<p><code>pickle</code> serialize a reference to the the type of the object and then expects that type to provide all the member functions needed. So, it&rsquo;s not able to handle this monkey patching situation.</p>
+
+<p>Next, I&rsquo;ll try <code>cloudpickle</code>!</p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">cloudpickle</span>
+t2 <span style="color: #666666">=</span> cloudpickle<span style="color: #666666">.</span>loads(cloudpickle<span style="color: #666666">.</span>dumps(t))
+<span style="color: #008000; font-weight: bold">print</span>(t <span style="color: #AA22FF; font-weight: bold">is</span> t2)
+</code></pre></div>
+
+<pre><code>False
+</code></pre>
+
+<p>Does the <code>hi</code> method remain changed? YES! Thank you, cloudpickle.</p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span><span style="color: #008000; font-weight: bold">print</span>(t2<span style="color: #666666">.</span>hi())
+</code></pre></div>
+
+<pre><code>SQUAWK
+</code></pre>
+
+<p>Ultimately, this makes a lot of sense. <code>cloudpickle</code> just investigates the members of an object (its <code>__dict__</code>) and serializes those. It doesn&rsquo;t need to serialize anything about the generic <code>Turkey</code> class. The key difference with <code>pickle</code> is that <code>cloudpickle</code> has the capability to serialize functions and so it can directly serialize members of the object without reference to its type.</p>
+
+    </div>
+
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+    </div>
+  <div class="container has-text-centered">
+    <div class="accounts">
+        <a href="/cv.pdf">CV</a>, <a href="https://github.com/tbenthompson">GitHub</a>, <a href="https://www.linkedin.com/in/ben-thompson-645292125/">LinkedIn</a>, <a href="mailto:t.ben.thompson@gmail.com">Email</a>
+    </div>
+    <div class="accounts">
+    <a href="http://esantorella.com/">My wife is really smart!</a>
+    </div>
+
+  </div>
+</section>
+</body>
+</html>
+

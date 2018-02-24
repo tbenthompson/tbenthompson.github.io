@@ -6,10 +6,20 @@
     <description>Recent content in Posts on T. Ben Thompson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Feb 2018 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 24 Feb 2018 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="http://tbenthompson.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cloudpickle, serializing functions and monkey patching</title>
+      <link>http://tbenthompson.com/post/cloudpickle_monkey_patching/</link>
+      <pubDate>Sat, 24 Feb 2018 00:00:00 -0500</pubDate>
+      
+      <guid>http://tbenthompson.com/post/cloudpickle_monkey_patching/</guid>
+      <description>I&amp;rsquo;ve been using cloudpickle in the internals of taskloaf for a while since it allows serializing almost all functions and objects. That&amp;rsquo;s really nice since it means I can pass arbitrary functions (tasks, jobs) from one worker to another across the network.
+Yesterday, I was curious about the internals of cloudpickle and whether a monkey-patched object would remain patched after being loaded remotely. I read a bit of the source, but figured just trying it was a good idea.</description>
+    </item>
     
     <item>
       <title>My Python testing set up</title>
