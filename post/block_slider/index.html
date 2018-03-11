@@ -126,7 +126,9 @@ V0 <span style="color: #666666">=</span> <span style="color: #666666">1e-6</span
     <span style="color: #008000; font-weight: bold">return</span> (b <span style="color: #666666">*</span> V0 <span style="color: #666666">/</span> Dc) <span style="color: #666666">*</span> (np<span style="color: #666666">.</span>exp((f0 <span style="color: #666666">-</span> state) <span style="color: #666666">/</span> b) <span style="color: #666666">-</span> (V <span style="color: #666666">/</span> V0))
 </code></pre></div>
 
-<p>I&rsquo;ll check $k<em>{crit}$. If $k &gt; k</em>{crit}$, the system is unconditionally unstable and $V \to \infty$.</p>
+<p>I&rsquo;ll check $k_{crit}$.</p>
+
+<p>If $k &gt; k_{crit}$, the system is unconditionally unstable and $V \to \infty$.</p>
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span>kcrit <span style="color: #666666">=</span> sigma_n <span style="color: #666666">*</span> b <span style="color: #666666">/</span> Dc 
 <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&#39;k/kcrit =&#39;</span>, k <span style="color: #666666">/</span> kcrit)
 </code></pre></div>
