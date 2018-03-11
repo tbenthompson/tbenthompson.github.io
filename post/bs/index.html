@@ -59,11 +59,9 @@ MathJax.Hub.Config({
     
     <h1 class="title">A Quasidynamic spring block slider</h1>
     <div class="content">
-      <p><em>source available <a href="block_slider.ipynb" target="_blank">here</a></em></p>
+      <p>Figures first, explanations later!</p>
 
-<p>Figures first, explanations later!</p>
-
-<p><img src="qd_1d.png" alt="Evolution of a quasidynamic spring-block-slider system."/></p>
+<p><img src="/qd_1d.png" alt="Evolution of a quasidynamic spring-block-slider system."/></p>
 
 <p>Recently, I&rsquo;ve been working on some 3D quasidynamic earthquake modeling problems. We&rsquo;re planning to add in some realistic geometries using tectosaur to see what influence that has on the earthquake cycle. While putting together that 3D model, I realized that it consists of two main pieces:</p>
 
@@ -126,7 +124,9 @@ V0 <span style="color: #666666">=</span> <span style="color: #666666">1e-6</span
     <span style="color: #008000; font-weight: bold">return</span> (b <span style="color: #666666">*</span> V0 <span style="color: #666666">/</span> Dc) <span style="color: #666666">*</span> (np<span style="color: #666666">.</span>exp((f0 <span style="color: #666666">-</span> state) <span style="color: #666666">/</span> b) <span style="color: #666666">-</span> (V <span style="color: #666666">/</span> V0))
 </code></pre></div>
 
-<p>I&rsquo;ll check $k<em>{crit}$. If $k &gt; k</em>{crit}$, the system is unconditionally unstable and $V \to \infty$.</p>
+<p>I&rsquo;ll check $ k_{crit}$.</p>
+
+<p>If $k &gt; k_{crit}$, the system is unconditionally unstable and $V \to \infty$.</p>
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span>kcrit <span style="color: #666666">=</span> sigma_n <span style="color: #666666">*</span> b <span style="color: #666666">/</span> Dc 
 <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&#39;k/kcrit =&#39;</span>, k <span style="color: #666666">/</span> kcrit)
 </code></pre></div>
@@ -219,7 +219,6 @@ plt<span style="color: #666666">.</span>rcParams[<span style="color: #BA2121">&#
 plt<span style="color: #666666">.</span>rcParams[<span style="color: #BA2121">&#39;legend.fontsize&#39;</span>] <span style="color: #666666">=</span> <span style="color: #666666">20</span>
 plt<span style="color: #666666">.</span>rcParams[<span style="color: #BA2121">&#39;figure.titlesize&#39;</span>] <span style="color: #666666">=</span> <span style="color: #666666">22</span>
 plt<span style="color: #666666">.</span>rcParams[<span style="color: #BA2121">&#39;text.latex.preamble&#39;</span>] <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;</span><span style="color: #BB6622; font-weight: bold">\\</span><span style="color: #BA2121">usepackage{amsmath}&#39;</span>
-plt<span style="color: #666666">.</span>rcParams[<span style="color: #BA2121">&#39;savefig.transparent&#39;</span>] <span style="color: #666666">=</span> <span style="color: #008000">False</span>
 </code></pre></div>
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span>plt<span style="color: #666666">.</span>figure(figsize <span style="color: #666666">=</span> (<span style="color: #666666">15</span>, <span style="color: #666666">15</span>))
 ax11 <span style="color: #666666">=</span> plt<span style="color: #666666">.</span>subplot(<span style="color: #666666">221</span>)
@@ -247,7 +246,7 @@ plt<span style="color: #666666">.</span>savefig(<span style="color: #BA2121">&#3
 plt<span style="color: #666666">.</span>show()
 </code></pre></div>
 
-<p><img src="block_slider_files/block_slider_26_0.png" alt="png" /></p>
+<p><img src="/qd_1d.png" alt="png" /></p>
 
     </div>
 

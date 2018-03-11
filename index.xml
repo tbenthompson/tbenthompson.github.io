@@ -120,7 +120,8 @@ I worked for a while as the primary software developer for TherapyCharts, a web-
       <pubDate>Sat, 10 Mar 2018 00:00:00 -0500</pubDate>
       
       <guid>http://tbenthompson.com/post/block_slider/</guid>
-      <description>Figures first, explanations later!
+      <description>source available here
+Figures first, explanations later!
 Recently, I&amp;rsquo;ve been working on some 3D quasidynamic earthquake modeling problems. We&amp;rsquo;re planning to add in some realistic geometries using tectosaur to see what influence that has on the earthquake cycle. While putting together that 3D model, I realized that it consists of two main pieces:
  The numerical methods for determining traction on the fault surface given the current values of slip everywhere on the fault (elasticity!</description>
     </item>
