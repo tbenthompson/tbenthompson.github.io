@@ -66,44 +66,44 @@ MathJax.Hub.Config({
 <p>I&rsquo;ve recently learned about using file backed shared memory with mmap to do efficient interprocess communication. At the most basic level, you share data between two processes by writing that data to a file. The file can be made to look a lot like a normal region of memory using <code>mmap</code>, a system call, and can be shared between multiple processes by giving <code>mmap</code> the <code>MAP_SHARED</code> flag. There&rsquo;s a downside though, in that the data has to synced to the hard drive continuously. So, instead of sharing a file that is written to disk, I discovered that you can share a file on a RAM disk &ndash; just a filesystem that is backed by RAM. On Linux, a large <code>tmpfs</code> RAM disk filesystem is often mounted by default at <code>/dev/shm</code>.</p>
 
 <p>Here&rsquo;s some python that creates a NumPy array with <code>mmap</code>. First, let&rsquo;s get set up&hellip;</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">os</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">os</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">mmap</span>
 n <span style="color: #666666">=</span> <span style="color: #008000">int</span>(<span style="color: #666666">5e7</span>)
 nb <span style="color: #666666">=</span> <span style="color: #666666">8</span> <span style="color: #666666">*</span> n
 filename <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;/dev/shm/abc&#39;</span>
-</code></pre></div>
+</pre></div>
 
 <p>Next, we need to make sure that the file is the correct size using <code>ftruncate</code>. Finally, we memory map it into a numpy array. <code>np.frombuffer</code> is a handy function when you already have a memory buffer and just want to &ldquo;view&rdquo; it as a numpy array without copying the memory.</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span><span style="color: #008000; font-weight: bold">with</span> <span style="color: #008000">open</span>(filename, <span style="color: #BA2121">&#39;w+b&#39;</span>) <span style="color: #008000; font-weight: bold">as</span> f:
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">with</span> <span style="color: #008000">open</span>(filename, <span style="color: #BA2121">&#39;w+b&#39;</span>) <span style="color: #008000; font-weight: bold">as</span> f:
     os<span style="color: #666666">.</span>ftruncate(f<span style="color: #666666">.</span>fileno(), nb)
     mem <span style="color: #666666">=</span> mmap<span style="color: #666666">.</span>mmap(f<span style="color: #666666">.</span>fileno(), nb)
 
 x <span style="color: #666666">=</span> np<span style="color: #666666">.</span>frombuffer(mem, dtype <span style="color: #666666">=</span> np<span style="color: #666666">.</span>float64)
-</code></pre></div>
+</pre></div>
 
 <p>And for kicks, we&rsquo;ll stick some random numbers in there&hellip;</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span>x[:] <span style="color: #666666">=</span> np<span style="color: #666666">.</span>random<span style="color: #666666">.</span>rand(n)
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>x[:] <span style="color: #666666">=</span> np<span style="color: #666666">.</span>random<span style="color: #666666">.</span>rand(n)
 x
-</code></pre></div>
+</pre></div>
 
 <pre><code>array([ 0.84984349,  0.5928336 ,  0.34455741, ...,  0.45909949,  0.51389915,  0.36287542])
 </code></pre>
 
 <p>Looks like everything is working! Right? Okay, so now I&rsquo;m going to create another array of the same size with random indexes into the first array.</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span>idx <span style="color: #666666">=</span> np<span style="color: #666666">.</span>random<span style="color: #666666">.</span>randint(<span style="color: #666666">0</span>, n, n)
-</code></pre></div>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>idx <span style="color: #666666">=</span> np<span style="color: #666666">.</span>random<span style="color: #666666">.</span>randint(<span style="color: #666666">0</span>, n, n)
+</pre></div>
 
 <p>And then, benchmark an indexing operation on <code>x</code>.</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span><span style="color: #666666">%</span>timeit y <span style="color: #666666">=</span> x[idx]
-</code></pre></div>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #666666">%</span>timeit y <span style="color: #666666">=</span> x[idx]
+</pre></div>
 
 <pre><code>1.39 s ± 92.1 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 </code></pre>
 
 <p>So, this is where it gets really interesting&hellip; What if we copy <code>x</code> and then do the benchmark again?</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span>x2 <span style="color: #666666">=</span> x<span style="color: #666666">.</span>copy()
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>x2 <span style="color: #666666">=</span> x<span style="color: #666666">.</span>copy()
 <span style="color: #666666">%</span>timeit y <span style="color: #666666">=</span> x2[idx]
-</code></pre></div>
+</pre></div>
 
 <pre><code>691 ms ± 117 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 </code></pre>
@@ -117,24 +117,24 @@ x
 <p>Using <code>mmap</code> with the <code>MAP_PRIVATE</code> flag boosted performance of the indexing operation to the same speed as when I copied <code>x</code>.</p>
 
 <p>Around the same point, I had another thought. The current indexes are random. Random indexing of a 50 million element array is bound to cause some caching problems. Does copying speed up a sequential indexing operation? Say, we just skip every other element. Let&rsquo;s try it!</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span>idx_seq <span style="color: #666666">=</span> np<span style="color: #666666">.</span>arange(<span style="color: #666666">0</span>, n, <span style="color: #666666">2</span>)
-</code></pre></div>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span><span style="color: #666666">%</span>timeit y <span style="color: #666666">=</span> x[idx_seq]
-</code></pre></div>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>idx_seq <span style="color: #666666">=</span> np<span style="color: #666666">.</span>arange(<span style="color: #666666">0</span>, n, <span style="color: #666666">2</span>)
+</pre></div>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #666666">%</span>timeit y <span style="color: #666666">=</span> x[idx_seq]
+</pre></div>
 
 <pre><code>62.8 ms ± 2.07 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
 </code></pre>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span><span style="color: #666666">%</span>timeit y <span style="color: #666666">=</span> x2[idx_seq]
-</code></pre></div>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #666666">%</span>timeit y <span style="color: #666666">=</span> x2[idx_seq]
+</pre></div>
 
 <pre><code>62.1 ms ± 1.47 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
 </code></pre>
 
 <p>First off, sequential indexing is much faster because it has much better cache utilization (actually, pretty much ideal cache utilization). I mean it&rsquo;s just a copying operation! This is going to be a memory bandwidth bound operation, so let&rsquo;s calculate really quickly what type of memory bandwidth my little laptop is achieving.</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span>t_sec <span style="color: #666666">=</span> <span style="color: #666666">0.0621</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>t_sec <span style="color: #666666">=</span> <span style="color: #666666">0.0621</span>
 total_bytes <span style="color: #666666">=</span> x2<span style="color: #666666">.</span>nbytes <span style="color: #666666">+</span> idx_linear<span style="color: #666666">.</span>nbytes <span style="color: #666666">+</span> y<span style="color: #666666">.</span>nbytes
 <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #008000">str</span>(total_bytes <span style="color: #666666">/</span> t_sec <span style="color: #666666">/</span> <span style="color: #666666">1e9</span>), <span style="color: #BA2121">&#39;GB/s&#39;</span>)
-</code></pre></div>
+</pre></div>
 
 <pre><code>12.882447665056361 GB/s
 </code></pre>
@@ -168,7 +168,7 @@ shm square 0.2850306034088135
 </code></pre>
 
 <p>And let&rsquo;s check our original problem by using a separate <code>hugetlbfs</code> RAM disk using huge pages mounted at <code>/mnt/hugepages</code> (remember before we used <code>/dev/shm</code>).</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span>filename <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;/mnt/hugepages/abc&#39;</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>filename <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;/mnt/hugepages/abc&#39;</span>
 page_size <span style="color: #666666">=</span> <span style="color: #666666">2.0</span> <span style="color: #666666">**</span> <span style="color: #666666">21</span>
 <span style="color: #408080; font-style: italic"># Using huge pages requires using a number bytes that is an exact multiply of the page size</span>
 nb_rounded_to_page_size <span style="color: #666666">=</span> <span style="color: #008000">int</span>(page_size <span style="color: #666666">*</span> np<span style="color: #666666">.</span>ceil(nb <span style="color: #666666">/</span> page_size))
@@ -177,7 +177,7 @@ nb_rounded_to_page_size <span style="color: #666666">=</span> <span style="color
     mem <span style="color: #666666">=</span> mmap<span style="color: #666666">.</span>mmap(f<span style="color: #666666">.</span>fileno(), nb_rounded_to_page_size)
 x <span style="color: #666666">=</span> np<span style="color: #666666">.</span>frombuffer(mem, dtype <span style="color: #666666">=</span> np<span style="color: #666666">.</span>float64)
 <span style="color: #666666">%</span>timeit y <span style="color: #666666">=</span> x[idx]
-</code></pre></div>
+</pre></div>
 
 <pre><code>657 ms ± 39.6 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 </code></pre>

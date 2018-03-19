@@ -64,34 +64,34 @@ MathJax.Hub.Config({
 <p>Yesterday, I was curious about the internals of <code>cloudpickle</code> and whether a monkey-patched object would remain patched after being loaded remotely. I read a bit of the source, but figured just trying it was a good idea.</p>
 
 <p>I create a silly, meaningless class and then an instance of that class.</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span><span style="color: #408080; font-style: italic"># Create a silly class and an object</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic"># Create a silly class and an object</span>
 <span style="color: #008000; font-weight: bold">class</span> <span style="color: #0000FF; font-weight: bold">Turkey</span>:
     <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">hi</span>(<span style="color: #008000">self</span>):
         <span style="color: #008000; font-weight: bold">return</span> <span style="color: #BA2121">&quot;hello&quot;</span>
 t <span style="color: #666666">=</span> Turkey()
 <span style="color: #008000; font-weight: bold">print</span>(t<span style="color: #666666">.</span>hi())
-</code></pre></div>
+</pre></div>
 
 <pre><code>hello
 </code></pre>
 
 <p>Then, I monkey patch the <code>hi</code> method to return 1 instead of 2. <code>types.MethodType</code> turns a free-standing function into a method that automatically receives the <code>self</code> parameter.</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">types</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">types</span>
 <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">hi2</span>(<span style="color: #008000">self</span>):
     <span style="color: #008000; font-weight: bold">return</span> <span style="color: #BA2121">&quot;SQUAWK&quot;</span>
 t<span style="color: #666666">.</span>hi <span style="color: #666666">=</span> types<span style="color: #666666">.</span>MethodType(hi2, t)
 <span style="color: #008000; font-weight: bold">print</span>(t<span style="color: #666666">.</span>hi())
-</code></pre></div>
+</pre></div>
 
 <pre><code>SQUAWK
 </code></pre>
 
 <p>First, I&rsquo;ll try <code>pickle</code>. I dump the turkey to a binary blob and reload it.</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">pickle</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">pickle</span>
 blob <span style="color: #666666">=</span> pickle<span style="color: #666666">.</span>dumps(t)
 t2 <span style="color: #666666">=</span> pickle<span style="color: #666666">.</span>loads(blob)
 <span style="color: #008000; font-weight: bold">print</span>(t2)
-</code></pre></div>
+</pre></div>
 
 <pre><code>---------------------------------------------------------------------------
 
@@ -110,17 +110,17 @@ AttributeError: 'Turkey' object has no attribute 'hi2'
 <p><code>pickle</code> serialize a reference to the the type of the object and then expects that type to provide all the member functions needed. So, it&rsquo;s not able to handle this monkey patching situation.</p>
 
 <p>Next, I&rsquo;ll try <code>cloudpickle</code>!</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">cloudpickle</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">cloudpickle</span>
 t2 <span style="color: #666666">=</span> cloudpickle<span style="color: #666666">.</span>loads(cloudpickle<span style="color: #666666">.</span>dumps(t))
 <span style="color: #008000; font-weight: bold">print</span>(t <span style="color: #AA22FF; font-weight: bold">is</span> t2)
-</code></pre></div>
+</pre></div>
 
 <pre><code>False
 </code></pre>
 
 <p>Does the <code>hi</code> method remain changed? YES! Thank you, cloudpickle.</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span><span style="color: #008000; font-weight: bold">print</span>(t2<span style="color: #666666">.</span>hi())
-</code></pre></div>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">print</span>(t2<span style="color: #666666">.</span>hi())
+</pre></div>
 
 <pre><code>SQUAWK
 </code></pre>

@@ -6,10 +6,19 @@
     <description>Recent content in Posts on T. Ben Thompson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Mar 2018 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 19 Mar 2018 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="http://tbenthompson.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Regularizing rate and state friction for numerical simulation.</title>
+      <link>http://tbenthompson.com/post/regularized_rate_state/</link>
+      <pubDate>Mon, 19 Mar 2018 00:00:00 -0400</pubDate>
+      
+      <guid>http://tbenthompson.com/post/regularized_rate_state/</guid>
+      <description>The standard form for rate and state friction produced undefined results for $V = 0$. Some algebra and calculus and microphysics lead to the commonly used regularized form that is still valid at $V=0$. This is based on the presentation in Rice and Ben-Zion 1996 and Lapusta et. al 2000. There&amp;rsquo;s nothing novel here, but the details of this sort of thing are often glossed over in the literature. So, while working it out for myself, I figured I&amp;rsquo;d write it up!</description>
+    </item>
     
     <item>
       <title>A Quasidynamic spring block slider</title>
