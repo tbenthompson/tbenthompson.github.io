@@ -90,21 +90,21 @@ MathJax.Hub.Config({
 <p>And the <code>rate_state_solver</code> is actually almost identical in both the 3D problem and a 1D spring block slider problem. So, I set out to repeat the same little exercise that has probably been done a thousand times before.</p>
 
 <p>If you want a much better designed rate-state friction solver, check out <a href="https://github.com/jrleeman/rsfmodel" target="_blank">John Leeman&rsquo;s rsfmodel package</a>.</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
 <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">scipy.optimize</span> <span style="color: #008000; font-weight: bold">import</span> fsolve
 <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">scipy.integrate</span> <span style="color: #008000; font-weight: bold">import</span> ode, odeint
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">matplotlib.pyplot</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">plt</span>
-</pre></div>
+</code></pre></div>
 
 <p>First, some reasonably typical material property parameters.</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sm <span style="color: #666666">=</span> <span style="color: #666666">3e10</span>                  <span style="color: #408080; font-style: italic"># Shear modulus (Pa)</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span>sm <span style="color: #666666">=</span> <span style="color: #666666">3e10</span>                  <span style="color: #408080; font-style: italic"># Shear modulus (Pa)</span>
 density <span style="color: #666666">=</span> <span style="color: #666666">2700</span>             <span style="color: #408080; font-style: italic"># rock density (kg/m^3)</span>
 cs <span style="color: #666666">=</span> np<span style="color: #666666">.</span>sqrt(sm <span style="color: #666666">/</span> density) <span style="color: #408080; font-style: italic"># Shear wave speed (m/s)</span>
 eta <span style="color: #666666">=</span> sm <span style="color: #666666">/</span> (<span style="color: #666666">2</span> <span style="color: #666666">*</span> cs)        <span style="color: #408080; font-style: italic"># The radiation damping coefficient (kg / (m^2 * s))</span>
 L <span style="color: #666666">=</span> <span style="color: #666666">60</span> <span style="color: #666666">*</span> <span style="color: #666666">1000</span>              <span style="color: #408080; font-style: italic"># Width of our plate boundary (m)</span>
 k <span style="color: #666666">=</span> sm <span style="color: #666666">/</span> L                 <span style="color: #408080; font-style: italic"># spring constant (Pa / m)</span>
 Vp <span style="color: #666666">=</span> <span style="color: #666666">1e-9</span>                  <span style="color: #408080; font-style: italic"># Rate of plate motion</span>
-</pre></div>
+</code></pre></div>
 
 <p>Next, the regularized rate and state friction law with the aging law, and some simple parameter choices that lead to cyclic earthquake behavior. I&rsquo;m mixing together a few different sources here, but the main ones are:</p>
 
@@ -112,7 +112,7 @@ Vp <span style="color: #666666">=</span> <span style="color: #666666">1e-9</span
 <li>Erickson and Dunham, <em>An efficient numerical method for earthquake cycles in heterogeneous media: Alternating sub-basin and surface-rupturing events on faults crossing a sedimentary basin, 2014.</em></li>
 <li>Segall, <em>Earthquake and Volcano Deformation.</em></li>
 </ul>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sigma_n <span style="color: #666666">=</span> <span style="color: #666666">50e6</span>   <span style="color: #408080; font-style: italic"># Normal stress (Pa)</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span>sigma_n <span style="color: #666666">=</span> <span style="color: #666666">50e6</span>   <span style="color: #408080; font-style: italic"># Normal stress (Pa)</span>
 a <span style="color: #666666">=</span> <span style="color: #666666">0.015</span>        <span style="color: #408080; font-style: italic"># direct velocity strengthening effect</span>
 b <span style="color: #666666">=</span> <span style="color: #666666">0.02</span>         <span style="color: #408080; font-style: italic"># state-based velocity weakening effect</span>
 Dc <span style="color: #666666">=</span> <span style="color: #666666">0.2</span>         <span style="color: #408080; font-style: italic"># state evolution length scale (m)</span>
@@ -129,14 +129,14 @@ V0 <span style="color: #666666">=</span> <span style="color: #666666">1e-6</span
 <span style="color: #408080; font-style: italic"># State evolution law -- aging law.</span>
 <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">G</span>(V, state):
     <span style="color: #008000; font-weight: bold">return</span> (b <span style="color: #666666">*</span> V0 <span style="color: #666666">/</span> Dc) <span style="color: #666666">*</span> (np<span style="color: #666666">.</span>exp((f0 <span style="color: #666666">-</span> state) <span style="color: #666666">/</span> b) <span style="color: #666666">-</span> (V <span style="color: #666666">/</span> V0))
-</pre></div>
+</code></pre></div>
 
 <p>I&rsquo;ll check $k_{crit}$.</p>
 
 <p>If $k &gt; k_{crit}$, the system is unconditionally unstable and $V \to \infty$.</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>kcrit <span style="color: #666666">=</span> sigma_n <span style="color: #666666">*</span> b <span style="color: #666666">/</span> Dc 
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span>kcrit <span style="color: #666666">=</span> sigma_n <span style="color: #666666">*</span> b <span style="color: #666666">/</span> Dc 
 <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&#39;k/kcrit =&#39;</span>, k <span style="color: #666666">/</span> kcrit)
-</pre></div>
+</code></pre></div>
 
 <pre><code>k/kcrit = 0.1
 </code></pre>
@@ -144,17 +144,17 @@ V0 <span style="color: #666666">=</span> <span style="color: #666666">1e-6</span
 <p>Great!</p>
 
 <p>Next, I&rsquo;ll set up the initial conditions for the model:</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>x_0 <span style="color: #666666">=</span> <span style="color: #666666">0.0</span> <span style="color: #408080; font-style: italic"># slider position</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span>x_0 <span style="color: #666666">=</span> <span style="color: #666666">0.0</span> <span style="color: #408080; font-style: italic"># slider position</span>
 V_slider_0 <span style="color: #666666">=</span> Vp <span style="color: #666666">/</span> <span style="color: #666666">1000.0</span> <span style="color: #408080; font-style: italic"># Initially, the slider is moving at 1/1000th the plate rate.</span>
-</pre></div>
+</code></pre></div>
 
 <p>Setting the initial condition for the state variable is non-trivial because I don&rsquo;t want crazy swings at the beginning of the model. So, I solve for the steady-state state variable given the initial velocity. Since $\frac{\partial state}{\partial t}$ <code>= G(V, state)</code>, that just involves solving for the value of <code>state</code> at which <code>G(V, state) = 0</code>. I use the <code>fsolve</code> scipy function. (Did you notice that equation that was partially Latex and partially code? It felt weird typing that.)</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">steady_state</span>(V_slider):
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span><span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">steady_state</span>(V_slider):
     <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">f</span>(state):
         <span style="color: #008000; font-weight: bold">return</span> G(V_slider, state)
     <span style="color: #008000; font-weight: bold">return</span> fsolve(f, <span style="color: #666666">0.0</span>)[<span style="color: #666666">0</span>]
 state_0 <span style="color: #666666">=</span> steady_state(V_slider_0)
-</pre></div>
+</code></pre></div>
 
 <p>Okay, so now I&rsquo;m getting to the part where I actually solve the differential equations! But, first, there&rsquo;s an interesting thing about this model. It&rsquo;s actually a differential algebraic equation (DAE) instead of a pure ODE. That&rsquo;s because the current velocity is not defined in differential terms, but instead it is implicity defined as a function of the current shear stress and state parameter. Most of the time, for the 1D spring block slider model that I&rsquo;m looking at here, folks have transformed it into a pure ODE. However, that transformation to an ODE doesn&rsquo;t work very well in the 3D setting. So, for 3D, I&rsquo;m stuck with a DAE. It&rsquo;s not as easy, but it&rsquo;s also not <strong>that</strong> bad. For the sake of easily translating the 1D model here to use a 3D elastic solver, I&rsquo;m going to actually keep using the DAE formulation.</p>
 
@@ -165,20 +165,20 @@ state_0 <span style="color: #666666">=</span> steady_state(V_slider_0)
 <p>Aside: This is actually a transformed version of the typical momentum equation $F = ma$, where $ma$ is replaced by the &ldquo;quasidynamic&rdquo; approximation, $\eta V$ and $F$ is replaced by the driving shear force $\tau_{qs}$ and the resisting friction force $F(V, \sigma_n, state)$</p>
 
 <p>As an implementation detail, I warm-start the <code>fsolve</code> call with <code>V_slider_old</code>, which is the velocity from the previous time step - a decent guess for the new velocity.</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">current_vel</span>(tau_qs, state, V_slider_old):
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span><span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">current_vel</span>(tau_qs, state, V_slider_old):
     <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">f</span>(V):
         <span style="color: #008000; font-weight: bold">return</span> tau_qs <span style="color: #666666">-</span> eta <span style="color: #666666">*</span> V <span style="color: #666666">-</span> F(V, sigma_n, state)
     <span style="color: #008000; font-weight: bold">return</span> fsolve(f, V_slider_old)[<span style="color: #666666">0</span>]
-</pre></div>
+</code></pre></div>
 
 <p>When using <code>odeint</code>, I need to define the points in time where I want to observe the state of the system. So, every year, for 15,000 years. (This is not the size of the time step, which is internally decided by <code>odeint</code>).</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>secs_per_year <span style="color: #666666">=</span> <span style="color: #666666">365</span> <span style="color: #666666">*</span> <span style="color: #666666">24</span> <span style="color: #666666">*</span> <span style="color: #666666">60</span> <span style="color: #666666">*</span> <span style="color: #666666">60</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span>secs_per_year <span style="color: #666666">=</span> <span style="color: #666666">365</span> <span style="color: #666666">*</span> <span style="color: #666666">24</span> <span style="color: #666666">*</span> <span style="color: #666666">60</span> <span style="color: #666666">*</span> <span style="color: #666666">60</span>
 h_t_yrs <span style="color: #666666">=</span> np<span style="color: #666666">.</span>linspace(<span style="color: #666666">0.0</span>, <span style="color: #666666">15000.0</span>, <span style="color: #666666">15001</span>)
 h_t <span style="color: #666666">=</span> h_t_yrs <span style="color: #666666">*</span> secs_per_year
-</pre></div>
+</code></pre></div>
 
 <p>Next, I define the derivatives.</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">f</span>(x_and_state, t):
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span><span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">f</span>(x_and_state, t):
     x, state <span style="color: #666666">=</span> x_and_state
     <span style="color: #408080; font-style: italic"># The position of the load point.</span>
     y <span style="color: #666666">=</span> Vp <span style="color: #666666">*</span> t 
@@ -196,25 +196,25 @@ h_t <span style="color: #666666">=</span> h_t_yrs <span style="color: #666666">*
     dstatedt <span style="color: #666666">=</span> G(V_slider, state)
     <span style="color: #008000; font-weight: bold">return</span> [dxdt, dstatedt]
 f<span style="color: #666666">.</span>V_slider_old <span style="color: #666666">=</span> V_slider_0
-</pre></div>
+</code></pre></div>
 
 <p>Define the initial conditions:</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>initial_conditions <span style="color: #666666">=</span> np<span style="color: #666666">.</span>array([x_0, state_0])
-</pre></div>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span>initial_conditions <span style="color: #666666">=</span> np<span style="color: #666666">.</span>array([x_0, state_0])
+</code></pre></div>
 
 <p>And actually solve the equations!</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>history <span style="color: #666666">=</span> odeint(f, initial_conditions, h_t, rtol<span style="color: #666666">=1e-12</span>, atol<span style="color: #666666">=1e-12</span>, mxstep<span style="color: #666666">=5000</span>)
-</pre></div>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>h_x <span style="color: #666666">=</span> history[:,<span style="color: #666666">0</span>]
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span>history <span style="color: #666666">=</span> odeint(f, initial_conditions, h_t, rtol<span style="color: #666666">=1e-12</span>, atol<span style="color: #666666">=1e-12</span>, mxstep<span style="color: #666666">=5000</span>)
+</code></pre></div>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span>h_x <span style="color: #666666">=</span> history[:,<span style="color: #666666">0</span>]
 h_state <span style="color: #666666">=</span> history[:,<span style="color: #666666">1</span>]
 h_V <span style="color: #666666">=</span> (h_x[<span style="color: #666666">1</span>:] <span style="color: #666666">-</span> h_x[:<span style="color: #666666">-1</span>]) <span style="color: #666666">/</span> (h_t[<span style="color: #666666">1</span>:] <span style="color: #666666">-</span> h_t[:<span style="color: #666666">-1</span>])
 h_y <span style="color: #666666">=</span> h_t <span style="color: #666666">*</span> Vp
 h_tau_qs <span style="color: #666666">=</span> k <span style="color: #666666">*</span> (h_y <span style="color: #666666">-</span> h_x)
 h_tau_qd <span style="color: #666666">=</span> h_tau_qs[<span style="color: #666666">1</span>:] <span style="color: #666666">-</span> eta <span style="color: #666666">*</span> h_V
-</pre></div>
+</code></pre></div>
 
 <p>Finally, I&rsquo;ll plot up the results.</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic">#plt.style.use(&#39;dark_background&#39;)</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span><span style="color: #408080; font-style: italic">#plt.style.use(&#39;dark_background&#39;)</span>
 <span style="color: #666666">%</span>matplotlib inline
 <span style="color: #666666">%</span>config InlineBackend<span style="color: #666666">.</span>figure_format <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;retina&#39;</span>
 plt<span style="color: #666666">.</span>rcParams[<span style="color: #BA2121">&#39;text.usetex&#39;</span>] <span style="color: #666666">=</span> <span style="color: #008000">True</span>
@@ -227,8 +227,8 @@ plt<span style="color: #666666">.</span>rcParams[<span style="color: #BA2121">&#
 plt<span style="color: #666666">.</span>rcParams[<span style="color: #BA2121">&#39;figure.titlesize&#39;</span>] <span style="color: #666666">=</span> <span style="color: #666666">22</span>
 plt<span style="color: #666666">.</span>rcParams[<span style="color: #BA2121">&#39;text.latex.preamble&#39;</span>] <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;</span><span style="color: #BB6622; font-weight: bold">\\</span><span style="color: #BA2121">usepackage{amsmath}&#39;</span>
 plt<span style="color: #666666">.</span>rcParams[<span style="color: #BA2121">&#39;savefig.transparent&#39;</span>] <span style="color: #666666">=</span> <span style="color: #008000">False</span>
-</pre></div>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>plt<span style="color: #666666">.</span>figure(figsize <span style="color: #666666">=</span> (<span style="color: #666666">15</span>, <span style="color: #666666">15</span>))
+</code></pre></div>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><code class="language-python" data-lang="python"><span></span>plt<span style="color: #666666">.</span>figure(figsize <span style="color: #666666">=</span> (<span style="color: #666666">15</span>, <span style="color: #666666">15</span>))
 ax11 <span style="color: #666666">=</span> plt<span style="color: #666666">.</span>subplot(<span style="color: #666666">221</span>)
 plt<span style="color: #666666">.</span>plot(h_t_yrs, h_x, label <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;x&#39;</span>)
 plt<span style="color: #666666">.</span>plot(h_t_yrs, h_y, label <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;y&#39;</span>)
@@ -252,7 +252,7 @@ plt<span style="color: #666666">.</span>ylabel(<span style="color: #BA2121">&#39
 plt<span style="color: #666666">.</span>savefig(<span style="color: #BA2121">&#39;qd_1d.pdf&#39;</span>, bbox_inches <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;tight&#39;</span>)
 plt<span style="color: #666666">.</span>savefig(<span style="color: #BA2121">&#39;qd_1d.png&#39;</span>, bbox_inches <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;tight&#39;</span>, dpi <span style="color: #666666">=</span> <span style="color: #666666">200</span>)
 plt<span style="color: #666666">.</span>show()
-</pre></div>
+</code></pre></div>
 
 <p><img src="block_slider_files/block_slider_26_0.png" alt="png" /></p>
 
