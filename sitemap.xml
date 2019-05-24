@@ -3,14 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://tbenthompson.com/project/quasidynamic/</loc>
-  </url>
-  
-  <url>
-    <loc>http://tbenthompson.com/project/topography/</loc>
-  </url>
-  
-  <url>
     <loc>http://tbenthompson.com/project/tectosaur/</loc>
   </url>
   
@@ -20,6 +12,14 @@
   
   <url>
     <loc>http://tbenthompson.com/project/cppimport/</loc>
+  </url>
+  
+  <url>
+    <loc>http://tbenthompson.com/project/quasidynamic/</loc>
+  </url>
+  
+  <url>
+    <loc>http://tbenthompson.com/project/topography/</loc>
   </url>
   
   <url>
