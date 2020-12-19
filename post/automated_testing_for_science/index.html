@@ -64,16 +64,12 @@ MathJax.Hub.Config({
     
     <h1 class="title">Automated testing for scientists and data analysts</h1>
     <div class="content">
-      
-
-<p>A lot of scientists and data analysts don&rsquo;t use automatic test suites for verifying their code.
+      <p>A lot of scientists and data analysts don&rsquo;t use automatic test suites for verifying their code.
 And I think that&rsquo;s because it&rsquo;s really hard.
 Almost all the introductions to automated testing that I&rsquo;ve seen come from a more typical software engineering perspective. They assume you already know exactly what the output of your code should be.
 And the trouble with science is that that&rsquo;s rarely the case.
 I mean, if you knew the results ahead of time, you wouldn&rsquo;t be doing science!</p>
-
-<p>It&rsquo;s hard to square this situation with the consistent loud noises coming from the software development world (in my case, also from inside my head!) saying &ldquo;It might be broken! Write tests! Write tests! Write tests!&rdquo;. &ldquo;But, I can&rsquo;t!&rdquo;</p>
-
+<p>It&rsquo;s hard to square this situation with the consistent loud noises coming from the software development world (in my case, also from inside my head!) saying &ldquo;It might be broken! Write tests! Write tests! Write tests!&quot;. &ldquo;But, I can&rsquo;t!&rdquo;</p>
 <p>I&rsquo;ve been dealing with this battle for a few years now and feel like I&rsquo;ve figured out some coping strategies.
 The simplest solution is to just give up.
 And for some types of science, I think that&rsquo;s the right thing to do.
@@ -81,13 +77,9 @@ Essentially, whether or not to test is a question of how important it is that th
 In that sense, I don&rsquo;t think automated testing makes sense for exploratory analysis.
 But, for a reusable algorithm or production/final analysis, tests are invaluable.
 My work flow mostly involves Python and C++. So, in my case, the question of whether something should be tested often goes hand in hand with whether I&rsquo;m working in a Jupyter notebook or with a proper package.</p>
-
 <p>So, let&rsquo;s back up and ask: why should we have automated tests?</p>
-
 <h2 id="automated-testing">Automated testing</h2>
-
 <p>Automated testing is valuable for ensuring that software does what is is supposed to do. Automated testing:</p>
-
 <ul>
 <li>reduces fear when making implementation or design changes (this is huge, in my opinion!) One perspective on when to write tests is to write tests whenever you feel afraid of making a change and to keep writing tests until your not afraid anymore.</li>
 <li>enables rapid refactoring without fear of breaking the code base</li>
@@ -95,100 +87,67 @@ My work flow mostly involves Python and C++. So, in my case, the question of whe
 <li>helps improve software accuracy, correctness</li>
 <li>provides a form of precise documentation</li>
 </ul>
-
-<p><a href="https://stackoverflow.com/questions/67299/is-unit-testing-worth-the-effort" target="_blank">A couple good discussions of why we should unit test.</a></p>
-
+<p><a href="https://stackoverflow.com/questions/67299/is-unit-testing-worth-the-effort">A couple good discussions of why we should unit test.</a></p>
 <p>I&rsquo;ve also enjoyed the book &ldquo;Working Effectively with Legacy Code&rdquo; by Michael Feathers, because it focuses on adding tests to previously untested and maybe poorly designed &ldquo;legacy&rdquo; code (which he defines as any code without tests!).
-<a href="https://softwareengineering.stackexchange.com/questions/122014/what-are-the-key-points-of-working-effectively-with-legacy-code" target="_blank">A summary of the book.</a></p>
-
+<a href="https://softwareengineering.stackexchange.com/questions/122014/what-are-the-key-points-of-working-effectively-with-legacy-code">A summary of the book.</a></p>
 <p>But, returning to the original problem, automated testing can be very difficult in science and analytics because the true answer is not known. Sometimes low level functions can be assigned a &ldquo;correct&rdquo; result. But, for higher level constructs (e.g. an entire time series forecast or the solution of a complex PDE), it&rsquo;s normally much harder to determine what is right and wrong.  It requires careful input from the statistician/scientist/analyst to determine if something looks right or wrong and whether there&rsquo;s anything fishy going on.</p>
-
 <p>So, given that we want to have automated tests, but the inherent nature of the problem makes most testing difficult, what do we do? I still struggle with this issue and am learning all the time, but I&rsquo;ve found three types of approaches particularly useful:</p>
-
 <h2 id="special-cases">Special cases</h2>
-
 <p>This first approach is the most common, the simplest, and often the most valuable.
-Suppose I&rsquo;m writing a <a href="https://github.com/tbenthompson/tectosaur" target="_blank">general algorithm for numerically solving elastic partial differential equations for an arbitrary geometry and set of boundary conditions</a>.
+Suppose I&rsquo;m writing a <a href="https://github.com/tbenthompson/tectosaur">general algorithm for numerically solving elastic partial differential equations for an arbitrary geometry and set of boundary conditions</a>.
 It might be really hard to say whether the answer I&rsquo;m getting is correct for
 any given problem. But some specific problems have already been solved analytically.
 For example, a spherically symmetric problem is easily solved by hand and any number of textbooks
-have exact solutions. Or, similarly, the motion of the Earth due to an planar earthquake in an infinite flat Earth has <a href="http://www.bosai.go.jp/study/application/dc3d/DC3Dhtml_E.html" target="_blank">a well known solution</a>.</p>
-
-<p>In some cases, there are very general approaches for building special cases. For example, anyone writing numerical methods for solving PDEs should absolutely learn about the <a href="http://www.personal.psu.edu/jhm/ME540/lectures/VandV/MMS_summary.pdf" target="_blank">method of manufactured solutions</a>, which lets you come up with as many arbitrary test problems as you need.</p>
-
+have exact solutions. Or, similarly, the motion of the Earth due to an planar earthquake in an infinite flat Earth has <a href="http://www.bosai.go.jp/study/application/dc3d/DC3Dhtml_E.html">a well known solution</a>.</p>
+<p>In some cases, there are very general approaches for building special cases. For example, anyone writing numerical methods for solving PDEs should absolutely learn about the <a href="http://www.personal.psu.edu/jhm/ME540/lectures/VandV/MMS_summary.pdf">method of manufactured solutions</a>, which lets you come up with as many arbitrary test problems as you need.</p>
 <p>Unfortunately, even if there are useful special cases, often the resulting tests only validate the program as a whole. What if that program involves thousands of lines of code? I&rsquo;d prefer to be able to test smaller portions of the code base on their own.</p>
-
 <h2 id="property-testing">Property testing</h2>
-
 <p>I think property testing is the most useful approach when the answer isn&rsquo;t known. Instead of check the final answer, we check a <em>property</em> of some final or intermediate part of the calculation. For example:</p>
-
 <ul>
 <li>Newton&rsquo;s method for root finding should take exactly one step to solve any linear system of equations. So, a simple property test might be to generate 100 random linear systems and check that all of them are solved in one step. The difference from a special case is that we have a simple algorithm for generating many special cases.</li>
 <li>In the case of a finite element or boundary element model, the solution should converge with increasing mesh density.</li>
 <li>Running an idempotent function 100 times should leave the system in the same state as running it once.</li>
 <li>With an infinite penalty, ridge and lasso regressions return all zeros. With a penalty of zero, ridge and lasso regressions return the same answer as unregularized least squares.</li>
 </ul>
-
 <p>I&rsquo;ve always written property tests by hand, but there are some libraries that attempt to automate part of the process. They&rsquo;re probably more useful if you are writing code that might receive inputs from the &ldquo;outside&rdquo; and thus must check behavior in funky edge cases (zero length lists, NaNs, Infinity, etc).
 Many property testing libraries are descended from the original QuickCheck Haskell library.
-I&rsquo;ve heard good things about <a href="https://github.com/HypothesisWorks/hypothesis-python" target="_blank">Hypothesis</a>.</p>
-
+I&rsquo;ve heard good things about <a href="https://github.com/HypothesisWorks/hypothesis-python">Hypothesis</a>.</p>
 <h2 id="golden-master-testing">Golden master testing</h2>
-
 <p>Property testing is great, because it links the test back to some fundamental
 property of the code/math. The trouble is that it still requires knowing <em>something</em>
 about what the code should do. What if you really have no clue what the output
 should be, or encoding the properties is too difficult to do in a repeat-able
 automated test and requires human input? But you still want to make sure that your refactoring and future development don&rsquo;t break the current implementation.</p>
-
 <p>That&rsquo;s where golden master testing shines. Also known as characterization testing. The idea here is very simple. Choose some input (if that includes randomness, set the random seed manually!). Then, run your function and save the output to a file. Later, to test that the behavior of the function has not changed, run it again on the same input and check that the output matches the previous output exactly.</p>
-
-<p><a href="https://en.wikipedia.org/wiki/Characterization_test" target="_blank">Wikipedia</a> has a good discussion of the advantages and disadvantages of this type of testing. The main two points:</p>
-
+<p><a href="https://en.wikipedia.org/wiki/Characterization_test">Wikipedia</a> has a good discussion of the advantages and disadvantages of this type of testing. The main two points:</p>
 <ul>
 <li>it enables testing even if you have no idea what the correct result is. Common in science and analytics. Also, common in legacy systems&hellip;</li>
 <li>it only prevents unwanted side effects of software changes, it doesn&rsquo;t actually check that the answer is correct.</li>
 </ul>
-
 <h2 id="testing-through-monte-carlo-simulation-a-special-kind-of-property-test-guest-section-by-liz-santorella">Testing through Monte Carlo simulation: A special kind of property test (guest section by Liz Santorella)</h2>
-
 <p>Many statistical algorithms are designed with the following setup in mind:
 Assume that data is drawn from some known distribution $D$ with unknown parameters $\theta$.
 We don&rsquo;t know $\theta$, but the algorithm $A$ returns $\hat{\theta} \approx \theta$,
-with the estimate becoming precise as the data grows large.
-<!---
-For example,
-say we have a series of observations $y_1, y_2, \dots, y_N$ and we assume they are drawn independently from
-the Normal$(\mu, \sigma)$ distribution. We don't know $\mu$ or $\sigma$. Applying the algorithm $A$ to the
-data should give the unknown parameters, approximately: $A(y_1, y_2, \dots, y_N) \approx (\mu, \sigma)$.
---></p>
-
+with the estimate becoming precise as the data grows large.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <p>In such a setup, we can make up some parameters, create fake data drawn according
 to a distribution with those parameters, and check that, when data is large, the algorithm
 returns parameter estimates very close to the parameters you put in.</p>
-
 <p>The appeal of this method is that it allows you to know what the right answer for your
 entire procedure is (you made up the data, after all). The downside is that your algorithm
 may only work accurately when your data is very large, so the test can take a long time to
 run. It can also be hard to tell what counts as a correct answer: If you put in the parameter
 $\mu=1$ and recover $\hat{\mu}=1.002$, is the discrepancy becuase your Monte Carlo data is too
 small or because your code is wrong?</p>
-
 <p>In practice, I often combine Monte Carlo simulation testing with Golden Master testing.
 I run Monte Carlo simulations for several parameter values, including some interesting
 edge cases. Then once I&rsquo;m satisfied that the code works, I run it on a very small example,
 save both the inputs and the outputs, and make those inputs and outputs into a Golden Master test.
 I don&rsquo;t automate the Monte Carlo test itself &ndash; it takes too long to run, and its guarantees
 are only probabilistic.</p>
-
-<!---
-## Making sure it runs
-Sometimes, you don't have time to figure out how to check that your code produces the correct output,
-but you can still check that it runs without raising errors. Although this can easily be done in a unit testing
-framework, I like to make sure my code runs by creating a Jupyter notebook
-that calls almost every line of code that I think is important. I explain why the code behaves
-the way it does in the notebook, which then makes pretty good documentation.
--->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 
     </div>
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on T. Ben Thompson</title>
@@ -67,7 +67,7 @@ py.test The py.test tool is handy for running a suite of tests in python. It&amp
       <pubDate>Wed, 17 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/post/sneaky-transparent-huge-pages/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
@@ -87,7 +87,7 @@ This works, but dense matrices can be slow when there are many stars. The cost o
       <pubDate>Wed, 23 Dec 2015 00:00:00 -0500</pubDate>
       
       <guid>http://tbenthompson.com/post/serialize_fnc_cpp/</guid>
-      <description> </description>
+      <description></description>
     </item>
     
     <item>
