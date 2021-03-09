@@ -6,10 +6,37 @@
     <description>Recent content in Posts on T. Ben Thompson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Mar 2018 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 02 Apr 2019 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="http://tbenthompson.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>(Cool video alert!) Cascadia earthquake cycle simulation</title>
+      <link>http://tbenthompson.com/post/cascadia/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 -0400</pubDate>
+      
+      <guid>http://tbenthompson.com/post/cascadia/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>130 million triangular dislocations per second with Python/CUDA</title>
+      <link>http://tbenthompson.com/post/cutde/</link>
+      <pubDate>Thu, 26 Jul 2018 00:00:00 -0400</pubDate>
+      
+      <guid>http://tbenthompson.com/post/cutde/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CLUDA - Write once, run anywhere with both CUDA and OpenCL.</title>
+      <link>http://tbenthompson.com/post/cluda/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 -0400</pubDate>
+      
+      <guid>http://tbenthompson.com/post/cluda/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Regularizing rate and state friction for numerical simulation.</title>
@@ -21,7 +48,7 @@
     </item>
     
     <item>
-      <title>A Quasidynamic spring block slider</title>
+      <title>A quasidynamic spring block slider</title>
       <link>http://tbenthompson.com/post/block_slider/</link>
       <pubDate>Sat, 10 Mar 2018 00:00:00 -0500</pubDate>
       
@@ -87,7 +114,7 @@ This works, but dense matrices can be slow when there are many stars. The cost o
       <pubDate>Wed, 23 Dec 2015 00:00:00 -0500</pubDate>
       
       <guid>http://tbenthompson.com/post/serialize_fnc_cpp/</guid>
-      <description></description>
+      <description> </description>
     </item>
     
     <item>

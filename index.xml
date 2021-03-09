@@ -6,29 +6,18 @@
     <description>Recent content in Homepage on T. Ben Thompson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Mar 2018 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 02 Apr 2019 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="http://tbenthompson.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Tectosaur: Powerful and efficient boundary element software</title>
-      <link>http://tbenthompson.com/project/tectosaur/</link>
+      <title>Machine learning engineering at QuantCo.</title>
+      <link>http://tbenthompson.com/project/quantco/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://tbenthompson.com/project/tectosaur/</guid>
-      <description>A recent paper outlining the current Galerkin BEM approach.
-My tectonic and earthquake cycle research is supported by development of elastic boundary element software. This has required investigations into the best approaches for a wide range of computational and mathematical tasks: singular integration of Green&amp;rsquo;s functions, approximation of farfield Green&amp;rsquo;s function interactions with the fast multipole method, flexible treatment of equality and inequality constraints, and a big dose of computational geometry.</description>
-    </item>
-    
-    <item>
-      <title>Taskloaf: Simplified distributed task parallelism</title>
-      <link>http://tbenthompson.com/project/taskloaf/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://tbenthompson.com/project/taskloaf/</guid>
-      <description>Taskloaf GitHub page
-Task-based parallelism enables running complex parallel computations by describing them as a graph of tasks. Shared memory task-based parallelism has become an important tool as demonstrated by tools like Intel TBB, Cilk, and OpenMP v3. But, distributed memory task-based parallelism systems is still heavily researched to determine the most usable, efficient and scalable approach. Instead of waiting for the future holy grail of distributed task parallelism, I designed Taskloaf while visiting Oak Ridge National Lab in Fall 2015.</description>
+      <guid>http://tbenthompson.com/project/quantco/</guid>
+      <description>See my resume for some info on what I do at QuantCo.</description>
     </item>
     
     <item>
@@ -38,6 +27,16 @@ Task-based parallelism enables running complex parallel computations by describi
       
       <guid>http://tbenthompson.com/project/cppimport/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>GPU-accelerated symmetric Galerkin boundary element software</title>
+      <link>http://tbenthompson.com/project/tectosaur/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://tbenthompson.com/project/tectosaur/</guid>
+      <description>A recent paper outlining our Galerkin BEM approach.
+My tectonic and earthquake cycle research is supported by development of elastic boundary element software. This has required investigations into the best approaches for a wide range of computational and mathematical tasks: singular integration of Green&amp;rsquo;s functions, approximation of farfield Green&amp;rsquo;s function interactions with the fast multipole method, flexible treatment of equality and inequality constraints, and a big dose of computational geometry. These are a just a few of the components of this effort.</description>
     </item>
     
     <item>
@@ -58,6 +57,24 @@ The Cascadia subduction zone hosts great $\mathrm{M}_\mathrm{W} &amp;gt; 8.5$ ea
       <guid>http://tbenthompson.com/project/topography/</guid>
       <description>Paper
 Images of earthquake slip typically rely on flat Earth physical models to link surface observations to fault activity at depth despite the extreme topographic relief (20%) in vicinity of recent great earthquakes (e.g., 2008 $M_w$=7.9 Wenchuan). Here we use a three-dimensional boundary element approach to characterize the effects of realistic topography on coseismic slip inversions and find that near the steepest topography, the flat Earth assumption may induce errors $&amp;gt;100%$ in imaged coseismic slip.</description>
+    </item>
+    
+    <item>
+      <title>Simplified distributed task parallelism</title>
+      <link>http://tbenthompson.com/project/taskloaf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://tbenthompson.com/project/taskloaf/</guid>
+      <description>Task-based parallelism enables running complex parallel computations by describing them as a graph of tasks. Shared memory task-based parallelism has become an important tool as demonstrated by tools like Intel TBB, Cilk, and OpenMP v3. But, distributed memory task-based parallelism systems is still heavily researched to determine the most usable, efficient and scalable approach. Instead of waiting for the future holy grail of distributed task parallelism, I designed Taskloaf while visiting Oak Ridge National Lab in Fall 2015.</description>
+    </item>
+    
+    <item>
+      <title>Neural-net-accelerated viscoelastic calculations.</title>
+      <link>http://tbenthompson.com/project/visconn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://tbenthompson.com/project/visconn/</guid>
+      <description>The viscous behavior of the deep Earth results in slow surface motion continuing for many years after an earthquake. However, computing the physics of this behavior can be extremely expensive involving multi-dimensional inverse Laplace transforms and slowly-convergent series. We developed a basic feedforward neural network that is able to replicate the results of the analytic computation while running ~500x faster. Since the analytic function being approximated is already known, this is a sort of strange application of neural networks in that they are very explicitly being used in their role as universal function approximators for a high-dimensional function.</description>
     </item>
     
     <item>
@@ -89,7 +106,7 @@ The Longmen Shan is the steepest topographic front at the India‐Asia collision
     </item>
     
     <item>
-      <title>Algorithms for Microscale Rock Deformation</title>
+      <title>Machine vision for microscale rock deformation</title>
       <link>http://tbenthompson.com/project/microscale/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -109,12 +126,39 @@ I worked for a while as the primary software developer for TherapyCharts, a web-
     </item>
     
     <item>
-      <title>Machine Learning, Neural Networks, and Melanoma</title>
+      <title>Machine learning, neural networks, and melanoma</title>
       <link>http://tbenthompson.com/project/neuralnets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/project/neuralnets/</guid>
       <description>In high school, I was very interested in machine learning algorithms and investigated neural networks, support vector machines and unsupervised learning. I replicated various algorithms and tested their properties at different points in parameter space on the MNIST dataset which contains 60,000 handwritten numbers. Later, I used an unsupervised learning technique (Autoencoders, Hinton et. al 2006) to improve the performance of a support vector machine model in detecting Melanoma (skin cancer).</description>
+    </item>
+    
+    <item>
+      <title>(Cool video alert!) Cascadia earthquake cycle simulation</title>
+      <link>http://tbenthompson.com/post/cascadia/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 -0400</pubDate>
+      
+      <guid>http://tbenthompson.com/post/cascadia/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>130 million triangular dislocations per second with Python/CUDA</title>
+      <link>http://tbenthompson.com/post/cutde/</link>
+      <pubDate>Thu, 26 Jul 2018 00:00:00 -0400</pubDate>
+      
+      <guid>http://tbenthompson.com/post/cutde/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CLUDA - Write once, run anywhere with both CUDA and OpenCL.</title>
+      <link>http://tbenthompson.com/post/cluda/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 -0400</pubDate>
+      
+      <guid>http://tbenthompson.com/post/cluda/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -127,7 +171,7 @@ I worked for a while as the primary software developer for TherapyCharts, a web-
     </item>
     
     <item>
-      <title>A Quasidynamic spring block slider</title>
+      <title>A quasidynamic spring block slider</title>
       <link>http://tbenthompson.com/post/block_slider/</link>
       <pubDate>Sat, 10 Mar 2018 00:00:00 -0500</pubDate>
       
@@ -193,7 +237,7 @@ This works, but dense matrices can be slow when there are many stars. The cost o
       <pubDate>Wed, 23 Dec 2015 00:00:00 -0500</pubDate>
       
       <guid>http://tbenthompson.com/post/serialize_fnc_cpp/</guid>
-      <description></description>
+      <description> </description>
     </item>
     
     <item>

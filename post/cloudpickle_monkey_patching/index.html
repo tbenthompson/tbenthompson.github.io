@@ -7,8 +7,7 @@
 <title>Cloudpickle, serializing functions and monkey patching | T. Ben Thompson</title>
 
 
-<link rel="stylesheet" href="http://tbenthompson.com//css/style.css"/><link rel='stylesheet' href='/css/custom.css'>
-<script type="text/x-mathjax-config">
+<link rel="stylesheet" href="http://tbenthompson.com//css/style.css"/><link rel='stylesheet' href='/css/custom.css?version=51'><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   TeX: { equationNumbers: { autoNumber: "AMS" } }
 });
@@ -67,27 +66,27 @@ MathJax.Hub.Config({
       <p>I&rsquo;ve been using <code>cloudpickle</code> in the internals of <a href="https://github.com/tbenthompson/taskloaf">taskloaf</a> for a while since it allows serializing almost all functions and objects. That&rsquo;s really nice since it means I can pass arbitrary functions (tasks, jobs) from one worker to another across the network.</p>
 <p>Yesterday, I was curious about the internals of <code>cloudpickle</code> and whether a monkey-patched object would remain patched after being loaded remotely. I read a bit of the source, but figured just trying it was a good idea.</p>
 <p>I create a silly, meaningless class and then an instance of that class.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#007f7f"># Create a silly class and an object</span>
-<span style="color:#fff;font-weight:bold">class</span> Turkey:
-    <span style="color:#fff;font-weight:bold">def</span> hi(self):
-        <span style="color:#fff;font-weight:bold">return</span> <span style="color:#0ff;font-weight:bold">&#34;hello&#34;</span>
-t = Turkey()
-<span style="color:#fff;font-weight:bold">print</span>(t.hi())
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Create a silly class and an object</span>
+<span class="k">class</span> <span class="nc">Turkey</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">hi</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&#34;hello&#34;</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">Turkey</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">hi</span><span class="p">())</span>
 </code></pre></div><pre><code>hello
 </code></pre>
 <p>Then, I monkey patch the <code>hi</code> method to return 1 instead of 2. <code>types.MethodType</code> turns a free-standing function into a method that automatically receives the <code>self</code> parameter.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#fff;font-weight:bold">import</span> types
-<span style="color:#fff;font-weight:bold">def</span> hi2(self):
-    <span style="color:#fff;font-weight:bold">return</span> <span style="color:#0ff;font-weight:bold">&#34;SQUAWK&#34;</span>
-t.hi = types.MethodType(hi2, t)
-<span style="color:#fff;font-weight:bold">print</span>(t.hi())
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">types</span>
+<span class="k">def</span> <span class="nf">hi2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s2">&#34;SQUAWK&#34;</span>
+<span class="n">t</span><span class="o">.</span><span class="n">hi</span> <span class="o">=</span> <span class="n">types</span><span class="o">.</span><span class="n">MethodType</span><span class="p">(</span><span class="n">hi2</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">hi</span><span class="p">())</span>
 </code></pre></div><pre><code>SQUAWK
 </code></pre>
 <p>First, I&rsquo;ll try <code>pickle</code>. I dump the turkey to a binary blob and reload it.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#fff;font-weight:bold">import</span> pickle
-blob = pickle.dumps(t)
-t2 = pickle.loads(blob)
-<span style="color:#fff;font-weight:bold">print</span>(t2)
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">pickle</span>
+<span class="n">blob</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+<span class="n">t2</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">blob</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">t2</span><span class="p">)</span>
 </code></pre></div><pre><code>---------------------------------------------------------------------------
 
 AttributeError                            Traceback (most recent call last)
@@ -103,13 +102,13 @@ AttributeError: 'Turkey' object has no attribute 'hi2'
 </code></pre>
 <p><code>pickle</code> serialize a reference to the the type of the object and then expects that type to provide all the member functions needed. So, it&rsquo;s not able to handle this monkey patching situation.</p>
 <p>Next, I&rsquo;ll try <code>cloudpickle</code>!</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#fff;font-weight:bold">import</span> cloudpickle
-t2 = cloudpickle.loads(cloudpickle.dumps(t))
-<span style="color:#fff;font-weight:bold">print</span>(t is t2)
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">cloudpickle</span>
+<span class="n">t2</span> <span class="o">=</span> <span class="n">cloudpickle</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">cloudpickle</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">t</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">t</span> <span class="ow">is</span> <span class="n">t2</span><span class="p">)</span>
 </code></pre></div><pre><code>False
 </code></pre>
 <p>Does the <code>hi</code> method remain changed? YES! Thank you, cloudpickle.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#fff;font-weight:bold">print</span>(t2.hi())
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="n">t2</span><span class="o">.</span><span class="n">hi</span><span class="p">())</span>
 </code></pre></div><pre><code>SQUAWK
 </code></pre>
 <p>Ultimately, this makes a lot of sense. <code>cloudpickle</code> just investigates the members of an object (its <code>__dict__</code>) and serializes those. It doesn&rsquo;t need to serialize anything about the generic <code>Turkey</code> class. The key difference with <code>pickle</code> is that <code>cloudpickle</code> has the capability to serialize functions and so it can directly serialize members of the object without reference to its type.</p>
@@ -123,10 +122,13 @@ t2 = cloudpickle.loads(cloudpickle.dumps(t))
     </div>
   <div class="container has-text-centered">
     <div class="accounts">
-        <a href="/resume.pdf">Resume</a>, <a href="https://scholar.google.com/citations?user=ED9oDz8AAAAJ&hl=en">Google Scholar</a>, <a href="https://github.com/tbenthompson">GitHub</a>, <a href="https://www.linkedin.com/in/ben-thompson-645292125/">LinkedIn</a>, <a href="https://twitter.com/tbenthompson">Twitter</a>, <a href="mailto:t.ben.thompson@gmail.com">Email</a>
+        <a href="/resume.pdf">Resume</a>, <a href="https://scholar.google.com/citations?user=ED9oDz8AAAAJ&hl=en">Google Scholar</a>, <a href="https://github.com/tbenthompson">GitHub</a>, <a href="https://www.linkedin.com/in/ben-thompson-645292125/">LinkedIn</a>, <a href="mailto:t.ben.thompson@gmail.com">Email</a>
     </div>
     <div class="accounts">
     <a href="http://esantorella.com/">My wife is really smart!</a>
+    </div>
+    <div class="accounts">
+      <a href="https://www.instagram.com/wish.dogg/">My dog has more social media presence than I do.</a>
     </div>
 
   </div>

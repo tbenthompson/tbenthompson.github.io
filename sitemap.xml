@@ -3,15 +3,15 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://tbenthompson.com/project/tectosaur/</loc>
-  </url>
-  
-  <url>
-    <loc>http://tbenthompson.com/project/taskloaf/</loc>
+    <loc>http://tbenthompson.com/project/quantco/</loc>
   </url>
   
   <url>
     <loc>http://tbenthompson.com/project/cppimport/</loc>
+  </url>
+  
+  <url>
+    <loc>http://tbenthompson.com/project/tectosaur/</loc>
   </url>
   
   <url>
@@ -20,6 +20,14 @@
   
   <url>
     <loc>http://tbenthompson.com/project/topography/</loc>
+  </url>
+  
+  <url>
+    <loc>http://tbenthompson.com/project/taskloaf/</loc>
+  </url>
+  
+  <url>
+    <loc>http://tbenthompson.com/project/visconn/</loc>
   </url>
   
   <url>
@@ -48,13 +56,28 @@
   </url>
   
   <url>
+    <loc>http://tbenthompson.com/post/cascadia/</loc>
+    <lastmod>2019-04-02T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://tbenthompson.com/</loc>
-    <lastmod>2018-03-19T00:00:00-04:00</lastmod>
+    <lastmod>2019-04-02T00:00:00-04:00</lastmod>
   </url>
   
   <url>
     <loc>http://tbenthompson.com/post/</loc>
-    <lastmod>2018-03-19T00:00:00-04:00</lastmod>
+    <lastmod>2019-04-02T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://tbenthompson.com/post/cutde/</loc>
+    <lastmod>2018-07-26T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://tbenthompson.com/post/cluda/</loc>
+    <lastmod>2018-04-02T00:00:00-04:00</lastmod>
   </url>
   
   <url>

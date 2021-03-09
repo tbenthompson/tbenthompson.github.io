@@ -7,8 +7,7 @@
 <title>Automated testing for scientists and data analysts | T. Ben Thompson</title>
 
 
-<link rel="stylesheet" href="http://tbenthompson.com//css/style.css"/><link rel='stylesheet' href='/css/custom.css'>
-<script type="text/x-mathjax-config">
+<link rel="stylesheet" href="http://tbenthompson.com//css/style.css"/><link rel='stylesheet' href='/css/custom.css?version=51'><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   TeX: { equationNumbers: { autoNumber: "AMS" } }
 });
@@ -129,8 +128,12 @@ automated test and requires human input? But you still want to make sure that yo
 Assume that data is drawn from some known distribution $D$ with unknown parameters $\theta$.
 We don&rsquo;t know $\theta$, but the algorithm $A$ returns $\hat{\theta} \approx \theta$,
 with the estimate becoming precise as the data grows large.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<!---
+For example,
+say we have a series of observations $y_1, y_2, \dots, y_N$ and we assume they are drawn independently from
+the Normal$(\mu, \sigma)$ distribution. We don't know $\mu$ or $\sigma$. Applying the algorithm $A$ to the
+data should give the unknown parameters, approximately: $A(y_1, y_2, \dots, y_N) \approx (\mu, \sigma)$.
+-->
 <p>In such a setup, we can make up some parameters, create fake data drawn according
 to a distribution with those parameters, and check that, when data is large, the algorithm
 returns parameter estimates very close to the parameters you put in.</p>
@@ -146,8 +149,14 @@ edge cases. Then once I&rsquo;m satisfied that the code works, I run it on a ver
 save both the inputs and the outputs, and make those inputs and outputs into a Golden Master test.
 I don&rsquo;t automate the Monte Carlo test itself &ndash; it takes too long to run, and its guarantees
 are only probabilistic.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<!---
+## Making sure it runs
+Sometimes, you don't have time to figure out how to check that your code produces the correct output,
+but you can still check that it runs without raising errors. Although this can easily be done in a unit testing
+framework, I like to make sure my code runs by creating a Jupyter notebook
+that calls almost every line of code that I think is important. I explain why the code behaves
+the way it does in the notebook, which then makes pretty good documentation.
+-->
 
     </div>
 
@@ -158,10 +167,13 @@ are only probabilistic.</p>
     </div>
   <div class="container has-text-centered">
     <div class="accounts">
-        <a href="/resume.pdf">Resume</a>, <a href="https://scholar.google.com/citations?user=ED9oDz8AAAAJ&hl=en">Google Scholar</a>, <a href="https://github.com/tbenthompson">GitHub</a>, <a href="https://www.linkedin.com/in/ben-thompson-645292125/">LinkedIn</a>, <a href="https://twitter.com/tbenthompson">Twitter</a>, <a href="mailto:t.ben.thompson@gmail.com">Email</a>
+        <a href="/resume.pdf">Resume</a>, <a href="https://scholar.google.com/citations?user=ED9oDz8AAAAJ&hl=en">Google Scholar</a>, <a href="https://github.com/tbenthompson">GitHub</a>, <a href="https://www.linkedin.com/in/ben-thompson-645292125/">LinkedIn</a>, <a href="mailto:t.ben.thompson@gmail.com">Email</a>
     </div>
     <div class="accounts">
     <a href="http://esantorella.com/">My wife is really smart!</a>
+    </div>
+    <div class="accounts">
+      <a href="https://www.instagram.com/wish.dogg/">My dog has more social media presence than I do.</a>
     </div>
 
   </div>
