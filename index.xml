@@ -6,7 +6,7 @@
     <description>Recent content in Homepage on T. Ben Thompson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Apr 2019 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 21 Mar 2021 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="http://tbenthompson.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -132,6 +132,16 @@ I worked for a while as the primary software developer for TherapyCharts, a web-
       
       <guid>http://tbenthompson.com/project/neuralnets/</guid>
       <description>In high school, I was very interested in machine learning algorithms and investigated neural networks, support vector machines and unsupervised learning. I replicated various algorithms and tested their properties at different points in parameter space on the MNIST dataset which contains 60,000 handwritten numbers. Later, I used an unsupervised learning technique (Autoencoders, Hinton et. al 2006) to improve the performance of a support vector machine model in detecting Melanoma (skin cancer).</description>
+    </item>
+    
+    <item>
+      <title>Maybe we should stop using planar triangles for fault modeling.</title>
+      <link>http://tbenthompson.com/post/surface_representation/</link>
+      <pubDate>Sun, 21 Mar 2021 00:00:00 -0400</pubDate>
+      
+      <guid>http://tbenthompson.com/post/surface_representation/</guid>
+      <description>Let&amp;rsquo;s consider a model problem where the goal is to calculate the stress on a fault due to some slip on that fault. We also include a topographic free surface. How should we model this surface?
+Should we use planar triangles to model a curved fault? What happens at the junction between two triangles? If we do the natural fault thing and require the slip to be tangential to the suface, the slip vector has a step function at the junction between the two triangles.</description>
     </item>
     
     <item>
