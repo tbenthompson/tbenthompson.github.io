@@ -6,7 +6,7 @@
     <description>Recent content in Homepage on T. Ben Thompson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Mar 2021 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 03 Apr 2021 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="http://tbenthompson.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -132,6 +132,15 @@ I worked for a while as the primary software developer for TherapyCharts, a web-
       
       <guid>http://tbenthompson.com/project/neuralnets/</guid>
       <description>In high school, I was very interested in machine learning algorithms and investigated neural networks, support vector machines and unsupervised learning. I replicated various algorithms and tested their properties at different points in parameter space on the MNIST dataset which contains 60,000 handwritten numbers. Later, I used an unsupervised learning technique (Autoencoders, Hinton et. al 2006) to improve the performance of a support vector machine model in detecting Melanoma (skin cancer).</description>
+    </item>
+    
+    <item>
+      <title>Maintaining momentum</title>
+      <link>http://tbenthompson.com/post/maintaining_momentum/</link>
+      <pubDate>Sat, 03 Apr 2021 00:00:00 -0400</pubDate>
+      
+      <guid>http://tbenthompson.com/post/maintaining_momentum/</guid>
+      <description>Collaboration in an unstructured world While I haven&amp;rsquo;t made any decisions yet, I&amp;rsquo;m currently considering heading off into a much less structured career path which could be variously described as &amp;ldquo;independent scientist&amp;rdquo;, &amp;ldquo;entrepreneuer&amp;rdquo;, &amp;ldquo;contractor&amp;rdquo; or &amp;ldquo;self-employed open-source developer&amp;rdquo;. Along those lines, I&amp;rsquo;ve been wondering what makes work &amp;ldquo;good&amp;rdquo; for me and how I can put the pieces together reliably. I think the critical piece will be to proactively communicate with lots of people.</description>
     </item>
     
     <item>
