@@ -1,33 +1,183 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<html lang="en-us">
+
 <head>
 	<meta name="generator" content="Hugo 0.68.3" />
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>T. Ben Thompson</title>
+<meta name="title" content="T. Ben Thompson" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
 
-<title>T. Ben Thompson</title>
+
+<meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://tbenthompson.com/" />
+<meta property="og:updated_time" content="2021-04-03T00:00:00-04:00" />
 
 
-<link rel="stylesheet" href="http://tbenthompson.com//css/style.css"/><link rel='stylesheet' href='/css/custom.css?version=51'><script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  TeX: { equationNumbers: { autoNumber: "AMS" } }
-});
-</script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
 
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    displayMath: [['$$','$$'], ['\[','\]']],
-    processEscapes: true,
-    processEnvironments: true,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    TeX: { equationNumbers: { autoNumber: "AMS" },
-         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content=""/>
+
+
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <link rel="alternate" type="application/rss+xml" href="http://tbenthompson.com/index.xml" title="T. Ben Thompson" />
+  <style>
+  body {
+    font-family: sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
   }
-});
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    display: block;
+    padding: 5px;
+    white-space: pre-wrap;
+    font-size: 13px;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  code.has-jax {
+    -webkit-font-smoothing: antialiased;
+    background: inherit !important;
+    border: none !important;
+    font-size: 100%;
+  }
+</style>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      tags: 'ams'
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
 </script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114592151-1"></script>
 <script>
@@ -37,117 +187,130 @@ MathJax.Hub.Config({
 
   gtag('config', 'UA-114592151-1');
 </script>
-
+<link rel="stylesheet" href="/css/syntax.css">
 </head>
+
 <body>
+  <header><nav><a href="/">Home</a>
+<a href="/post">Posts</a>
+<a href="/project">Past Projects</a>
+</nav>
+</header>
+  <main>
+<h2></h2>
+<p>Hi! Some topics that excite me and I write about here: software dev, computational math, high performance computing, machine learning, integral equations, earthquake science.</p>
+<p>Other things that excite me that I don&rsquo;t write about here: growing plants, running, mountains, my dog, the time I jacked up my house by a quarter inch.</p>
+<p>You can reach me by email at <a href="mailto:t.ben.thompson@gmail.com">t.ben.thompson@gmail.com</a></p>
+<p>I&rsquo;m excited to talk to you about all sorts of stuff! Also let me know if you want to work together:</p>
+<ul>
+<li>I&rsquo;m always <a href="/post/maintaining_momentum">looking for new collaborators</a> on open source software, machine learning, numerical methods for PDEs, earthquake science and beyond.</li>
+<li>I work at a machine learning and data science startup called <a href="https://quantco.com/">QuantCo</a>. We are almost always hiring talented people.</li>
+</ul>
 
-<section class="section">
-  <div class="container">
-    <nav class="nav">
-      <div class="nav-left">
-        <a class="nav-item" href="http://tbenthompson.com/"><h1 class="title is-4">T. Ben Thompson</h1></a>
-      </div>
-      <div class="nav-right">
-      </div>
-    </nav>
+
+
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<div id="mc_embed_signup" style="padding: 20px 0 20px 0;">
+  <form action="https://tbenthompson.us1.list-manage.com/subscribe/post?u=be25bc8a8ab56f1fb3e6651c2&amp;id=b407942450" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+      <label for="mce-EMAIL" style="font-weight: normal">You can get new posts emailed to you!:</label>
+      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email@address.com" required>
+
+    <div style="display:none">
+      <input type="checkbox" value="1" name="group[377262][1]" id="mce-group[377262]-377262-0" checked>Posts
+      <input type="checkbox" value="2" name="group[377262][2]" id="mce-group[377262]-377262-1" >BIEBook
+    </div>
+      
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_be25bc8a8ab56f1fb3e6651c2_b407942450" tabindex="-1" value=""></div>
+      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+  </form>
+</div>
+
+<b>Recent posts</b> • <a href="/post">all posts</a> • <a href="/post/index.xml">rss</a>
+  <div>
+  <span>
+    <i>
+      
+      <time datetime='2021-04-03' pubdate>
+        03 Apr, 2021
+      </time>
+      
+    </i>
+  </span>
+  <a href="http://tbenthompson.com/post/maintaining_momentum/">Maintaining momentum</a>
   </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        
-    <div class="face-wrapper">
-        <img class="face" width="150" src="ben_thompson.jpg"/>
-    </div>
-
-    <div class="content">
-      <p><a href="/resume.pdf">Resume</a>, <a href="https://scholar.google.com/citations?user=ED9oDz8AAAAJ&hl=en">Google Scholar</a>, <a href="https://github.com/tbenthompson">GitHub</a>, <a href="https://www.linkedin.com/in/ben-thompson-645292125/">LinkedIn</a>, <a href="mailto:t.ben.thompson@gmail.com">Email</a></p>
-<p>I work as a machine learning engineer, with skills in computational mathematics, high performance computing, and data engineering. I have past experience as a computational earthquake scientist, field geologist, and full stack software engineer. I also really like to run a long ways in the woods and mountains with my dog and my friends.</p>
-
-    </div>
-    <div class="whitespace">
-    </div>
-    <h1 class="mainpagelist">Work and Projects</h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/project/quantco/"><div style="width: 130px; display: inline-block">2017-present</div> - Machine learning engineering at QuantCo.</a></h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/project/cppimport/"><div style="width: 130px; display: inline-block">2016-present</div> - cppimport: Import C&#43;&#43; files directly from Python!</a></h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/project/tectosaur/"><div style="width: 130px; display: inline-block">2015-2019</div> - GPU-accelerated symmetric Galerkin boundary element software</a></h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/project/quasidynamic/"><div style="width: 130px; display: inline-block">2019</div> - Earthquake cycle modeling of the Cascadia subduction zone</a></h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/project/topography/"><div style="width: 130px; display: inline-block">2018</div> - Topography and the shallow slip deficit inference</a></h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/project/taskloaf/"><div style="width: 130px; display: inline-block">2015-2017</div> - Simplified distributed task parallelism</a></h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/project/visconn/"><div style="width: 130px; display: inline-block">2015-2016</div> - Neural-net-accelerated viscoelastic calculations.</a></h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/project/himalaya_stress/"><div style="width: 130px; display: inline-block">2015</div> - Crustal stress estimation in the Himalayan wedge</a></h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/project/longmenshan/"><div style="width: 130px; display: inline-block">2014</div> - Longmen Shan fault geometry and slip rates</a></h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/project/shargyn/"><div style="width: 130px; display: inline-block">2012-2013</div> - Neotectonics of the Shargyn Basin, western Mongolia</a></h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/project/microscale/"><div style="width: 130px; display: inline-block">2011</div> - Machine vision for microscale rock deformation</a></h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/project/therapycharts/"><div style="width: 130px; display: inline-block">2009-2011</div> - TherapyCharts</a></h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/project/neuralnets/"><div style="width: 130px; display: inline-block">2006-2009</div> - Machine learning, neural networks, and melanoma</a></h1>
-    
-    <div class="whitespace">
-
-    <h1 class="mainpagelist">Posts</h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/post/maintaining_momentum/"><div style="width: 130px; display: inline-block">Apr 3, 2021</div> - Maintaining momentum</a></h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/post/surface_representation/"><div style="width: 130px; display: inline-block">Mar 31, 2021</div> - Maybe we should stop using planar triangles for fault modeling.</a></h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/post/cascadia/"><div style="width: 130px; display: inline-block">Apr 2, 2019</div> - (Cool video alert!) Cascadia earthquake cycle simulation</a></h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/post/cutde/"><div style="width: 130px; display: inline-block">Jul 26, 2018</div> - 130 million triangular dislocations per second with Python/CUDA</a></h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/post/cluda/"><div style="width: 130px; display: inline-block">Apr 2, 2018</div> - CLUDA - Write once, run anywhere with both CUDA and OpenCL.</a></h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/post/regularized_rate_state/"><div style="width: 130px; display: inline-block">Mar 19, 2018</div> - Regularizing rate and state friction for numerical simulation.</a></h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/post/block_slider/"><div style="width: 130px; display: inline-block">Mar 10, 2018</div> - A quasidynamic spring block slider</a></h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/post/cloudpickle_monkey_patching/"><div style="width: 130px; display: inline-block">Feb 24, 2018</div> - Cloudpickle, serializing functions and monkey patching</a></h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/post/how_i_test/"><div style="width: 130px; display: inline-block">Feb 22, 2018</div> - My Python testing set up</a></h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/post/automated_testing_for_science/"><div style="width: 130px; display: inline-block">Feb 7, 2018</div> - Automated testing for scientists and data analysts</a></h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/post/sneaky-transparent-huge-pages/"><div style="width: 130px; display: inline-block">Jan 17, 2018</div> - Sneaky (transparent) huge pages</a></h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/post/sparse_nbody/"><div style="width: 130px; display: inline-block">Jul 2, 2016</div> - Sparse n-body matrices</a></h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/post/serialize_fnc_cpp/"><div style="width: 130px; display: inline-block">Dec 23, 2015</div> - &#34;Serializing&#34; a function in C&#43;&#43;</a></h1>
-    
-    <h1 class="postlink"><a href="http://tbenthompson.com/post/setting_up_website/"><div style="width: 130px; display: inline-block">Dec 11, 2015</div> - Setting up my website</a></h1>
-    
-    <div class="whitespace">
-    </div>
-
-    </div>
-</section>
-<section class="section">
-    <div class="container">
-    </div>
-  <div class="container has-text-centered">
-    <div class="accounts">
-        <a href="/resume.pdf">Resume</a>, <a href="https://scholar.google.com/citations?user=ED9oDz8AAAAJ&hl=en">Google Scholar</a>, <a href="https://github.com/tbenthompson">GitHub</a>, <a href="https://www.linkedin.com/in/ben-thompson-645292125/">LinkedIn</a>, <a href="mailto:t.ben.thompson@gmail.com">Email</a>
-    </div>
-    <div class="accounts">
-    <a href="http://esantorella.com/">My wife is really smart!</a>
-    </div>
-    <div class="accounts">
-      <a href="https://www.instagram.com/wish.dogg/">My dog has more social media presence than I do.</a>
-    </div>
-
+  
+  <div>
+  <span>
+    <i>
+      
+      <time datetime='2021-03-31' pubdate>
+        31 Mar, 2021
+      </time>
+      
+    </i>
+  </span>
+  <a href="http://tbenthompson.com/post/surface_representation/">Maybe we should stop using planar triangles for fault modeling.</a>
   </div>
-</section>
+  
+  <div>
+  <span>
+    <i>
+      
+      <time datetime='2019-04-02' pubdate>
+        02 Apr, 2019
+      </time>
+      
+    </i>
+  </span>
+  <a href="http://tbenthompson.com/post/cascadia/">Cool video of Cascadia earthquake cycle simulations</a>
+  </div>
+  
+  <div>
+  <span>
+    <i>
+      
+      <time datetime='2018-07-26' pubdate>
+        26 Jul, 2018
+      </time>
+      
+    </i>
+  </span>
+  <a href="http://tbenthompson.com/post/cutde/">130 million triangular dislocations per second with Python/CUDA</a>
+  </div>
+  
+  <div>
+  <span>
+    <i>
+      
+      <time datetime='2018-04-02' pubdate>
+        02 Apr, 2018
+      </time>
+      
+    </i>
+  </span>
+  <a href="http://tbenthompson.com/post/cluda/">CLUDA - Write once, run anywhere with both CUDA and OpenCL.</a>
+  </div>
+  
+
+  </main>
+  <footer><hr>
+<div class="container has-text-centered">
+    <div class="accounts">
+          <a href="/resume.pdf">Resume</a> • <a href="https://scholar.google.com/citations?user=ED9oDz8AAAAJ&hl=en">Google Scholar</a> • <a href="https://github.com/tbenthompson">GitHub</a> • <a href="https://www.linkedin.com/in/ben-thompson-645292125/">LinkedIn</a> • <a href="mailto:t.ben.thompson@gmail.com">Email</a>
+    </div>
+    <div class="accounts">
+        <a href="http://esantorella.com/">My wife is really smart!</a>
+    </div>
+    <div class="accounts">
+        <a href="https://www.instagram.com/wish.dogg/">My dog has more social media presence than 
+        I do.</a>
+    </div>
+</div>
+</footer>
+
+    
 </body>
-</html>
 
+</html>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Homepage on T. Ben Thompson</title>
+    <title>T. Ben Thompson</title>
     <link>http://tbenthompson.com/</link>
-    <description>Recent content in Homepage on T. Ben Thompson</description>
+    <description>Recent content on T. Ben Thompson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 03 Apr 2021 00:00:00 -0400</lastBuildDate>
@@ -154,7 +154,7 @@ Should we use planar triangles to model a curved fault? What happens at the junc
     </item>
     
     <item>
-      <title>(Cool video alert!) Cascadia earthquake cycle simulation</title>
+      <title>Cool video of Cascadia earthquake cycle simulations</title>
       <link>http://tbenthompson.com/post/cascadia/</link>
       <pubDate>Tue, 02 Apr 2019 00:00:00 -0400</pubDate>
       
@@ -267,6 +267,17 @@ This works, but dense matrices can be slow when there are many stars. The cost o
       <guid>http://tbenthompson.com/post/setting_up_website/</guid>
       <description>I have a website now. Since technical stuff is fun, I thought I&amp;rsquo;d share the way I set it up.
 The site is a set of statically served HTML pages. Hugo makes this really easy. Hugo is super fast and is written in Go. You can set up a few template pages and then write posts and pages in Markdown. Some layout is also done using Go templates. Running Hugo takes your templates and pages and concerts them into static HTML.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://tbenthompson.com/thanks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://tbenthompson.com/thanks/</guid>
+      <description>Thanks so much for subscribing! You should get an email confirming your subscription.
+If you&amp;rsquo;re up for it, I&amp;rsquo;d really like it if you reply to that email and let me know:
+ a bit about yourself. what you&amp;rsquo;d like to read more about.  </description>
     </item>
     
   </channel>

@@ -1,32 +1,193 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<html lang="en-us">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TherapyCharts | T. Ben Thompson</title>
+<meta name="title" content="TherapyCharts" />
+<meta name="description" content="homepage
+I worked for a while as the primary software developer for TherapyCharts, a web-based therapist records system. I developed a Python and PostgreSQL based backend and a ExtJS interface. I participated in two American Psychological Association conferences performing support and sales for TherapyCharts. TherapyCharts has now partnered with Wiley Publishing and is known as “Therascribe powered by TherapyCharts”." />
+<meta name="keywords" content="" />
 
-<title>TherapyCharts | T. Ben Thompson</title>
+
+<meta property="og:title" content="TherapyCharts" />
+<meta property="og:description" content="homepage
+I worked for a while as the primary software developer for TherapyCharts, a web-based therapist records system. I developed a Python and PostgreSQL based backend and a ExtJS interface. I participated in two American Psychological Association conferences performing support and sales for TherapyCharts. TherapyCharts has now partnered with Wiley Publishing and is known as “Therascribe powered by TherapyCharts”." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://tbenthompson.com/project/therapycharts/" />
+<meta property="article:published_time" content="2010-01-01T00:00:00-05:00" />
+<meta property="article:modified_time" content="2010-01-01T00:00:00-05:00" />
 
 
-<link rel="stylesheet" href="http://tbenthompson.com//css/style.css"/><link rel='stylesheet' href='/css/custom.css?version=51'><script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  TeX: { equationNumbers: { autoNumber: "AMS" } }
-});
-</script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
 
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    displayMath: [['$$','$$'], ['\[','\]']],
-    processEscapes: true,
-    processEnvironments: true,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    TeX: { equationNumbers: { autoNumber: "AMS" },
-         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="TherapyCharts"/>
+<meta name="twitter:description" content="homepage
+I worked for a while as the primary software developer for TherapyCharts, a web-based therapist records system. I developed a Python and PostgreSQL based backend and a ExtJS interface. I participated in two American Psychological Association conferences performing support and sales for TherapyCharts. TherapyCharts has now partnered with Wiley Publishing and is known as “Therascribe powered by TherapyCharts”."/>
+
+
+
+<meta itemprop="name" content="TherapyCharts">
+<meta itemprop="description" content="homepage
+I worked for a while as the primary software developer for TherapyCharts, a web-based therapist records system. I developed a Python and PostgreSQL based backend and a ExtJS interface. I participated in two American Psychological Association conferences performing support and sales for TherapyCharts. TherapyCharts has now partnered with Wiley Publishing and is known as “Therascribe powered by TherapyCharts”.">
+<meta itemprop="datePublished" content="2010-01-01T00:00:00-05:00" />
+<meta itemprop="dateModified" content="2010-01-01T00:00:00-05:00" />
+<meta itemprop="wordCount" content="59">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
   }
-});
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    display: block;
+    padding: 5px;
+    white-space: pre-wrap;
+    font-size: 13px;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  code.has-jax {
+    -webkit-font-smoothing: antialiased;
+    background: inherit !important;
+    border: none !important;
+    font-size: 100%;
+  }
+</style>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      tags: 'ams'
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
 </script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114592151-1"></script>
 <script>
@@ -36,56 +197,79 @@ MathJax.Hub.Config({
 
   gtag('config', 'UA-114592151-1');
 </script>
-
+<link rel="stylesheet" href="/css/syntax.css">
 </head>
+
 <body>
+  <header><nav><a href="/">Home</a>
+<a href="/post">Posts</a>
+<a href="/project">Past Projects</a>
+</nav>
+</header>
+  <main>
+<h2>TherapyCharts</h2>
 
-<section class="section">
-  <div class="container">
-    <nav class="nav">
-      <div class="nav-left">
-        <a class="nav-item" href="http://tbenthompson.com/"><h1 class="title is-4">T. Ben Thompson</h1></a>
-      </div>
-      <div class="nav-right">
-      </div>
-    </nav>
-  </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        
-    <div class="subtitle is-6 is-pulled-right">
+<p>
+  <i>
       
-    </div>
-    
-    <h2 class="subtitle is-6">January 1, 2010</h2>
-    
-    <h1 class="title">TherapyCharts</h1>
-    <div class="content">
-      <p><a href="http://www.therapycharts.com/">homepage</a></p>
+      2009-2011
+      
+  </i>
+</p>
+
+<content>
+  <p><a href="http://www.therapycharts.com/">homepage</a></p>
 <p>I worked for a while as the primary software developer for TherapyCharts, a web-based therapist records system. I developed a Python and PostgreSQL based backend and a ExtJS interface. I participated in two American Psychological Association conferences performing support and sales for TherapyCharts. TherapyCharts has now partnered with Wiley Publishing and is known as “Therascribe powered by TherapyCharts”.</p>
 
-    </div>
+</content>
 
-    </div>
-</section>
-<section class="section">
-    <div class="container">
-    </div>
-  <div class="container has-text-centered">
-    <div class="accounts">
-        <a href="/resume.pdf">Resume</a>, <a href="https://scholar.google.com/citations?user=ED9oDz8AAAAJ&hl=en">Google Scholar</a>, <a href="https://github.com/tbenthompson">GitHub</a>, <a href="https://www.linkedin.com/in/ben-thompson-645292125/">LinkedIn</a>, <a href="mailto:t.ben.thompson@gmail.com">Email</a>
-    </div>
-    <div class="accounts">
-    <a href="http://esantorella.com/">My wife is really smart!</a>
-    </div>
-    <div class="accounts">
-      <a href="https://www.instagram.com/wish.dogg/">My dog has more social media presence than I do.</a>
-    </div>
 
-  </div>
-</section>
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<div id="mc_embed_signup" style="padding: 20px 0 20px 0;">
+  <form action="https://tbenthompson.us1.list-manage.com/subscribe/post?u=be25bc8a8ab56f1fb3e6651c2&amp;id=b407942450" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+      <label for="mce-EMAIL" style="font-weight: normal">If you enjoyed this post, please subscribe!:</label>
+      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email@address.com" required>
+
+    <div style="display:none">
+      <input type="checkbox" value="1" name="group[377262][1]" id="mce-group[377262]-377262-0" checked>Posts
+      <input type="checkbox" value="2" name="group[377262][2]" id="mce-group[377262]-377262-1" >BIEBook
+    </div>
+      
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_be25bc8a8ab56f1fb3e6651c2_b407942450" tabindex="-1" value=""></div>
+      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+  </form>
+</div>
+
+<p>
+  
+</p>
+<script src="https://utteranc.es/client.js"
+        repo="tbenthompson/tbenthompson.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+  </main>
+  <footer><hr>
+<div class="container has-text-centered">
+    <div class="accounts">
+          <a href="/resume.pdf">Resume</a> • <a href="https://scholar.google.com/citations?user=ED9oDz8AAAAJ&hl=en">Google Scholar</a> • <a href="https://github.com/tbenthompson">GitHub</a> • <a href="https://www.linkedin.com/in/ben-thompson-645292125/">LinkedIn</a> • <a href="mailto:t.ben.thompson@gmail.com">Email</a>
+    </div>
+    <div class="accounts">
+        <a href="http://esantorella.com/">My wife is really smart!</a>
+    </div>
+    <div class="accounts">
+        <a href="https://www.instagram.com/wish.dogg/">My dog has more social media presence than 
+        I do.</a>
+    </div>
+</div>
+</footer>
+
+    
 </body>
-</html>
 
+</html>
