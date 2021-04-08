@@ -13,9 +13,7 @@
       <pubDate>Sat, 03 Apr 2021</pubDate>
       
       <guid>http://tbenthompson.com/post/maintaining_momentum/</guid>
-      <description>
-        &lt;![CDATA[&lt;link rel=&#34;stylesheet&#34; href=&#34;http://tbenthompson.com/css/syntax.css&#34;&gt;]]&gt; 
-          &lt;h3 id=&#34;collaboration-in-an-unstructured-world&#34;&gt;Collaboration in an unstructured world&lt;/h3&gt;
+      <description>&lt;h3 id=&#34;collaboration-in-an-unstructured-world&#34;&gt;Collaboration in an unstructured world&lt;/h3&gt;
 &lt;p&gt;While I haven&amp;rsquo;t made any decisions yet, I&amp;rsquo;m currently considering heading off into a much less structured career path which could be variously described as &amp;ldquo;independent scientist&amp;rdquo;, &amp;ldquo;entrepreneuer&amp;rdquo;, &amp;ldquo;contractor&amp;rdquo; or &amp;ldquo;self-employed open-source developer&amp;rdquo;. Along those lines, I&amp;rsquo;ve been wondering what makes work good for me and how I can put the pieces together reliably. I think the critical piece will be to proactively communicate with lots of people.&lt;/p&gt;
 &lt;p&gt;At the moment, I work as a machine learning engineer for QuantCo, working together with business people, economists, statisticians and other software engineers to build useful software systems for things like ecommerce pricing or insurance fraud detection. Jobs like this are inherently collaborative. Half the job is to work together with other people to figure out what exactly you should be doing and how to do it. There are strategy discussions, design discussions, pair programming sessions, stand ups and just plan old hang-out-and-chats.&lt;/p&gt;
 &lt;p&gt;By comparison, as an independent scientist, there&amp;rsquo;s not necessarily anyone there that is depending on me, helping me or working together with me. Even as a faculty member within the structure of academia, there&amp;rsquo;s a lot of individualism to science. A single research group is often quite disconnected from the rest of the community. Papers aren&amp;rsquo;t normally communicated until they&amp;rsquo;re done. A lot of people simply don&amp;rsquo;t care about the work you&amp;rsquo;re doing. Seminars or conferences can be confrontational. People don&amp;rsquo;t often say what they really think about some research outside of their small social network.&lt;/p&gt;
@@ -44,8 +42,7 @@
 &lt;/ul&gt;
 &lt;p&gt;I took away two lessons from this list. First, when I&amp;rsquo;ve felt unfocused or unable to get good work done, it was because something was fundamentally &lt;em&gt;wrong&lt;/em&gt; and not because I needed to push harder. You can&amp;rsquo;t push through a fundamentally flawed mathematical method or a flawed business plan. When things went from going great to going badly in the situations above, I probably should&amp;rsquo;ve made changes instead of just languishing or pushing against a brick wall. Second, any time I can think of where I had two of these things was a really good time for my motivation and happiness. I don&amp;rsquo;t know what would happen if I had all three of these things and maintained that situation for a few years. Probably something really good. I should probably try to find that!&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Thanks to Liz Santorella, Ruth Byers, Brendan Meade, Reena Joubert, and Phoebe DeVries for helping me crystallize some of the ideas in this post and for providing some edits. The ideas still are pretty rough and hypothetical, so if you want to chat please &lt;a href=&#34;mailto:t.ben.thompson@gmail.com&#34;&gt;get in touch&lt;/a&gt;!&lt;/em&gt;&lt;/p&gt;
-
-      </description>
+</description>
     </item>
     
     <item>
@@ -54,9 +51,7 @@
       <pubDate>Wed, 31 Mar 2021</pubDate>
       
       <guid>http://tbenthompson.com/post/surface_representation/</guid>
-      <description>
-        &lt;![CDATA[&lt;link rel=&#34;stylesheet&#34; href=&#34;http://tbenthompson.com/css/syntax.css&#34;&gt;]]&gt; 
-          &lt;p&gt;Let&amp;rsquo;s consider a model problem where the goal is to calculate the stress on a fault due to some slip on that fault. We also include a topographic free surface. How should we model this surface?&lt;/p&gt;
+      <description>&lt;p&gt;Let&amp;rsquo;s consider a model problem where the goal is to calculate the stress on a fault due to some slip on that fault. We also include a topographic free surface. How should we model this surface?&lt;/p&gt;
 &lt;p&gt;Should we use planar triangles to model a curved fault? What happens at the junction between two triangles? If we do the natural fault thing and require the slip to be tangential to the suface, the slip vector has a step function at the junction between the two triangles. This must be true because the two triangles have different normal vectors and tangent vectors. On the other hand, if we force slip to be continuous across triangles, we have to allow non-tangential slip because at an edge where two triangles meet the slip vector has to be identical but the tangent vectors are different.&lt;/p&gt;
 &lt;p&gt;That means that we&amp;rsquo;re stuck between a rock and a hard place and have to choose:&lt;/p&gt;
 &lt;ul&gt;
@@ -77,8 +72,7 @@
 &lt;li&gt;Modifying non-smooth surfaces to be smooth makes a negligible difference in the model results, especially compared to the other uncertainties. And on the scale of a few meters left or right, there is no real reason to think that input geometries are perfectly correct. I think there&amp;rsquo;s some potential for this point to be wrong in some circumstances. For example, if the small scale roughness is extremely important to the problem, or the purpose of the model is to study a sharp corner in a fault. But, in most situations, using smooth surfaces will be both acceptable and easier. If a corner truly is important, I can do some refinement so that the resulting singularity is sufficiently well resolved.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;em&gt;Thanks to Andreas Klöckner, Brendan Meade and Andrew Bradley for discussions that led to this post. If you want to chat about these kind of topics, please &lt;a href=&#34;mailto:t.ben.thompson@gmail.com&#34;&gt;get in touch&lt;/a&gt;!&lt;/em&gt;&lt;/p&gt;
-
-      </description>
+</description>
     </item>
     
     <item>
@@ -87,11 +81,8 @@
       <pubDate>Tue, 02 Apr 2019</pubDate>
       
       <guid>http://tbenthompson.com/post/cascadia/</guid>
-      <description>
-        &lt;![CDATA[&lt;link rel=&#34;stylesheet&#34; href=&#34;http://tbenthompson.com/css/syntax.css&#34;&gt;]]&gt; 
-          &lt;iframe width=&#34;600&#34; height=&#34;338&#34; src=&#34;https://www.youtube.com/embed/ieN-9MUhND8?start=112&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-      </description>
+      <description>&lt;iframe width=&#34;600&#34; height=&#34;338&#34; src=&#34;https://www.youtube.com/embed/ieN-9MUhND8?start=112&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
     </item>
     
     <item>
@@ -100,11 +91,8 @@
       <pubDate>Thu, 26 Jul 2018</pubDate>
       
       <guid>http://tbenthompson.com/post/cutde/</guid>
-      <description>
-        &lt;![CDATA[&lt;link rel=&#34;stylesheet&#34; href=&#34;http://tbenthompson.com/css/syntax.css&#34;&gt;]]&gt; 
-          &lt;meta http-equiv=&#34;refresh&#34; content=&#34;0; url=https://github.com/tbenthompson/cutde&#34; /&gt;
-
-      </description>
+      <description>&lt;meta http-equiv=&#34;refresh&#34; content=&#34;0; url=https://github.com/tbenthompson/cutde&#34; /&gt;
+</description>
     </item>
     
     <item>
@@ -113,11 +101,8 @@
       <pubDate>Mon, 02 Apr 2018</pubDate>
       
       <guid>http://tbenthompson.com/post/cluda/</guid>
-      <description>
-        &lt;![CDATA[&lt;link rel=&#34;stylesheet&#34; href=&#34;http://tbenthompson.com/css/syntax.css&#34;&gt;]]&gt; 
-          &lt;meta http-equiv=&#34;refresh&#34; content=&#34;0; url=https://github.com/tbenthompson/cluda&#34; /&gt;
-
-      </description>
+      <description>&lt;meta http-equiv=&#34;refresh&#34; content=&#34;0; url=https://github.com/tbenthompson/cluda&#34; /&gt;
+</description>
     </item>
     
     <item>
@@ -126,9 +111,7 @@
       <pubDate>Mon, 19 Mar 2018</pubDate>
       
       <guid>http://tbenthompson.com/post/regularized_rate_state/</guid>
-      <description>
-        &lt;![CDATA[&lt;link rel=&#34;stylesheet&#34; href=&#34;http://tbenthompson.com/css/syntax.css&#34;&gt;]]&gt; 
-          &lt;p&gt;The standard form for rate and state friction produces undefined results for $V = 0$. Some algebra and calculus and microphysics lead to the commonly used regularized form that is still valid at $V=0$. This is based on the presentation in Rice and Ben-Zion 1996 and Lapusta et. al 2000. There&amp;rsquo;s nothing novel here, but the details of this sort of thing are often glossed over in the literature. So, while working it out for myself, I figured I&amp;rsquo;d write it up!&lt;/p&gt;
+      <description>&lt;p&gt;The standard form for rate and state friction produces undefined results for $V = 0$. Some algebra and calculus and microphysics lead to the commonly used regularized form that is still valid at $V=0$. This is based on the presentation in Rice and Ben-Zion 1996 and Lapusta et. al 2000. There&amp;rsquo;s nothing novel here, but the details of this sort of thing are often glossed over in the literature. So, while working it out for myself, I figured I&amp;rsquo;d write it up!&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s start with the common, empirically-derived rate and state friction with the aging law for state evolution.&lt;/p&gt;
 &lt;p&gt;\begin{equation}
 \tau = \sigma_n (f_0 + a \log(V/V_0) + b \log(V_0\theta/D_c))
@@ -189,8 +172,7 @@ V = V_0 (\exp(\frac{\tau}{a\sigma_n}) - \exp(\frac{-\tau}{a\sigma_n}))\exp(-\fra
 \label{aging01-2}
 \end{equation}&lt;/p&gt;
 &lt;p&gt;In my numerical quasidynamic models, I am using equations \ref{rsreg} and \ref{aging01-2}, rather than the more traditional \ref{rsorig} and \ref{agingorig}. Most other rate and state friction implementations (both fully dynamic and quasidynamic) that I have read about also use the regularized forms.&lt;/p&gt;
-
-      </description>
+</description>
     </item>
     
     <item>
@@ -199,9 +181,7 @@ V = V_0 (\exp(\frac{\tau}{a\sigma_n}) - \exp(\frac{-\tau}{a\sigma_n}))\exp(-\fra
       <pubDate>Sat, 10 Mar 2018</pubDate>
       
       <guid>http://tbenthompson.com/post/block_slider/</guid>
-      <description>
-        &lt;![CDATA[&lt;link rel=&#34;stylesheet&#34; href=&#34;http://tbenthompson.com/css/syntax.css&#34;&gt;]]&gt; 
-          &lt;p&gt;&lt;em&gt;source available &lt;a href=&#34;block_slider.ipynb&#34;&gt;here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;em&gt;source available &lt;a href=&#34;block_slider.ipynb&#34;&gt;here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Figures first, explanations later!&lt;/p&gt;
 &lt;img src=&#34;qd_1d.png&#34; alt=&#34;Evolution of a quasidynamic spring-block-slider system.&#34;/&gt;
 &lt;p&gt;Recently, I&amp;rsquo;ve been working on some 3D quasidynamic earthquake modeling problems. We&amp;rsquo;re planning to add in some realistic geometries using tectosaur to see what influence that has on the earthquake cycle. While putting together that 3D model, I realized that it consists of two main pieces:&lt;/p&gt;
@@ -348,8 +328,7 @@ V = V_0 (\exp(\frac{\tau}{a\sigma_n}) - \exp(\frac{-\tau}{a\sigma_n}))\exp(-\fra
 &lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;savefig&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;qd_1d.png&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;bbox_inches&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;tight&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dpi&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;show&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;block_slider_files/block_slider_26_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
-
-      </description>
+</description>
     </item>
     
     <item>
@@ -358,9 +337,7 @@ V = V_0 (\exp(\frac{\tau}{a\sigma_n}) - \exp(\frac{-\tau}{a\sigma_n}))\exp(-\fra
       <pubDate>Sat, 24 Feb 2018</pubDate>
       
       <guid>http://tbenthompson.com/post/cloudpickle_monkey_patching/</guid>
-      <description>
-        &lt;![CDATA[&lt;link rel=&#34;stylesheet&#34; href=&#34;http://tbenthompson.com/css/syntax.css&#34;&gt;]]&gt; 
-          &lt;p&gt;I&amp;rsquo;ve been using &lt;code&gt;cloudpickle&lt;/code&gt; in the internals of &lt;a href=&#34;https://github.com/tbenthompson/taskloaf&#34;&gt;taskloaf&lt;/a&gt; for a while since it allows serializing almost all functions and objects. That&amp;rsquo;s really nice since it means I can pass arbitrary functions (tasks, jobs) from one worker to another across the network.&lt;/p&gt;
+      <description>&lt;p&gt;I&amp;rsquo;ve been using &lt;code&gt;cloudpickle&lt;/code&gt; in the internals of &lt;a href=&#34;https://github.com/tbenthompson/taskloaf&#34;&gt;taskloaf&lt;/a&gt; for a while since it allows serializing almost all functions and objects. That&amp;rsquo;s really nice since it means I can pass arbitrary functions (tasks, jobs) from one worker to another across the network.&lt;/p&gt;
 &lt;p&gt;Yesterday, I was curious about the internals of &lt;code&gt;cloudpickle&lt;/code&gt; and whether a monkey-patched object would remain patched after being loaded remotely. I read a bit of the source, but figured just trying it was a good idea.&lt;/p&gt;
 &lt;p&gt;I create a silly, meaningless class and then an instance of that class.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Create a silly class and an object&lt;/span&gt;
@@ -409,8 +386,7 @@ AttributeError: &#39;Turkey&#39; object has no attribute &#39;hi2&#39;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;SQUAWK
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Ultimately, this makes a lot of sense. &lt;code&gt;cloudpickle&lt;/code&gt; just investigates the members of an object (its &lt;code&gt;__dict__&lt;/code&gt;) and serializes those. It doesn&amp;rsquo;t need to serialize anything about the generic &lt;code&gt;Turkey&lt;/code&gt; class. The key difference with &lt;code&gt;pickle&lt;/code&gt; is that &lt;code&gt;cloudpickle&lt;/code&gt; has the capability to serialize functions and so it can directly serialize members of the object without reference to its type.&lt;/p&gt;
-
-      </description>
+</description>
     </item>
     
     <item>
@@ -419,9 +395,7 @@ AttributeError: &#39;Turkey&#39; object has no attribute &#39;hi2&#39;
       <pubDate>Thu, 22 Feb 2018</pubDate>
       
       <guid>http://tbenthompson.com/post/how_i_test/</guid>
-      <description>
-        &lt;![CDATA[&lt;link rel=&#34;stylesheet&#34; href=&#34;http://tbenthompson.com/css/syntax.css&#34;&gt;]]&gt; 
-          &lt;p&gt;To follow up on the last post about testing for science and data analytics, I thought it&amp;rsquo;d be nice to talk about the specific tools I use for testing. I don&amp;rsquo;t claim this is the best way to do things, but it tends to work pretty well for small projects and teams.&lt;/p&gt;
+      <description>&lt;p&gt;To follow up on the last post about testing for science and data analytics, I thought it&amp;rsquo;d be nice to talk about the specific tools I use for testing. I don&amp;rsquo;t claim this is the best way to do things, but it tends to work pretty well for small projects and teams.&lt;/p&gt;
 &lt;h2 id=&#34;pytest&#34;&gt;py.test&lt;/h2&gt;
 &lt;p&gt;The py.test tool is handy for running a suite of tests in python. It&amp;rsquo;s a very general tool for running all the tests in a project. It can do a lot of powerful things, but requires almost no boilerplate to get started with. The pattern I&amp;rsquo;ve always followed is: Add a &lt;code&gt;tests&lt;/code&gt; directory the root of the project. Name any test files in that directory &lt;code&gt;test_xyz.py&lt;/code&gt; and then any tests within that file &lt;code&gt;def test_abc():&lt;/code&gt;. py.test will find all of these automatically and run them. On several projects that I work on, I have tens or hundreds of tests that, in total, take less than a second to run. As a result, I simply run &lt;code&gt;py.test&lt;/code&gt; every time I make a change.&lt;/p&gt;
 &lt;p&gt;For more happiness, I add a &lt;code&gt;pytest.ini&lt;/code&gt; file to the root of my project:&lt;/p&gt;
@@ -473,8 +447,7 @@ ipdb.set_trace()
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;import pdb
 pdb.set_trace()
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And then when those lines are run, execution will stop and I&amp;rsquo;m dropped into a debugging prompt where I can step through the code, examine variable values and other nice things.&lt;/p&gt;
-
-      </description>
+</description>
     </item>
     
     <item>
@@ -483,9 +456,7 @@ pdb.set_trace()
       <pubDate>Wed, 07 Feb 2018</pubDate>
       
       <guid>http://tbenthompson.com/post/automated_testing_for_science/</guid>
-      <description>
-        &lt;![CDATA[&lt;link rel=&#34;stylesheet&#34; href=&#34;http://tbenthompson.com/css/syntax.css&#34;&gt;]]&gt; 
-          &lt;p&gt;A lot of scientists and data analysts don&amp;rsquo;t use automatic test suites for verifying their code.
+      <description>&lt;p&gt;A lot of scientists and data analysts don&amp;rsquo;t use automatic test suites for verifying their code.
 And I think that&amp;rsquo;s because it&amp;rsquo;s really hard.
 Almost all the introductions to automated testing that I&amp;rsquo;ve seen come from a more typical software engineering perspective. They assume you already know exactly what the output of your code should be.
 And the trouble with science is that that&amp;rsquo;s rarely the case.
@@ -579,8 +550,7 @@ framework, I like to make sure my code runs by creating a Jupyter notebook
 that calls almost every line of code that I think is important. I explain why the code behaves
 the way it does in the notebook, which then makes pretty good documentation.
 --&gt;
-
-      </description>
+</description>
     </item>
     
     <item>
@@ -589,9 +559,7 @@ the way it does in the notebook, which then makes pretty good documentation.
       <pubDate>Wed, 17 Jan 2018</pubDate>
       
       <guid>http://tbenthompson.com/post/sneaky-transparent-huge-pages/</guid>
-      <description>
-        &lt;![CDATA[&lt;link rel=&#34;stylesheet&#34; href=&#34;http://tbenthompson.com/css/syntax.css&#34;&gt;]]&gt; 
-          &lt;p&gt;A week ago, I spent an afternoon on a run in with a sneaky feature of the Linux kernel that made some sparse matrix vector product operations about twice as slow as I expected.&lt;/p&gt;
+      <description>&lt;p&gt;A week ago, I spent an afternoon on a run in with a sneaky feature of the Linux kernel that made some sparse matrix vector product operations about twice as slow as I expected.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ve recently learned about using file backed shared memory with mmap to do efficient interprocess communication. At the most basic level, you share data between two processes by writing that data to a file. The file can be made to look a lot like a normal region of memory using &lt;code&gt;mmap&lt;/code&gt;, a system call, and can be shared between multiple processes by giving &lt;code&gt;mmap&lt;/code&gt; the &lt;code&gt;MAP_SHARED&lt;/code&gt; flag. There&amp;rsquo;s a downside though, in that the data has to synced to the hard drive continuously. So, instead of sharing a file that is written to disk, I discovered that you can share a file on a RAM disk &amp;ndash; just a filesystem that is backed by RAM. On Linux, a large &lt;code&gt;tmpfs&lt;/code&gt; RAM disk filesystem is often mounted by default at &lt;code&gt;/dev/shm&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s some python that creates a NumPy array with &lt;code&gt;mmap&lt;/code&gt;. First, let&amp;rsquo;s get set up&amp;hellip;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;os&lt;/span&gt;
@@ -673,8 +641,7 @@ shm square 0.2850306034088135
 &lt;span class=&#34;o&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;timeit&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;idx&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;657 ms ± 39.6 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Hurray! Success!&lt;/p&gt;
-      </description>
+&lt;p&gt;Hurray! Success!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -683,9 +650,7 @@ shm square 0.2850306034088135
       <pubDate>Sat, 02 Jul 2016</pubDate>
       
       <guid>http://tbenthompson.com/post/sparse_nbody/</guid>
-      <description>
-        &lt;![CDATA[&lt;link rel=&#34;stylesheet&#34; href=&#34;http://tbenthompson.com/css/syntax.css&#34;&gt;]]&gt; 
-          &lt;p&gt;&lt;img src=&#34;http://tbenthompson.com/images/sparse_treecode_matrix.png&#34; alt=&#34;matrix&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;http://tbenthompson.com/images/sparse_treecode_matrix.png&#34; alt=&#34;matrix&#34;&gt;&lt;/p&gt;
 &lt;p&gt;This is a sparsity plot of a matrix representing an approximate n-body interaction. The black dots are non-zeros in the matrix. Imagine 2000 stars, each exerting some gravitational pull on each of the other stars. This gravitational interaction could be represented by a dense matrix:&lt;/p&gt;
 &lt;p&gt;$$
 A_{ij} = \frac{G m_i m_j}{|\mathbf{x}_i - \mathbf{x}_j|^2}
@@ -693,8 +658,7 @@ $$&lt;/p&gt;
 &lt;p&gt;This works, but dense matrices can be slow when there are many stars. The cost of evaluating a matrix-vector product will scale like $O(n^2)$. Fortunately, the matrix can be represented in a different way if a little bit of error is okay. The interactions can be separated into those between nearby stars and the remaining interactions between stars that are far from each other. Groups of farfield interactions can be approximated. The result is a matrix that looks like what I&amp;rsquo;m showing above. The matrix has four distinct blocks. The upper left 2000x2000 block of the matrix represents the direct interaction that could not be approximated. The lower left and lower right represent the evaluation of the approximation coefficients. Both are super sparse! The upper right is the evaluation of the influence of the approximation coefficients on the points themselves. This part is less sparse.&lt;/p&gt;
 &lt;p&gt;Depending on exactly where the matrix coefficients are coming and how the approximation is done, this idea is called a tree-code, the fast multipole method, or a hierarchical matrix and results in an asymptotic complexity of either $O(n)$ or $O(n\log{n})$. The matrix in the figure is too small to show the impressive sparsification achievable with these methods. With a larger problem including 500,000 interacting points, I need &amp;lt;0.1% of the original number of matrix entries (250 billion vs 0.2 billion).&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m using this same idea for elastic interactions in the Earth&amp;rsquo;s crust. The interaction kernel is different, but the idea is fundamentally the same. I&amp;rsquo;m using a specific variant of the fast multipole method called the &lt;a href=&#34;http://www.mrl.nyu.edu/~harper/kifmm3d/documentation/publications.html&#34;&gt;kernel independent fast multipole method&lt;/a&gt;. This is a nice approach since the implementation is the same for each of the interaction kernels I deal with.&lt;/p&gt;
-
-      </description>
+</description>
     </item>
     
     <item>
@@ -703,11 +667,8 @@ $$&lt;/p&gt;
       <pubDate>Wed, 23 Dec 2015</pubDate>
       
       <guid>http://tbenthompson.com/post/serialize_fnc_cpp/</guid>
-      <description>
-        &lt;![CDATA[&lt;link rel=&#34;stylesheet&#34; href=&#34;http://tbenthompson.com/css/syntax.css&#34;&gt;]]&gt; 
-          &lt;script src=&#34;https://gist.github.com/tbenthompson/94fd4095f89da23dec20.js&#34;&gt;&lt;/script&gt;
-
-      </description>
+      <description>&lt;script src=&#34;https://gist.github.com/tbenthompson/94fd4095f89da23dec20.js&#34;&gt;&lt;/script&gt;
+</description>
     </item>
     
     <item>
@@ -716,9 +677,7 @@ $$&lt;/p&gt;
       <pubDate>Fri, 11 Dec 2015</pubDate>
       
       <guid>http://tbenthompson.com/post/setting_up_website/</guid>
-      <description>
-        &lt;![CDATA[&lt;link rel=&#34;stylesheet&#34; href=&#34;http://tbenthompson.com/css/syntax.css&#34;&gt;]]&gt; 
-          &lt;p&gt;I have a website now. Since technical stuff is fun, I thought I&amp;rsquo;d share the way I set it up.&lt;/p&gt;
+      <description>&lt;p&gt;I have a website now. Since technical stuff is fun, I thought I&amp;rsquo;d share the way I set it up.&lt;/p&gt;
 &lt;p&gt;The site is a set of statically served HTML pages. &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; makes this really easy. Hugo is super fast and is written in Go. You can set up a few template pages and then write posts and pages in Markdown. Some layout is also done using Go templates. Running Hugo takes your templates and pages and concerts them into static HTML. The pages can then be dropped into any web accessible folder and accessed remotely. This is nice, but a few additional steps makes everything even easier:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub Pages&lt;/a&gt; serves the pages from a git repository.&lt;/li&gt;
@@ -726,8 +685,7 @@ $$&lt;/p&gt;
 &lt;li&gt;This &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34;&gt;Hugo documentation on using it with GitHub&lt;/a&gt; has some good suggestions including a very helpful &lt;code&gt;deploy.sh&lt;/code&gt; script that makes deploying changes super easy.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You can take a look at all this &lt;a href=&#34;https://github.com/tbenthompson/tbenthompson_site&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-      </description>
+</description>
     </item>
     
   </channel>
