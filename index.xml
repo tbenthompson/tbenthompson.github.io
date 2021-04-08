@@ -6,7 +6,7 @@
     <description>Recent content on T. Ben Thompson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Apr 2021 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 08 Apr 2021 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="http://tbenthompson.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -132,6 +132,24 @@ I worked for a while as the primary software developer for TherapyCharts, a web-
       
       <guid>http://tbenthompson.com/project/neuralnets/</guid>
       <description>In high school, I was very interested in machine learning algorithms and investigated neural networks, support vector machines and unsupervised learning. I replicated various algorithms and tested their properties at different points in parameter space on the MNIST dataset which contains 60,000 handwritten numbers. Later, I used an unsupervised learning technique (Autoencoders, Hinton et. al 2006) to improve the performance of a support vector machine model in detecting Melanoma (skin cancer).</description>
+    </item>
+    
+    <item>
+      <title>Matrix-free triangular dislocations</title>
+      <link>http://tbenthompson.com/book/tde_matrix_free/</link>
+      <pubDate>Thu, 08 Apr 2021 00:00:00 -0400</pubDate>
+      
+      <guid>http://tbenthompson.com/book/tde_matrix_free/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Triangular dislocation elements with topography</title>
+      <link>http://tbenthompson.com/book/tde_topo/</link>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 -0400</pubDate>
+      
+      <guid>http://tbenthompson.com/book/tde_topo/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -276,8 +294,7 @@ The site is a set of statically served HTML pages. Hugo makes this really easy. 
       
       <guid>http://tbenthompson.com/thanks/</guid>
       <description>Thanks so much for subscribing! You should get an email confirming your subscription.
-If you&amp;rsquo;re up for it, I&amp;rsquo;d really like it if you reply to that email and let me know:
- a bit about yourself. what you&amp;rsquo;d like to read more about.  </description>
+It&amp;rsquo;d be awesome if you want to tell me a bit about yourself, what you&amp;rsquo;d like to read more of, and what you&amp;rsquo;ve been interested in lately? You can reply to the subscription confirmation email!</description>
     </item>
     
   </channel>
