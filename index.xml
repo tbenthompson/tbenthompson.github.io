@@ -6,18 +6,15 @@
     <description>Recent content on T. Ben Thompson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Apr 2021 00:00:00 -0400</lastBuildDate>
-    
-	<atom:link href="http://tbenthompson.com/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 08 Apr 2021 00:00:00 -0400</lastBuildDate><atom:link href="http://tbenthompson.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Machine learning engineering at QuantCo.</title>
       <link>http://tbenthompson.com/project/quantco/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/project/quantco/</guid>
-      <description>See my resume for some info on what I do at QuantCo.</description>
+      <description>&lt;p&gt;See &lt;a href=&#34;http://tbenthompson.com/resume.pdf&#34;&gt;my resume&lt;/a&gt; for some info on what I do at &lt;a href=&#34;https://quantco.com/&#34;&gt;QuantCo.&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -26,7 +23,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/project/cppimport/</guid>
-      <description></description>
+      <description>&lt;meta http-equiv=&#34;refresh&#34; content=&#34;0; url=https://github.com/tbenthompson/cppimport&#34; /&gt;
+</description>
     </item>
     
     <item>
@@ -35,8 +33,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/project/tectosaur/</guid>
-      <description>A recent paper outlining our Galerkin BEM approach.
-My tectonic and earthquake cycle research is supported by development of elastic boundary element software. This has required investigations into the best approaches for a wide range of computational and mathematical tasks: singular integration of Green&amp;rsquo;s functions, approximation of farfield Green&amp;rsquo;s function interactions with the fast multipole method, flexible treatment of equality and inequality constraints, and a big dose of computational geometry. These are a just a few of the components of this effort.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://eartharxiv.org/xzhuk/&#34;&gt;A recent paper outlining our Galerkin BEM approach.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;My tectonic and earthquake cycle research is supported by development of elastic boundary element software. This has required investigations into the best approaches for a wide range of computational and mathematical tasks: singular integration of Green&amp;rsquo;s functions, approximation of farfield Green&amp;rsquo;s function interactions with the fast multipole method, flexible treatment of equality and inequality constraints, and a big dose of computational geometry. These are a just a few of the components of this effort. This new software will be able to model arbitrary geometries including surface topography, complex data-derived fault geometries, and material boundaries. Models with millions of elements will be possible in two or three dimensions. Exciting!&lt;/p&gt;
+&lt;img src=&#34;http://tbenthompson.com/images/matrix.png&#34; style=&#34;width: 400px;&#34;/&gt;
+&lt;p&gt;&lt;em&gt;A visualization of the structure in a boundary element matrix with rotational symmetry.&lt;/em&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -45,8 +46,10 @@ My tectonic and earthquake cycle research is supported by development of elastic
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/project/quasidynamic/</guid>
-      <description>Paper
-The Cascadia subduction zone hosts great $\mathrm{M}_\mathrm{W} &amp;gt; 8.5$ earthquakes, but studying these events is hindered by our short observational record. Earthquake cycle simulation provides an alternative window into the behavior of the subduction zone. Here, we present simulations over 3,800 years, 14 ruptures and hundreds of slow slip events on a high-fidelity geometric representation of the Cascadia subduction zone beneath surface topography. The boundaries of these ruptures are defined by ephemeral stress barriers that last for several cycles but are eliminated by a barrier-crossing rupture.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://eartharxiv.org/3vuxw/&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Cascadia subduction zone hosts great $\mathrm{M}_\mathrm{W} &amp;gt; 8.5$ earthquakes, but studying these events is hindered by our short observational record. Earthquake cycle simulation provides an alternative window into the behavior of the subduction zone. Here, we present simulations over 3,800 years, 14 ruptures and hundreds of slow slip events on a high-fidelity geometric representation of the Cascadia subduction zone beneath surface topography. The boundaries of these ruptures are defined by ephemeral stress barriers that last for several cycles but are eliminated by a barrier-crossing rupture. Thus, it is possible that many real world rupture barriers are due to remnant stress shadows from previous slip events and may not persist over several earthquake cycles. In addition, we see &amp;ldquo;fast&amp;rdquo; slow slip events with $\mathrm{M}_\mathrm{W} \approx 8$. These events may occur in nature and reduce the seismically available moment for earthquakes.&lt;/p&gt;
+&lt;iframe width=&#34;600&#34; height=&#34;338&#34; src=&#34;https://www.youtube.com/embed/ieN-9MUhND8?start=112&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
     </item>
     
     <item>
@@ -55,8 +58,16 @@ The Cascadia subduction zone hosts great $\mathrm{M}_\mathrm{W} &amp;gt; 8.5$ ea
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/project/topography/</guid>
-      <description>Paper
-Images of earthquake slip typically rely on flat Earth physical models to link surface observations to fault activity at depth despite the extreme topographic relief (20%) in vicinity of recent great earthquakes (e.g., 2008 $M_w$=7.9 Wenchuan). Here we use a three-dimensional boundary element approach to characterize the effects of realistic topography on coseismic slip inversions and find that near the steepest topography, the flat Earth assumption may induce errors $&amp;gt;100%$ in imaged coseismic slip.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://osf.io/sp3bj/&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Images of earthquake slip typically rely on flat Earth physical models to link surface observations to fault activity at depth despite the extreme topographic relief (20%) in vicinity of recent great earthquakes (e.g., 2008 $M_w$=7.9 Wenchuan).
+Here we use a three-dimensional boundary element approach to characterize the effects of realistic topography on coseismic slip inversions and find that near the steepest topography, the flat Earth assumption may induce errors $&amp;gt;100%$ in imaged coseismic slip.
+Additionally, we show that the flat earth assumption even in regions with small topographic gradients (1-5% , 1992  $M_w$=7.3 Landers) can lead to the inaccurate inference of a shallow slip deficit.
+This illustrates how physical model errors can be amplified by an order of magnitude in estimating images of coseismic fault slip and that more physically realistic models may be required for accurate inference in an era of rapidly growing geodetic databases.&lt;/p&gt;
+&lt;img src=&#34;http://tbenthompson.com/images/wenchuan_model_3d.png&#34; style=&#34;width: 600px;&#34;/&gt;
+&lt;p&gt;&lt;em&gt;A view of the Wenchuan model looking south from high above the Earth&amp;rsquo;s surface at the fault model through transparent mountainous topography.&lt;/em&gt;&lt;/p&gt;
+&lt;img src=&#34;http://tbenthompson.com/images/landers_panels.png&#34; style=&#34;width: 600px;&#34;/&gt;
+&lt;p&gt;&lt;em&gt;The distribution of slip on the primary segments of the Landers rupture surface as inferred by our model including topographic effects.&lt;/em&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -65,7 +76,8 @@ Images of earthquake slip typically rely on flat Earth physical models to link s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/project/taskloaf/</guid>
-      <description>Task-based parallelism enables running complex parallel computations by describing them as a graph of tasks. Shared memory task-based parallelism has become an important tool as demonstrated by tools like Intel TBB, Cilk, and OpenMP v3. But, distributed memory task-based parallelism systems is still heavily researched to determine the most usable, efficient and scalable approach. Instead of waiting for the future holy grail of distributed task parallelism, I designed Taskloaf while visiting Oak Ridge National Lab in Fall 2015.</description>
+      <description>&lt;p&gt;Task-based parallelism enables running complex parallel computations by describing them as a graph of tasks. Shared memory task-based parallelism has become an important tool as demonstrated by tools like Intel TBB, Cilk, and OpenMP v3. But, distributed memory task-based parallelism systems is still heavily researched to determine the most usable, efficient and scalable approach. Instead of waiting for the future holy grail of distributed task parallelism, I designed Taskloaf while visiting Oak Ridge National Lab in Fall 2015. Taskloaf is a minimal but reasonably efficient and scalable task parallelism library. A primary goal with the library was to keep it small and easy to maintain. The codebase has less than 2k lines of code so that a skilled C++ programmer can learn the inner workings of the entire library in a day. The interface is based around &lt;a href=&#34;https://en.wikipedia.org/wiki/Futures_and_promises&#34;&gt;futures&lt;/a&gt;, a time-tested parallelism primitive. I use Taskloaf to parallelize my boundary element software.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -74,7 +86,9 @@ Images of earthquake slip typically rely on flat Earth physical models to link s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/project/visconn/</guid>
-      <description>The viscous behavior of the deep Earth results in slow surface motion continuing for many years after an earthquake. However, computing the physics of this behavior can be extremely expensive involving multi-dimensional inverse Laplace transforms and slowly-convergent series. We developed a basic feedforward neural network that is able to replicate the results of the analytic computation while running ~500x faster. Since the analytic function being approximated is already known, this is a sort of strange application of neural networks in that they are very explicitly being used in their role as universal function approximators for a high-dimensional function.</description>
+      <description>&lt;img src=&#34;http://tbenthompson.com/images/nn_grl.jpeg&#34;/&gt;
+&lt;p&gt;The viscous behavior of the deep Earth results in slow surface motion continuing for many years after an earthquake. However, computing the physics of this behavior can be extremely expensive involving multi-dimensional inverse Laplace transforms and slowly-convergent series. We developed a basic feedforward neural network that is able to replicate the results of the analytic computation while running ~500x faster. Since the analytic function being approximated is already known, this is a sort of strange application of neural networks in that they are very explicitly being used in their role as universal function approximators for a high-dimensional function. It works really well!&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -83,7 +97,11 @@ Images of earthquake slip typically rely on flat Earth physical models to link s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/project/himalaya_stress/</guid>
-      <description>Quantitative estimates of crustal stress magnitude and orientation are hard to come by. On the other hand, geodesy is providing an increasingly accurate picture of global tectonic motions. Field and laboratory analyses contribute fault slip rates and exhumation rates. Seismology yields estimates of stress from moment tensor analyses. I am working to combine these data sources with geometrically accurate elastic boundary element models to estimate the crustal stress field and the driving forces behind those stresses &amp;ndash; for example, mantle tractions on the base of the crust.</description>
+      <description>&lt;p&gt;Quantitative estimates of crustal stress magnitude and orientation are hard to come by. On the other hand, geodesy is providing an increasingly accurate picture of global tectonic motions. Field and laboratory analyses contribute fault slip rates and exhumation rates. Seismology yields estimates of stress from moment tensor analyses. I am working to combine these data sources with geometrically accurate elastic boundary element models to estimate the crustal stress field and the driving forces behind those stresses &amp;ndash; for example, mantle tractions on the base of the crust.&lt;/p&gt;
+&lt;p&gt;Currently, I am applying these methods to the Himalayan wedge in the vicinity of the 2015 Nepal earthquake. In the past, Coulomb wedge and elastic wedge models provided a qualitative picture of these stresses and the growth of mountain belts over long time scales. My work will make these models quantitative by constraining geometrically realistic wedge models with geodetic and geologic observations. An improved image of the stress in the crust will help answer several questions about active tectonics in the Himalayas. Are stress drops low or high compared to total stress? Is it reasonable that some stress in the Himalayas might be released as plastic strain rather than fault slip? What fault slip rates and directions are consistent with different hypotheses concerning the tectonic driving forces?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://tbenthompson.com/images/hrf_principal_stresses.png&#34; alt=&#34;HRF principal stresses&#34;&gt;
+&lt;em&gt;Principal stress orientations in a cross section of the Himalayan wedge including a frictional detachment and one internal MCT-like fault.&lt;/em&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -92,8 +110,11 @@ Images of earthquake slip typically rely on flat Earth physical models to link s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/project/longmenshan/</guid>
-      <description>GRL article.
-The Longmen Shan is the steepest topographic front at the India‐Asia collision zone and the site of the Mw 7.9 Wenchuan earthquake. To explain the interseismic GPS velocities across the greater Longmen Shan region, we developed a boundary element model including earthquake cycle effects, topography, the westward dipping Beichuan Fault and a ∼20 km deep, shallowly dipping, detachment, inferred from observed afterslip and from structural considerations. Prior analyses which had neglected the detachment and earthquake cycle effects found shortening rates near zero.</description>
+      <description>&lt;p&gt;&lt;em&gt;&lt;a href=&#34;http://onlinelibrary.wiley.com/doi/10.1002/2014GL062833/abstract&#34;&gt;GRL article&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The Longmen Shan is the steepest topographic front at the India‐Asia collision zone and the site of the Mw 7.9 Wenchuan earthquake. To explain the interseismic GPS velocities across the greater Longmen Shan region, we developed a boundary element model including earthquake cycle effects, topography, the westward dipping Beichuan Fault and a ∼20 km deep, shallowly dipping, detachment, inferred from observed afterslip and from structural considerations. Prior analyses which had neglected the detachment and earthquake cycle effects found shortening rates near zero. In contrast, we found that interseismic GPS data are consistent with a shortening rate of 5.7±1.5mm/yr and maximum surface slip‐deficit rate of 9.5±2.5mm/yr. This model unifies the interpretation of geodetic deformation throughout the earthquake cycle and suggests that the Longmen Shan is an active fold‐and‐thrust belt with Wenchuan‐like recurrence intervals as short as 600 years.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://tbenthompson.com/images/longmenshan.png&#34; /&gt;
+&lt;em&gt;A cross section of the Longmen Shan showing model-predicted velocities. Positive velocity is to the right/southwest.&lt;/em&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -102,7 +123,8 @@ The Longmen Shan is the steepest topographic front at the India‐Asia collision
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/project/shargyn/</guid>
-      <description>My undergraduate thesis. Western Mongolia has experienced four of the largest strike-slip earthquakes in recorded history. The Gobi-Altai fault system is a 500km long left-lateral slip zone. The Altai fault system is a 1000km long right-lateral slip zone. Combined these fault systems accomodate 10-15% of the shortening in the Indo-Eurasian collision. At the intersection, complex kinematics have created a 150 x 100km basin, called the Shargyn Basin. I propose an explanation for the kinematics of the ongoing formation of the basin.</description>
+      <description>&lt;p&gt;My undergraduate thesis. Western Mongolia has experienced four of the largest strike-slip earthquakes in recorded history. The Gobi-Altai fault system is a 500km long left-lateral slip zone. The Altai fault system is a 1000km long right-lateral slip zone. Combined these fault systems accomodate 10-15% of the shortening in the Indo-Eurasian collision. At the intersection, complex kinematics have created a 150 x 100km basin, called the Shargyn Basin. I propose an explanation for the kinematics of the ongoing formation of the basin. The main source of data is a 3 month field season in Mongolia.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -111,8 +133,11 @@ The Longmen Shan is the steepest topographic front at the India‐Asia collision
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/project/microscale/</guid>
-      <description>github
-For an undergraduate research project, I worked with Alejandra to automate a procedure to quantify finite strain on a microscale. On a certain surface, a sample is etched (like a microprocessor) with spaced dots. Then, on a microscope photograph, the dot positions are recorded before and after deformation. However, tracking hundreds of thousands of these dots by hand is impossible. So, I worked on an algorithm to determine the deformation function between the initial and final images by tracking the dot positions.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/tbenthompson/microdeform&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For an undergraduate research project, I worked with &lt;a href=&#34;https://scholar.google.com/citations?user=4uDVRD0AAAAJ&amp;amp;hl=en&#34;&gt;Alejandra&lt;/a&gt; to automate a procedure to quantify finite strain on a microscale. On a certain surface, a sample is etched (like a microprocessor) with spaced dots. Then, on a microscope photograph, the dot positions are recorded before and after deformation. However, tracking hundreds of thousands of these dots by hand is impossible. So, I worked on an algorithm to determine the deformation function between the initial and final images by tracking the dot positions.&lt;/p&gt;
+&lt;img src=&#34;http://tbenthompson.com/images/sample_centers.png&#34;/&gt;
+&lt;p&gt;&lt;em&gt;Identifying the centers (red) of the etched dots.&lt;/em&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -121,8 +146,9 @@ For an undergraduate research project, I worked with Alejandra to automate a pro
       <pubDate>Fri, 01 Jan 2010 00:00:00 -0500</pubDate>
       
       <guid>http://tbenthompson.com/project/therapycharts/</guid>
-      <description>homepage
-I worked for a while as the primary software developer for TherapyCharts, a web-based therapist records system. I developed a Python and PostgreSQL based backend and a ExtJS interface. I participated in two American Psychological Association conferences performing support and sales for TherapyCharts. TherapyCharts has now partnered with Wiley Publishing and is known as “Therascribe powered by TherapyCharts”.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.therapycharts.com/&#34;&gt;homepage&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I worked for a while as the primary software developer for TherapyCharts, a web-based therapist records system. I developed a Python and PostgreSQL based backend and a ExtJS interface. I participated in two American Psychological Association conferences performing support and sales for TherapyCharts. TherapyCharts has now partnered with Wiley Publishing and is known as “Therascribe powered by TherapyCharts”.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -131,7 +157,8 @@ I worked for a while as the primary software developer for TherapyCharts, a web-
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/project/neuralnets/</guid>
-      <description>In high school, I was very interested in machine learning algorithms and investigated neural networks, support vector machines and unsupervised learning. I replicated various algorithms and tested their properties at different points in parameter space on the MNIST dataset which contains 60,000 handwritten numbers. Later, I used an unsupervised learning technique (Autoencoders, Hinton et. al 2006) to improve the performance of a support vector machine model in detecting Melanoma (skin cancer).</description>
+      <description>&lt;p&gt;In high school, I was very interested in machine learning algorithms and investigated neural networks, support vector machines and unsupervised learning. I replicated various algorithms and tested their properties at different points in parameter space on the MNIST dataset which contains 60,000 handwritten numbers. Later, I used an unsupervised learning technique (Autoencoders, Hinton et. al 2006) to improve the performance of a support vector machine model in detecting Melanoma (skin cancer). My technique had a false negative and positive rate similar to experienced doctors. I presented some of these results at ISEF 2007, 2008 and 2009.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -140,7 +167,9 @@ I worked for a while as the primary software developer for TherapyCharts, a web-
       <pubDate>Thu, 08 Apr 2021 00:00:00 -0400</pubDate>
       
       <guid>http://tbenthompson.com/book/tde_topo/</guid>
-      <description></description>
+      <description>&lt;p&gt;&lt;img src=&#34;http://tbenthompson.com/images/wenchuan_model_3d.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;hihi&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -158,7 +187,36 @@ I worked for a while as the primary software developer for TherapyCharts, a web-
       <pubDate>Sat, 03 Apr 2021 00:00:00 -0400</pubDate>
       
       <guid>http://tbenthompson.com/post/maintaining_momentum/</guid>
-      <description>Collaboration in an unstructured world While I haven&amp;rsquo;t made any decisions yet, I&amp;rsquo;m currently considering heading off into a much less structured career path which could be variously described as &amp;ldquo;independent scientist&amp;rdquo;, &amp;ldquo;entrepreneuer&amp;rdquo;, &amp;ldquo;contractor&amp;rdquo; or &amp;ldquo;self-employed open-source developer&amp;rdquo;. Along those lines, I&amp;rsquo;ve been wondering what makes work good for me and how I can put the pieces together reliably. I think the critical piece will be to proactively communicate with lots of people.</description>
+      <description>&lt;h3 id=&#34;collaboration-in-an-unstructured-world&#34;&gt;Collaboration in an unstructured world&lt;/h3&gt;
+&lt;p&gt;While I haven&amp;rsquo;t made any decisions yet, I&amp;rsquo;m currently considering heading off into a much less structured career path which could be variously described as &amp;ldquo;independent scientist&amp;rdquo;, &amp;ldquo;entrepreneuer&amp;rdquo;, &amp;ldquo;contractor&amp;rdquo; or &amp;ldquo;self-employed open-source developer&amp;rdquo;. Along those lines, I&amp;rsquo;ve been wondering what makes work good for me and how I can put the pieces together reliably. I think the critical piece will be to proactively communicate with lots of people.&lt;/p&gt;
+&lt;p&gt;At the moment, I work as a machine learning engineer for QuantCo, working together with business people, economists, statisticians and other software engineers to build useful software systems for things like ecommerce pricing or insurance fraud detection. Jobs like this are inherently collaborative. Half the job is to work together with other people to figure out what exactly you should be doing and how to do it. There are strategy discussions, design discussions, pair programming sessions, stand ups and just plan old hang-out-and-chats.&lt;/p&gt;
+&lt;p&gt;By comparison, as an independent scientist, there&amp;rsquo;s not necessarily anyone there that is depending on me, helping me or working together with me. Even as a faculty member within the structure of academia, there&amp;rsquo;s a lot of individualism to science. A single research group is often quite disconnected from the rest of the community. Papers aren&amp;rsquo;t normally communicated until they&amp;rsquo;re done. A lot of people simply don&amp;rsquo;t care about the work you&amp;rsquo;re doing. Seminars or conferences can be confrontational. People don&amp;rsquo;t often say what they really think about some research outside of their small social network.&lt;/p&gt;
+&lt;p&gt;So, as I&amp;rsquo;ve been considering this potential path, I&amp;rsquo;ve been thinking a lot about how to establish the kind of collaboration I want. And I think part of the solution is to really focus on the people. While the true goal of my work is scientific progress combined with personal fulfullment, a reasonable proxy goal might be to make it all about people and engagement: people that value/use my work, people that talk to me, people that work with me. I doubt the end result will be very different between these objective functions and the people-focused version is going to do a better job of maintaining my momentum.&lt;/p&gt;
+&lt;p&gt;Along those lines, these are some rough ideas I&amp;rsquo;ve had:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Find one or more close collaborators. This is my number one collaborative goal &amp;ndash; to find someone who is interested in working together on a daily basis. Not your typical weekly arms-length collaboration. I don&amp;rsquo;t know if this goal is achievable.&lt;/li&gt;
+&lt;li&gt;Do projects &lt;strong&gt;for&lt;/strong&gt; people. Facilitate other people&amp;rsquo;s work as much as I can. Make it undeniably valuable for other people to seek me out and work with me.&lt;/li&gt;
+&lt;li&gt;Write a lot. I probably won&amp;rsquo;t be publishing articles in journals, but even if I were, the 6-12 month publishing cadence is far too slow to rely completely on publications for communicating with other scientists. I&amp;rsquo;d prefer a feedback loop on the order of a week or two. I plan to use my website for my technical writing.&lt;/li&gt;
+&lt;li&gt;Email people on a regular basis. Cold emailing people. Build an email list that I use any time I write a new website post. Recruit hard for my email list. Should I become the guy-who-spams-his-website-posts-to-everyone? Is this a case of no publicity is bad publicity? I&amp;rsquo;m not sure.&lt;/li&gt;
+&lt;li&gt;Lots of video calls! Visit in person once the pandemic is over if people are in the northeast.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;three-pillars-of-good-work&#34;&gt;Three pillars of good work&lt;/h3&gt;
+&lt;p&gt;While discussing some career ideas with a friend recently, she asked me to back up and think about what basic components make work good and productive for me. Below was my attempt at a response:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;A medium collaboration level. Maybe ~10-40% of time is spent communicating and working together with good people who are invested in the work I&amp;rsquo;m doing and I&amp;rsquo;m invested in their work.&lt;/li&gt;
+&lt;li&gt;Work that is intrinsically motivating. This is a fairly broad category. That could be building something that I think people want, could be fixing something that is broken, could be learning something new.&lt;/li&gt;
+&lt;li&gt;Enough control. I don&amp;rsquo;t need to be master of the universe, but without some control, people will treat you poorly, projects will get cancelled and any number of other bad things will happen.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I think I&amp;rsquo;ve had two of these things at many points and that was super motivating and resulted in high happiness and high productivity:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;During grad school, early on, I had instrinsically motivating work (#2) and plenty of control (#3). That was really awesome. I lost some of both due to some of the mistakes I made early on and getting stuck by the need to finish my dissertation when I also knew I was sort of working on a dead-end research-wise that very few people would be interested in. In the absence of organizational requirements like submitting a dissertation, I would&amp;rsquo;ve made a huge pivot in direction around year 4 or so. Maybe I should have made that pivot anyway, but I&amp;rsquo;m not sure. More collaboration (#1) would&amp;rsquo;ve have helped a lot in a couple critical points to help me avoid the mistakes I made.&lt;/li&gt;
+&lt;li&gt;I also had #2 and #3 when I was in high school playing with deep learning. Yeah, deep learning! Way back in 2007! I was super motivated and implemented some cool autoencoder stuff. I just wasn&amp;rsquo;t enough of an adult to continue down that path. I needed to have a lot of collaboration with people with more experience and I had none. I needed several years more math skills. I needed to go get in touch with some faculty or grad students working on this stuff. So, this project fell short of its potential due to a lack of collaboration (#1).&lt;/li&gt;
+&lt;li&gt;While working at QuantCo, at various points, I&amp;rsquo;ve had #1 and #2. Last year, I was working on improving a forecasting machine learning system at client-name-removed and that definitely qualified as #2 and I had enough interaction with other team members and client stakeholders that I definitely had #1. It was pretty great and I was super motivated. The project was shut down so this ended because I didn&amp;rsquo;t have control (#3).&lt;/li&gt;
+&lt;li&gt;I had #1 and #2 when I worked as a software engineer for a web-based therapy records system called TherapyCharts the summer after high school. Fast, dynamic work in an office with the founders. I continued to work on TherapyCharts during college on and off for a couple years as a part-time contractor. But, I had much less motivation. It had become clear to me that the company was not going to be successful and I felt like I needed to jump ship. But, maybe more important was that it had become much less collaborative because I was several hundred miles away and I was only communicating with the founders every few days or once a week.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I took away two lessons from this list. First, when I&amp;rsquo;ve felt unfocused or unable to get good work done, it was because something was fundamentally &lt;em&gt;wrong&lt;/em&gt; and not because I needed to push harder. You can&amp;rsquo;t push through a fundamentally flawed mathematical method or a flawed business plan. When things went from going great to going badly in the situations above, I probably should&amp;rsquo;ve made changes instead of just languishing or pushing against a brick wall. Second, any time I can think of where I had two of these things was a really good time for my motivation and happiness. I don&amp;rsquo;t know what would happen if I had all three of these things and maintained that situation for a few years. Probably something really good. I should probably try to find that!&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Thanks to Liz Santorella, Ruth Byers, Brendan Meade, Reena Joubert, and Phoebe DeVries for helping me crystallize some of the ideas in this post and for providing some edits. The ideas still are pretty rough and hypothetical, so if you want to chat please &lt;a href=&#34;mailto:t.ben.thompson@gmail.com&#34;&gt;get in touch&lt;/a&gt;!&lt;/em&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -167,8 +225,28 @@ I worked for a while as the primary software developer for TherapyCharts, a web-
       <pubDate>Wed, 31 Mar 2021 00:00:00 -0400</pubDate>
       
       <guid>http://tbenthompson.com/post/surface_representation/</guid>
-      <description>Let&amp;rsquo;s consider a model problem where the goal is to calculate the stress on a fault due to some slip on that fault. We also include a topographic free surface. How should we model this surface?
-Should we use planar triangles to model a curved fault? What happens at the junction between two triangles? If we do the natural fault thing and require the slip to be tangential to the suface, the slip vector has a step function at the junction between the two triangles.</description>
+      <description>&lt;p&gt;Let&amp;rsquo;s consider a model problem where the goal is to calculate the stress on a fault due to some slip on that fault. We also include a topographic free surface. How should we model this surface?&lt;/p&gt;
+&lt;p&gt;Should we use planar triangles to model a curved fault? What happens at the junction between two triangles? If we do the natural fault thing and require the slip to be tangential to the suface, the slip vector has a step function at the junction between the two triangles. This must be true because the two triangles have different normal vectors and tangent vectors. On the other hand, if we force slip to be continuous across triangles, we have to allow non-tangential slip because at an edge where two triangles meet the slip vector has to be identical but the tangent vectors are different.&lt;/p&gt;
+&lt;p&gt;That means that we&amp;rsquo;re stuck between a rock and a hard place and have to choose:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;non-tangential, but continuous slip&lt;/li&gt;
+&lt;li&gt;tangential, but discontinuous slip.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So, planar triangles probably aren&amp;rsquo;t a sustainable or &amp;ldquo;correct&amp;rdquo; way to represent a fault surface unless that surface is perfectly planar or we&amp;rsquo;re zoomed in far enough that the underlying microscale behavior is relevant. Fundamentally the problem is that our fault surface representation is $C^0$, meaning that the function itself is continuous but the derivatives are not. This problem propagates through the whole model up in other ways too. Suppose you choose to have discontinuous, but tangential, slip. Then, there will be stress singularities at every element junction!&lt;/p&gt;
+&lt;p&gt;Should we use a smoother fault surface representation? Probably. A $C^1$ fault representation where the normal vector is continuous between adjacent elements solves the problem described in the previous paragraph.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s back up and consider how to mesh our model earthquake problem from the perspective of &lt;em&gt;truth&lt;/em&gt;, &lt;em&gt;accuracy&lt;/em&gt; and &lt;em&gt;robustness&lt;/em&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Truth&lt;/strong&gt;: The underlying true surface of the Earth is fractal and has sharp corners at basically any zoom level. The fault surfaces are probably similarly fractal and non-smooth.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Accuracy&lt;/strong&gt;: There is accurate satellite data on the location of the Earth&amp;rsquo;s surface down to about a a few meters resolution. And for faults, depending on where in the world, the uncertainty in fault location is on the order of 10-10000m. So, only a few digits of accuracy could possibly be relevant in these models since there&amp;rsquo;s already a high level of error introduced by the mere location uncertainty in the faults, much less all the other uncertainties that I haven&amp;rsquo;t discussed here. The main goal, at least at this point in the evolution of the earthquake science field, is in terms of qualitative behavior and questions on the scale of 1-50% or even about the sign of an effect (positive or negative).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Robustness&lt;/strong&gt;: This is where smoothness gets really important. From my experience, having smooth boundaries makes so much about integral equation methods simpler. Especially for these faulting/crack problems where hypersingular terms are common.&lt;/p&gt;
+&lt;h2 id=&#34;a-different-approach&#34;&gt;A different approach&lt;/h2&gt;
+&lt;p&gt;My tentative approach that I&amp;rsquo;ve been exploring is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use at least a $C^1$ mesh. Even smoother surfaces should work fine too. An easy way to get a $C^1$ surface is to use cubic splines. Smooth surfaces make the numerics and code much easier because they remove several types of singularities. This is especially relevant because of the hypersingular integrals from faults that result in stress singularities I described above.&lt;/li&gt;
+&lt;li&gt;Methods for smooth surfaces tend to be developed by people looking for high-order accuracy. To reduce all forms of error, it makes sense to have accurate representations of both the surfaces involved and the functions defined on that surface. In addition, low order surface discretizations introduce singularities. For example, a boundary element method which is based on $C^0$ elements will have singularities in stress at each element intersection because there&amp;rsquo;s an artificially introduced corner. I don&amp;rsquo;t think the high-order accuracy is particularly important for quasi-static earthquake problems, but in my experience so far these high-order methods tend to work quite well even when the order $p$ is fairly small.&lt;/li&gt;
+&lt;li&gt;Modifying non-smooth surfaces to be smooth makes a negligible difference in the model results, especially compared to the other uncertainties. And on the scale of a few meters left or right, there is no real reason to think that input geometries are perfectly correct. I think there&amp;rsquo;s some potential for this point to be wrong in some circumstances. For example, if the small scale roughness is extremely important to the problem, or the purpose of the model is to study a sharp corner in a fault. But, in most situations, using smooth surfaces will be both acceptable and easier. If a corner truly is important, I can do some refinement so that the resulting singularity is sufficiently well resolved.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Thanks to Andreas Klöckner, Brendan Meade and Andrew Bradley for discussions that led to this post. If you want to chat about these kind of topics, please &lt;a href=&#34;mailto:t.ben.thompson@gmail.com&#34;&gt;get in touch&lt;/a&gt;!&lt;/em&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -177,7 +255,8 @@ Should we use planar triangles to model a curved fault? What happens at the junc
       <pubDate>Tue, 02 Apr 2019 00:00:00 -0400</pubDate>
       
       <guid>http://tbenthompson.com/post/cascadia/</guid>
-      <description> </description>
+      <description>&lt;iframe width=&#34;600&#34; height=&#34;338&#34; src=&#34;https://www.youtube.com/embed/ieN-9MUhND8?start=112&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
     </item>
     
     <item>
@@ -186,7 +265,8 @@ Should we use planar triangles to model a curved fault? What happens at the junc
       <pubDate>Thu, 26 Jul 2018 00:00:00 -0400</pubDate>
       
       <guid>http://tbenthompson.com/post/cutde/</guid>
-      <description></description>
+      <description>&lt;meta http-equiv=&#34;refresh&#34; content=&#34;0; url=https://github.com/tbenthompson/cutde&#34; /&gt;
+</description>
     </item>
     
     <item>
@@ -195,7 +275,8 @@ Should we use planar triangles to model a curved fault? What happens at the junc
       <pubDate>Mon, 02 Apr 2018 00:00:00 -0400</pubDate>
       
       <guid>http://tbenthompson.com/post/cluda/</guid>
-      <description></description>
+      <description>&lt;meta http-equiv=&#34;refresh&#34; content=&#34;0; url=https://github.com/tbenthompson/cluda&#34; /&gt;
+</description>
     </item>
     
     <item>
@@ -204,7 +285,68 @@ Should we use planar triangles to model a curved fault? What happens at the junc
       <pubDate>Mon, 19 Mar 2018 00:00:00 -0400</pubDate>
       
       <guid>http://tbenthompson.com/post/regularized_rate_state/</guid>
-      <description>The standard form for rate and state friction produces undefined results for $V = 0$. Some algebra and calculus and microphysics lead to the commonly used regularized form that is still valid at $V=0$. This is based on the presentation in Rice and Ben-Zion 1996 and Lapusta et. al 2000. There&amp;rsquo;s nothing novel here, but the details of this sort of thing are often glossed over in the literature. So, while working it out for myself, I figured I&amp;rsquo;d write it up!</description>
+      <description>&lt;p&gt;The standard form for rate and state friction produces undefined results for $V = 0$. Some algebra and calculus and microphysics lead to the commonly used regularized form that is still valid at $V=0$. This is based on the presentation in Rice and Ben-Zion 1996 and Lapusta et. al 2000. There&amp;rsquo;s nothing novel here, but the details of this sort of thing are often glossed over in the literature. So, while working it out for myself, I figured I&amp;rsquo;d write it up!&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s start with the common, empirically-derived rate and state friction with the aging law for state evolution.&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+\tau = \sigma_n (f_0 + a \log(V/V_0) + b \log(V_0\theta/D_c))
+\label{rsorig}
+\end{equation}&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+\dot{\theta} = 1 - V\theta / D_c
+\label{agingorig}
+\end{equation}&lt;/p&gt;
+&lt;p&gt;First, I&amp;rsquo;ll transform to use a somewhat different state variable. $\theta$ is hard to intuitively understand, while $\Psi$ is much more intuitive &amp;ndash; it&amp;rsquo;s just the current absolute offset of the friction coefficient.&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+\Psi = f_0 + b \log(V_0\theta/D_c)
+\label{transform}
+\end{equation}&lt;/p&gt;
+&lt;p&gt;or, for the inverse transformation:&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+\theta = \frac{D_c}{V_0}\exp(\frac{\Psi - f_0}{b})
+\label{invtransform}
+\end{equation}&lt;/p&gt;
+&lt;p&gt;With this transformation, $\ref{rsorig}$ becomes:&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+\tau = \sigma_n (\Psi + a \log(V/V_0))
+\label{rstransform}
+\end{equation}&lt;/p&gt;
+&lt;p&gt;For me, this is nicer in that I can understand the new &amp;ldquo;state&amp;rdquo; parameter, $\Psi$, as the current strength of friction when $V = V_0$.&lt;/p&gt;
+&lt;p&gt;Now, I&amp;rsquo;ll get the aging law in terms of $\Psi$.  Differentiating \ref{transform}:&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+\dot{\Psi} = b \dot{\theta}/\theta
+\end{equation}&lt;/p&gt;
+&lt;p&gt;and plugging in for $\dot{\theta}$ from \ref{agingorig}:&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+\dot{\Psi} = b/\theta - bV / D_c
+\end{equation}&lt;/p&gt;
+&lt;p&gt;Finally, plug in for $\theta$ from \ref{invtransform}, I get the aging law in terms of $\Psi$.&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+\dot{\Psi} = \frac{bV_0}{D_c}(\exp(\frac{f_0 - \Psi}{b}) - \frac{V}{V_0})
+\label{aging01}
+\end{equation}&lt;/p&gt;
+&lt;p&gt;With that done, the second step is to actually do the regularization at $V=0$. Solving $\ref{rstransform}$ for $V$:&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+V = V_0 \exp(\frac{\tau}{a\sigma_n})\exp(-\frac{\Psi}{a})
+\end{equation}&lt;/p&gt;
+&lt;p&gt;The trouble here is that the $\exp(\frac{\tau}{a\sigma_n})$ term can never be 0 and as a result $V=0$ is impossible. Quoting Lapusta et. al 2000:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A drawback of the logarithmic form (28a) is that the stress is not defined for V = 0. The logarithmic form was derived from purely empirical considerations to match experimental observations (Dieterich, 1979, 1981; Ruina, 1983). However, it has a theoretical basis, in that such a form would result if the direct velocity effect is due to stress biasing of the activation energy in an Arrhenius rate process at contact junctions, at least in the range for which forward microscopic jumps, in the direction of shear stress, are overwhelmingly more frequent than backward jumps.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So, the $\exp(\frac{\tau}{a\sigma_n})$ term represents the frequency of forward microscopic jumps. What about backward microscopic jumps? They happen too, especially near $V=0$. That suggests adding another term like $-\exp(\frac{-\tau}{a\sigma_n})$ to represent backward microscopic jumps:&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+V = V_0 (\exp(\frac{\tau}{a\sigma_n}) - \exp(\frac{-\tau}{a\sigma_n}))\exp(-\frac{\Psi}{a}) = 2 V_0 \sinh(\frac{\tau}{a\sigma_n})\exp(-\frac{\Psi}{a})
+\end{equation}&lt;/p&gt;
+&lt;p&gt;Solving for $\tau$ and I get the regularized rate-state friction system:&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+\tau = \sigma_n a \sinh^{-1}(\frac{V}{2V_0}\exp(\Psi/a))
+\label{rsreg}
+\end{equation}&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+\dot{\Psi} = \frac{bV_0}{D_c}(\exp(\frac{f_0 - \Psi}{b}) - \frac{V}{V_0})
+\label{aging01-2}
+\end{equation}&lt;/p&gt;
+&lt;p&gt;In my numerical quasidynamic models, I am using equations \ref{rsreg} and \ref{aging01-2}, rather than the more traditional \ref{rsorig} and \ref{agingorig}. Most other rate and state friction implementations (both fully dynamic and quasidynamic) that I have read about also use the regularized forms.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -213,10 +355,154 @@ Should we use planar triangles to model a curved fault? What happens at the junc
       <pubDate>Sat, 10 Mar 2018 00:00:00 -0500</pubDate>
       
       <guid>http://tbenthompson.com/post/block_slider/</guid>
-      <description>source available here
-Figures first, explanations later!
-Recently, I&amp;rsquo;ve been working on some 3D quasidynamic earthquake modeling problems. We&amp;rsquo;re planning to add in some realistic geometries using tectosaur to see what influence that has on the earthquake cycle. While putting together that 3D model, I realized that it consists of two main pieces:
- The numerical methods for determining traction on the fault surface given the current values of slip everywhere on the fault (elasticity!</description>
+      <description>&lt;p&gt;&lt;em&gt;source available &lt;a href=&#34;block_slider.ipynb&#34;&gt;here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Figures first, explanations later!&lt;/p&gt;
+&lt;img src=&#34;qd_1d.png&#34; alt=&#34;Evolution of a quasidynamic spring-block-slider system.&#34;/&gt;
+&lt;p&gt;Recently, I&amp;rsquo;ve been working on some 3D quasidynamic earthquake modeling problems. We&amp;rsquo;re planning to add in some realistic geometries using tectosaur to see what influence that has on the earthquake cycle. While putting together that 3D model, I realized that it consists of two main pieces:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The numerical methods for determining traction on the fault surface given the current values of slip everywhere on the fault (elasticity!)&lt;/li&gt;
+&lt;li&gt;The frictional evolution for determining the current velocity on the fault surface from the traction.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Or, in pseudocode, it&amp;rsquo;s a simple feedback where I loop:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;while not done:
+    slip += velocity * dt
+    traction = elastic_solver(slip)
+    velocity = rate_state_solver(traction)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I&amp;rsquo;ve been working on the &lt;code&gt;elastic_solver&lt;/code&gt; part for several years (and applying it to a bunch of cool quasistatic problems!) and am quite confident that it&amp;rsquo;s producing the right results. So, when I was running into strange behavior and crazy results, I figured the problems must be in the &lt;code&gt;rate_state_solver&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;And the &lt;code&gt;rate_state_solver&lt;/code&gt; is actually almost identical in both the 3D problem and a 1D spring block slider problem. So, I set out to repeat the same little exercise that has probably been done a thousand times before.&lt;/p&gt;
+&lt;p&gt;If you want a much better designed rate-state friction solver, check out &lt;a href=&#34;https://github.com/jrleeman/rsfmodel&#34;&gt;John Leeman&amp;rsquo;s rsfmodel package&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;numpy&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;np&lt;/span&gt;
+&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;scipy.optimize&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;fsolve&lt;/span&gt;
+&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;scipy.integrate&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ode&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;odeint&lt;/span&gt;
+&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;plt&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;First, some reasonably typical material property parameters.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;sm&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;3e10&lt;/span&gt;                  &lt;span class=&#34;c1&#34;&gt;# Shear modulus (Pa)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;density&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2700&lt;/span&gt;             &lt;span class=&#34;c1&#34;&gt;# rock density (kg/m^3)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;cs&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sqrt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sm&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;density&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# Shear wave speed (m/s)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;eta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sm&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;cs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;        &lt;span class=&#34;c1&#34;&gt;# The radiation damping coefficient (kg / (m^2 * s))&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;L&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;60&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1000&lt;/span&gt;              &lt;span class=&#34;c1&#34;&gt;# Width of our plate boundary (m)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;k&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sm&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;L&lt;/span&gt;                 &lt;span class=&#34;c1&#34;&gt;# spring constant (Pa / m)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;Vp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1e-9&lt;/span&gt;                  &lt;span class=&#34;c1&#34;&gt;# Rate of plate motion&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Next, the regularized rate and state friction law with the aging law, and some simple parameter choices that lead to cyclic earthquake behavior. I&amp;rsquo;m mixing together a few different sources here, but the main ones are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Erickson and Dunham, &lt;em&gt;An efficient numerical method for earthquake cycles in heterogeneous media: Alternating sub-basin and surface-rupturing events on faults crossing a sedimentary basin, 2014.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Segall, &lt;em&gt;Earthquake and Volcano Deformation.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;sigma_n&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;50e6&lt;/span&gt;   &lt;span class=&#34;c1&#34;&gt;# Normal stress (Pa)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.015&lt;/span&gt;        &lt;span class=&#34;c1&#34;&gt;# direct velocity strengthening effect&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.02&lt;/span&gt;         &lt;span class=&#34;c1&#34;&gt;# state-based velocity weakening effect&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;Dc&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.2&lt;/span&gt;         &lt;span class=&#34;c1&#34;&gt;# state evolution length scale (m)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;f0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.6&lt;/span&gt;         &lt;span class=&#34;c1&#34;&gt;# baseline coefficient of friction&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;V0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1e-6&lt;/span&gt;        &lt;span class=&#34;c1&#34;&gt;# when V = V0, f = f0, V is (m/s)&lt;/span&gt;
+
+&lt;span class=&#34;c1&#34;&gt;# Rate-state friction law w/ Rice et al 2001 regularization so that &lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;# it is nonsingular at V = 0&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;F&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;V&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sigma_n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;state&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+    &lt;span class=&#34;n&#34;&gt;f&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arcsinh&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;V&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;V0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;exp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;state&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+    &lt;span class=&#34;c1&#34;&gt;# the frictional stress is equal to the friction coefficient * the normal stress.&lt;/span&gt;
+    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;f&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sigma_n&lt;/span&gt;
+
+&lt;span class=&#34;c1&#34;&gt;# State evolution law -- aging law.&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;G&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;V&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;state&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;V0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Dc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;exp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;f0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;state&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;V&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;V0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I&amp;rsquo;ll check $k_{crit}$.&lt;/p&gt;
+&lt;p&gt;If $k &amp;gt; k_{crit}$, the system is unconditionally unstable and $V \to \infty$.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;kcrit&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sigma_n&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Dc&lt;/span&gt; 
+&lt;span class=&#34;k&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;k/kcrit =&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;k&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;kcrit&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;k/kcrit = 0.1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Great!&lt;/p&gt;
+&lt;p&gt;Next, I&amp;rsquo;ll set up the initial conditions for the model:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;x_0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.0&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# slider position&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;V_slider_0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Vp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1000.0&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# Initially, the slider is moving at 1/1000th the plate rate.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Setting the initial condition for the state variable is non-trivial because I don&amp;rsquo;t want crazy swings at the beginning of the model. So, I solve for the steady-state state variable given the initial velocity. Since $\frac{\partial state}{\partial t}$ &lt;code&gt;= G(V, state)&lt;/code&gt;, that just involves solving for the value of &lt;code&gt;state&lt;/code&gt; at which &lt;code&gt;G(V, state) = 0&lt;/code&gt;. I use the &lt;code&gt;fsolve&lt;/code&gt; scipy function. (Did you notice that equation that was partially Latex and partially code? It felt weird typing that.)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;steady_state&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;V_slider&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+    &lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;state&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;G&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;V_slider&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;state&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;fsolve&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;state_0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;steady_state&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;V_slider_0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Okay, so now I&amp;rsquo;m getting to the part where I actually solve the differential equations! But, first, there&amp;rsquo;s an interesting thing about this model. It&amp;rsquo;s actually a differential algebraic equation (DAE) instead of a pure ODE. That&amp;rsquo;s because the current velocity is not defined in differential terms, but instead it is implicity defined as a function of the current shear stress and state parameter. Most of the time, for the 1D spring block slider model that I&amp;rsquo;m looking at here, folks have transformed it into a pure ODE. However, that transformation to an ODE doesn&amp;rsquo;t work very well in the 3D setting. So, for 3D, I&amp;rsquo;m stuck with a DAE. It&amp;rsquo;s not as easy, but it&amp;rsquo;s also not &lt;strong&gt;that&lt;/strong&gt; bad. For the sake of easily translating the 1D model here to use a 3D elastic solver, I&amp;rsquo;m going to actually keep using the DAE formulation.&lt;/p&gt;
+&lt;p&gt;So, at each time step, I need to solve an algebraic equation for the current velocity.&lt;/p&gt;
+&lt;p&gt;$ \tau_{qs} - F(V, \sigma_n, state) = \eta V$&lt;/p&gt;
+&lt;p&gt;Aside: This is actually a transformed version of the typical momentum equation $F = ma$, where $ma$ is replaced by the &amp;ldquo;quasidynamic&amp;rdquo; approximation, $\eta V$ and $F$ is replaced by the driving shear force $\tau_{qs}$ and the resisting friction force $F(V, \sigma_n, state)$&lt;/p&gt;
+&lt;p&gt;As an implementation detail, I warm-start the &lt;code&gt;fsolve&lt;/code&gt; call with &lt;code&gt;V_slider_old&lt;/code&gt;, which is the velocity from the previous time step - a decent guess for the new velocity.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;current_vel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tau_qs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;state&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;V_slider_old&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+    &lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;V&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;tau_qs&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;eta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;V&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;F&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;V&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sigma_n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;state&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;fsolve&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;V_slider_old&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;When using &lt;code&gt;odeint&lt;/code&gt;, I need to define the points in time where I want to observe the state of the system. So, every year, for 15,000 years. (This is not the size of the time step, which is internally decided by &lt;code&gt;odeint&lt;/code&gt;).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;secs_per_year&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;365&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;24&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;60&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;60&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;h_t_yrs&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;linspace&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;0.0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;15000.0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;15001&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;h_t&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;h_t_yrs&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;secs_per_year&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Next, I define the derivatives.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x_and_state&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+    &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;state&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x_and_state&lt;/span&gt;
+    &lt;span class=&#34;c1&#34;&gt;# The position of the load point.&lt;/span&gt;
+    &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Vp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;t&lt;/span&gt; 
+    
+    &lt;span class=&#34;c1&#34;&gt;# The extensional force of our spring &lt;/span&gt;
+    &lt;span class=&#34;n&#34;&gt;tau_qs&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;k&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;y&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; 
+    
+    &lt;span class=&#34;c1&#34;&gt;# Solve for the current velocity&lt;/span&gt;
+    &lt;span class=&#34;n&#34;&gt;V_slider&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;current_vel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tau_qs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;state&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;V_slider_old&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; 
+    
+    &lt;span class=&#34;c1&#34;&gt;# Store the velocity to use it next time for warm-start the velocity solver&lt;/span&gt;
+    &lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;V_slider_old&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;V_slider&lt;/span&gt; 
+    
+    &lt;span class=&#34;n&#34;&gt;dxdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;V_slider&lt;/span&gt;
+    &lt;span class=&#34;n&#34;&gt;dstatedt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;G&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;V_slider&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;state&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;dxdt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dstatedt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;V_slider_old&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;V_slider_0&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Define the initial conditions:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;initial_conditions&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;([&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x_0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;state_0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And actually solve the equations!&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;history&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;odeint&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;initial_conditions&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;h_t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;rtol&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1e-12&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;atol&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1e-12&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;mxstep&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;5000&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;h_x&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;history&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[:,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;h_state&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;history&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[:,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;h_V&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;h_x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;h_x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[:&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;h_t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;h_t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[:&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;h_y&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;h_t&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Vp&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;h_tau_qs&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;k&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;h_y&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;h_x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;h_tau_qd&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;h_tau_qs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;eta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;h_V&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Finally, I&amp;rsquo;ll plot up the results.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#plt.style.use(&amp;#39;dark_background&amp;#39;)&lt;/span&gt;
+&lt;span class=&#34;o&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;matplotlib&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;inline&lt;/span&gt;
+&lt;span class=&#34;o&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;config&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;InlineBackend&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;figure_format&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;retina&amp;#39;&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rcParams&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;text.usetex&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;bp&#34;&gt;True&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rcParams&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;font.size&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;20&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rcParams&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;axes.labelsize&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;18&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rcParams&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;axes.titlesize&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;20&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rcParams&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;xtick.labelsize&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;16&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rcParams&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;ytick.labelsize&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;16&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rcParams&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;legend.fontsize&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;20&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rcParams&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;figure.titlesize&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;22&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rcParams&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;text.latex.preamble&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\\&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;usepackage{amsmath}&amp;#39;&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rcParams&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;savefig.transparent&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;bp&#34;&gt;False&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;figure&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;figsize&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;ax11&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;subplot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;221&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;plot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;h_t_yrs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;h_x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;label&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;x&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;plot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;h_t_yrs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;h_y&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;label&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;y&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;xlabel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;t (yrs)&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ylabel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;position (m)&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;legend&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;ax12&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;subplot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;222&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;plot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;h_t_yrs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:],&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;log10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;h_V&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;xlabel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;t (yrs)&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ylabel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;$&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\\&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;log_{10}(V)$&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;subplot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;223&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sharex&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ax11&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;plot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;h_t_yrs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;h_tau_qs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;label&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;$&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\\&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;tau_{qs}$&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;plot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;h_t_yrs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:],&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;h_tau_qd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;label&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;$&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\\&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;tau_{qd}$&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;xlabel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;t (yrs)&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ylabel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;shear stress (Pa)&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;legend&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;subplot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;224&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;plot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;h_t_yrs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;h_state&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;xlabel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;t (yrs)&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ylabel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;state&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;savefig&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;qd_1d.pdf&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;bbox_inches&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;tight&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;savefig&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;qd_1d.png&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;bbox_inches&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;tight&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dpi&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;show&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;block_slider_files/block_slider_26_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -225,8 +511,56 @@ Recently, I&amp;rsquo;ve been working on some 3D quasidynamic earthquake modelin
       <pubDate>Sat, 24 Feb 2018 00:00:00 -0500</pubDate>
       
       <guid>http://tbenthompson.com/post/cloudpickle_monkey_patching/</guid>
-      <description>I&amp;rsquo;ve been using cloudpickle in the internals of taskloaf for a while since it allows serializing almost all functions and objects. That&amp;rsquo;s really nice since it means I can pass arbitrary functions (tasks, jobs) from one worker to another across the network.
-Yesterday, I was curious about the internals of cloudpickle and whether a monkey-patched object would remain patched after being loaded remotely. I read a bit of the source, but figured just trying it was a good idea.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve been using &lt;code&gt;cloudpickle&lt;/code&gt; in the internals of &lt;a href=&#34;https://github.com/tbenthompson/taskloaf&#34;&gt;taskloaf&lt;/a&gt; for a while since it allows serializing almost all functions and objects. That&amp;rsquo;s really nice since it means I can pass arbitrary functions (tasks, jobs) from one worker to another across the network.&lt;/p&gt;
+&lt;p&gt;Yesterday, I was curious about the internals of &lt;code&gt;cloudpickle&lt;/code&gt; and whether a monkey-patched object would remain patched after being loaded remotely. I read a bit of the source, but figured just trying it was a good idea.&lt;/p&gt;
+&lt;p&gt;I create a silly, meaningless class and then an instance of that class.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Create a silly class and an object&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;Turkey&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;hi&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;bp&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;hello&amp;#34;&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Turkey&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;hi&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;())&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;hello
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then, I monkey patch the &lt;code&gt;hi&lt;/code&gt; method to return 1 instead of 2. &lt;code&gt;types.MethodType&lt;/code&gt; turns a free-standing function into a method that automatically receives the &lt;code&gt;self&lt;/code&gt; parameter.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;types&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;hi2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;bp&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;SQUAWK&amp;#34;&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;hi&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;types&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;MethodType&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;hi2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;hi&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;())&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;SQUAWK
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;First, I&amp;rsquo;ll try &lt;code&gt;pickle&lt;/code&gt;. I dump the turkey to a binary blob and reload it.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pickle&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;blob&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pickle&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;dumps&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;t2&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pickle&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;loads&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;blob&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;---------------------------------------------------------------------------
+
+AttributeError                            Traceback (most recent call last)
+
+&amp;lt;ipython-input-3-21cb01513bb4&amp;gt; in &amp;lt;module&amp;gt;()
+      1 import pickle
+      2 blob = pickle.dumps(t)
+----&amp;gt; 3 t2 = pickle.loads(blob)
+      4 print(t2)
+
+
+AttributeError: &#39;Turkey&#39; object has no attribute &#39;hi2&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;pickle&lt;/code&gt; serialize a reference to the the type of the object and then expects that type to provide all the member functions needed. So, it&amp;rsquo;s not able to handle this monkey patching situation.&lt;/p&gt;
+&lt;p&gt;Next, I&amp;rsquo;ll try &lt;code&gt;cloudpickle&lt;/code&gt;!&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;cloudpickle&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;t2&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;cloudpickle&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;loads&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cloudpickle&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;dumps&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;is&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;t2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;False
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Does the &lt;code&gt;hi&lt;/code&gt; method remain changed? YES! Thank you, cloudpickle.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;k&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;hi&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;())&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;SQUAWK
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ultimately, this makes a lot of sense. &lt;code&gt;cloudpickle&lt;/code&gt; just investigates the members of an object (its &lt;code&gt;__dict__&lt;/code&gt;) and serializes those. It doesn&amp;rsquo;t need to serialize anything about the generic &lt;code&gt;Turkey&lt;/code&gt; class. The key difference with &lt;code&gt;pickle&lt;/code&gt; is that &lt;code&gt;cloudpickle&lt;/code&gt; has the capability to serialize functions and so it can directly serialize members of the object without reference to its type.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -235,8 +569,59 @@ Yesterday, I was curious about the internals of cloudpickle and whether a monkey
       <pubDate>Thu, 22 Feb 2018 00:00:00 -0500</pubDate>
       
       <guid>http://tbenthompson.com/post/how_i_test/</guid>
-      <description>To follow up on the last post about testing for science and data analytics, I thought it&amp;rsquo;d be nice to talk about the specific tools I use for testing. I don&amp;rsquo;t claim this is the best way to do things, but it tends to work pretty well for small projects and teams.
-py.test The py.test tool is handy for running a suite of tests in python. It&amp;rsquo;s a very general tool for running all the tests in a project.</description>
+      <description>&lt;p&gt;To follow up on the last post about testing for science and data analytics, I thought it&amp;rsquo;d be nice to talk about the specific tools I use for testing. I don&amp;rsquo;t claim this is the best way to do things, but it tends to work pretty well for small projects and teams.&lt;/p&gt;
+&lt;h2 id=&#34;pytest&#34;&gt;py.test&lt;/h2&gt;
+&lt;p&gt;The py.test tool is handy for running a suite of tests in python. It&amp;rsquo;s a very general tool for running all the tests in a project. It can do a lot of powerful things, but requires almost no boilerplate to get started with. The pattern I&amp;rsquo;ve always followed is: Add a &lt;code&gt;tests&lt;/code&gt; directory the root of the project. Name any test files in that directory &lt;code&gt;test_xyz.py&lt;/code&gt; and then any tests within that file &lt;code&gt;def test_abc():&lt;/code&gt;. py.test will find all of these automatically and run them. On several projects that I work on, I have tens or hundreds of tests that, in total, take less than a second to run. As a result, I simply run &lt;code&gt;py.test&lt;/code&gt; every time I make a change.&lt;/p&gt;
+&lt;p&gt;For more happiness, I add a &lt;code&gt;pytest.ini&lt;/code&gt; file to the root of my project:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;[pytest]
+addopts = -s --tb=short
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;-s&lt;/code&gt; causes any text printed by my tests or code to appear on the screen. By default, py.test suppresses printing/logging to standard out. Personally, I don&amp;rsquo;t like that while debugging.
+The &lt;code&gt;--tb=short&lt;/code&gt; leads to shorter, more concise tracebacks in the case of test failures.&lt;/p&gt;
+&lt;p&gt;There are a ton of other features available with py.test, like fixtures, fancy assertions and lots of plugins. Here&amp;rsquo;s &lt;a href=&#34;http://pythontesting.net/framework/pytest/pytest-introduction/&#34;&gt;a more comprehensive intro to py.test&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;golden-master-tests&#34;&gt;Golden master tests&lt;/h2&gt;
+&lt;p&gt;Golden master testing doesn&amp;rsquo;t really &lt;strong&gt;require&lt;/strong&gt; any special infrastructure, but it can be nice to have a coordinated way to generate the keys and specify golden master tests. First, I set up a configuration option in &lt;code&gt;tests/conftest.py&lt;/code&gt;. This is a special file that &lt;code&gt;py.test&lt;/code&gt; uses to load plugins and configuration.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;def pytest_addoption(parser):
+    parser.addoption(
+        &amp;#34;--save-golden-masters&amp;#34;, action=&amp;#34;store_true&amp;#34;,
+        help=&amp;#34;reset golden master benchmarks&amp;#34;
+    )
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then, what you do with this depends on the project. In one project, where I&amp;rsquo;m normally compare numpy arrays, I have a decorator that makes setting up a golden master test really simple.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;def golden_master(digits = 6):
+    def decorator(test_fnc):
+        try:
+            save = pytest.config.getoption(&amp;#34;--save-golden-masters&amp;#34;)
+        except AttributeError as e:
+            save = False
+        @wraps(test_fnc)
+        def wrapper(request, *args, **kwargs):
+            result = test_fnc(request, *args, **kwargs)
+            test_name = request.node.name
+            filename = os.path.join(&amp;#39;tests&amp;#39;, &amp;#39;golden_masters&amp;#39;, test_name + &amp;#39;.npy&amp;#39;)
+            if save:
+                np.save(filename, result)
+            correct = np.load(filename)
+            np.testing.assert_almost_equal(result, correct, digits)
+        return wrapper
+    return decorator
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To use this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;@golden_master(4)
+def test_mycomplexfnc(request):
+    return mycomplexfnc()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;When I run &lt;code&gt;py.test --save-golden-masters&lt;/code&gt;, this will automatically save the result of the function to &lt;code&gt;tests/golden_masters/test_mycomplexfnc.npy&lt;/code&gt;. Then, the next time I run &lt;code&gt;py.test&lt;/code&gt;, the output of the &lt;code&gt;mycomplexfnc()&lt;/code&gt; will be compared to 4 digits against the old saved version.&lt;/p&gt;
+&lt;p&gt;Modifying this to work with pandas dataframes or other objects would be relatively simple. It could also be refactored to work with general objects without much effort, but, in my case, all the functions where I don&amp;rsquo;t have anything better than a golden master test are functions that return arrays.&lt;/p&gt;
+&lt;p&gt;Should you put the saved golden master test results in version control? I would say yes, since they are necessary for properly testing the code base.&lt;/p&gt;
+&lt;h2 id=&#34;slow-tests&#34;&gt;Slow tests&lt;/h2&gt;
+&lt;p&gt;Sometimes I have tests that take a little while to run and I don&amp;rsquo;t want them to run every single time I run &lt;code&gt;py.test&lt;/code&gt;. So, I add an opt-in option for running slow tests, following the directions &lt;a href=&#34;https://docs.pytest.org/en/latest/example/simple.html#control-skipping-of-tests-according-to-command-line-option&#34;&gt;on the py.test docs&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;pdb--ipdb&#34;&gt;pdb + ipdb&lt;/h2&gt;
+&lt;p&gt;I thought I&amp;rsquo;d just add a note about debuggers, since I&amp;rsquo;m way more productive with a debugger at hand. When my tests fail and I can&amp;rsquo;t figure out why, the first step is to use a debugger to really understand the code. The (P)ython (D)e(b)ugger. Also, the (IP)ython (D)e(b)ugger. These are super handy for dropping into some code to check values/step through the code/general debugging! It combines some of the playfulness of jupyter notebooks with python modules.&lt;/p&gt;
+&lt;p&gt;Just add these two lines:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;import ipdb
+ipdb.set_trace()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;import pdb
+pdb.set_trace()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And then when those lines are run, execution will stop and I&amp;rsquo;m dropped into a debugging prompt where I can step through the code, examine variable values and other nice things.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -245,7 +630,101 @@ py.test The py.test tool is handy for running a suite of tests in python. It&amp
       <pubDate>Wed, 07 Feb 2018 00:00:00 -0500</pubDate>
       
       <guid>http://tbenthompson.com/post/automated_testing_for_science/</guid>
-      <description>A lot of scientists and data analysts don&amp;rsquo;t use automatic test suites for verifying their code. And I think that&amp;rsquo;s because it&amp;rsquo;s really hard. Almost all the introductions to automated testing that I&amp;rsquo;ve seen come from a more typical software engineering perspective. They assume you already know exactly what the output of your code should be. And the trouble with science is that that&amp;rsquo;s rarely the case. I mean, if you knew the results ahead of time, you wouldn&amp;rsquo;t be doing science!</description>
+      <description>&lt;p&gt;A lot of scientists and data analysts don&amp;rsquo;t use automatic test suites for verifying their code.
+And I think that&amp;rsquo;s because it&amp;rsquo;s really hard.
+Almost all the introductions to automated testing that I&amp;rsquo;ve seen come from a more typical software engineering perspective. They assume you already know exactly what the output of your code should be.
+And the trouble with science is that that&amp;rsquo;s rarely the case.
+I mean, if you knew the results ahead of time, you wouldn&amp;rsquo;t be doing science!&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s hard to square this situation with the consistent loud noises coming from the software development world (in my case, also from inside my head!) saying &amp;ldquo;It might be broken! Write tests! Write tests! Write tests!&amp;quot;. &amp;ldquo;But, I can&amp;rsquo;t!&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been dealing with this battle for a few years now and feel like I&amp;rsquo;ve figured out some coping strategies.
+The simplest solution is to just give up.
+And for some types of science, I think that&amp;rsquo;s the right thing to do.
+Essentially, whether or not to test is a question of how important it is that the results are correct.
+In that sense, I don&amp;rsquo;t think automated testing makes sense for exploratory analysis.
+But, for a reusable algorithm or production/final analysis, tests are invaluable.
+My work flow mostly involves Python and C++. So, in my case, the question of whether something should be tested often goes hand in hand with whether I&amp;rsquo;m working in a Jupyter notebook or with a proper package.&lt;/p&gt;
+&lt;p&gt;So, let&amp;rsquo;s back up and ask: why should we have automated tests?&lt;/p&gt;
+&lt;h2 id=&#34;automated-testing&#34;&gt;Automated testing&lt;/h2&gt;
+&lt;p&gt;Automated testing is valuable for ensuring that software does what is is supposed to do. Automated testing:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;reduces fear when making implementation or design changes (this is huge, in my opinion!) One perspective on when to write tests is to write tests whenever you feel afraid of making a change and to keep writing tests until your not afraid anymore.&lt;/li&gt;
+&lt;li&gt;enables rapid refactoring without fear of breaking the code base&lt;/li&gt;
+&lt;li&gt;gives instant feedback&lt;/li&gt;
+&lt;li&gt;helps improve software accuracy, correctness&lt;/li&gt;
+&lt;li&gt;provides a form of precise documentation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://stackoverflow.com/questions/67299/is-unit-testing-worth-the-effort&#34;&gt;A couple good discussions of why we should unit test.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve also enjoyed the book &amp;ldquo;Working Effectively with Legacy Code&amp;rdquo; by Michael Feathers, because it focuses on adding tests to previously untested and maybe poorly designed &amp;ldquo;legacy&amp;rdquo; code (which he defines as any code without tests!).
+&lt;a href=&#34;https://softwareengineering.stackexchange.com/questions/122014/what-are-the-key-points-of-working-effectively-with-legacy-code&#34;&gt;A summary of the book.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;But, returning to the original problem, automated testing can be very difficult in science and analytics because the true answer is not known. Sometimes low level functions can be assigned a &amp;ldquo;correct&amp;rdquo; result. But, for higher level constructs (e.g. an entire time series forecast or the solution of a complex PDE), it&amp;rsquo;s normally much harder to determine what is right and wrong.  It requires careful input from the statistician/scientist/analyst to determine if something looks right or wrong and whether there&amp;rsquo;s anything fishy going on.&lt;/p&gt;
+&lt;p&gt;So, given that we want to have automated tests, but the inherent nature of the problem makes most testing difficult, what do we do? I still struggle with this issue and am learning all the time, but I&amp;rsquo;ve found three types of approaches particularly useful:&lt;/p&gt;
+&lt;h2 id=&#34;special-cases&#34;&gt;Special cases&lt;/h2&gt;
+&lt;p&gt;This first approach is the most common, the simplest, and often the most valuable.
+Suppose I&amp;rsquo;m writing a &lt;a href=&#34;https://github.com/tbenthompson/tectosaur&#34;&gt;general algorithm for numerically solving elastic partial differential equations for an arbitrary geometry and set of boundary conditions&lt;/a&gt;.
+It might be really hard to say whether the answer I&amp;rsquo;m getting is correct for
+any given problem. But some specific problems have already been solved analytically.
+For example, a spherically symmetric problem is easily solved by hand and any number of textbooks
+have exact solutions. Or, similarly, the motion of the Earth due to an planar earthquake in an infinite flat Earth has &lt;a href=&#34;http://www.bosai.go.jp/study/application/dc3d/DC3Dhtml_E.html&#34;&gt;a well known solution&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In some cases, there are very general approaches for building special cases. For example, anyone writing numerical methods for solving PDEs should absolutely learn about the &lt;a href=&#34;http://www.personal.psu.edu/jhm/ME540/lectures/VandV/MMS_summary.pdf&#34;&gt;method of manufactured solutions&lt;/a&gt;, which lets you come up with as many arbitrary test problems as you need.&lt;/p&gt;
+&lt;p&gt;Unfortunately, even if there are useful special cases, often the resulting tests only validate the program as a whole. What if that program involves thousands of lines of code? I&amp;rsquo;d prefer to be able to test smaller portions of the code base on their own.&lt;/p&gt;
+&lt;h2 id=&#34;property-testing&#34;&gt;Property testing&lt;/h2&gt;
+&lt;p&gt;I think property testing is the most useful approach when the answer isn&amp;rsquo;t known. Instead of check the final answer, we check a &lt;em&gt;property&lt;/em&gt; of some final or intermediate part of the calculation. For example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Newton&amp;rsquo;s method for root finding should take exactly one step to solve any linear system of equations. So, a simple property test might be to generate 100 random linear systems and check that all of them are solved in one step. The difference from a special case is that we have a simple algorithm for generating many special cases.&lt;/li&gt;
+&lt;li&gt;In the case of a finite element or boundary element model, the solution should converge with increasing mesh density.&lt;/li&gt;
+&lt;li&gt;Running an idempotent function 100 times should leave the system in the same state as running it once.&lt;/li&gt;
+&lt;li&gt;With an infinite penalty, ridge and lasso regressions return all zeros. With a penalty of zero, ridge and lasso regressions return the same answer as unregularized least squares.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I&amp;rsquo;ve always written property tests by hand, but there are some libraries that attempt to automate part of the process. They&amp;rsquo;re probably more useful if you are writing code that might receive inputs from the &amp;ldquo;outside&amp;rdquo; and thus must check behavior in funky edge cases (zero length lists, NaNs, Infinity, etc).
+Many property testing libraries are descended from the original QuickCheck Haskell library.
+I&amp;rsquo;ve heard good things about &lt;a href=&#34;https://github.com/HypothesisWorks/hypothesis-python&#34;&gt;Hypothesis&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;golden-master-testing&#34;&gt;Golden master testing&lt;/h2&gt;
+&lt;p&gt;Property testing is great, because it links the test back to some fundamental
+property of the code/math. The trouble is that it still requires knowing &lt;em&gt;something&lt;/em&gt;
+about what the code should do. What if you really have no clue what the output
+should be, or encoding the properties is too difficult to do in a repeat-able
+automated test and requires human input? But you still want to make sure that your refactoring and future development don&amp;rsquo;t break the current implementation.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s where golden master testing shines. Also known as characterization testing. The idea here is very simple. Choose some input (if that includes randomness, set the random seed manually!). Then, run your function and save the output to a file. Later, to test that the behavior of the function has not changed, run it again on the same input and check that the output matches the previous output exactly.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Characterization_test&#34;&gt;Wikipedia&lt;/a&gt; has a good discussion of the advantages and disadvantages of this type of testing. The main two points:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;it enables testing even if you have no idea what the correct result is. Common in science and analytics. Also, common in legacy systems&amp;hellip;&lt;/li&gt;
+&lt;li&gt;it only prevents unwanted side effects of software changes, it doesn&amp;rsquo;t actually check that the answer is correct.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;testing-through-monte-carlo-simulation-a-special-kind-of-property-test-guest-section-by-liz-santorella&#34;&gt;Testing through Monte Carlo simulation: A special kind of property test (guest section by Liz Santorella)&lt;/h2&gt;
+&lt;p&gt;Many statistical algorithms are designed with the following setup in mind:
+Assume that data is drawn from some known distribution $D$ with unknown parameters $\theta$.
+We don&amp;rsquo;t know $\theta$, but the algorithm $A$ returns $\hat{\theta} \approx \theta$,
+with the estimate becoming precise as the data grows large.&lt;/p&gt;
+&lt;!---
+For example,
+say we have a series of observations $y_1, y_2, \dots, y_N$ and we assume they are drawn independently from
+the Normal$(\mu, \sigma)$ distribution. We don&#39;t know $\mu$ or $\sigma$. Applying the algorithm $A$ to the
+data should give the unknown parameters, approximately: $A(y_1, y_2, \dots, y_N) \approx (\mu, \sigma)$.
+--&gt;
+&lt;p&gt;In such a setup, we can make up some parameters, create fake data drawn according
+to a distribution with those parameters, and check that, when data is large, the algorithm
+returns parameter estimates very close to the parameters you put in.&lt;/p&gt;
+&lt;p&gt;The appeal of this method is that it allows you to know what the right answer for your
+entire procedure is (you made up the data, after all). The downside is that your algorithm
+may only work accurately when your data is very large, so the test can take a long time to
+run. It can also be hard to tell what counts as a correct answer: If you put in the parameter
+$\mu=1$ and recover $\hat{\mu}=1.002$, is the discrepancy becuase your Monte Carlo data is too
+small or because your code is wrong?&lt;/p&gt;
+&lt;p&gt;In practice, I often combine Monte Carlo simulation testing with Golden Master testing.
+I run Monte Carlo simulations for several parameter values, including some interesting
+edge cases. Then once I&amp;rsquo;m satisfied that the code works, I run it on a very small example,
+save both the inputs and the outputs, and make those inputs and outputs into a Golden Master test.
+I don&amp;rsquo;t automate the Monte Carlo test itself &amp;ndash; it takes too long to run, and its guarantees
+are only probabilistic.&lt;/p&gt;
+&lt;!---
+## Making sure it runs
+Sometimes, you don&#39;t have time to figure out how to check that your code produces the correct output,
+but you can still check that it runs without raising errors. Although this can easily be done in a unit testing
+framework, I like to make sure my code runs by creating a Jupyter notebook
+that calls almost every line of code that I think is important. I explain why the code behaves
+the way it does in the notebook, which then makes pretty good documentation.
+--&gt;
+</description>
     </item>
     
     <item>
@@ -254,7 +733,89 @@ py.test The py.test tool is handy for running a suite of tests in python. It&amp
       <pubDate>Wed, 17 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/post/sneaky-transparent-huge-pages/</guid>
-      <description></description>
+      <description>&lt;p&gt;A week ago, I spent an afternoon on a run in with a sneaky feature of the Linux kernel that made some sparse matrix vector product operations about twice as slow as I expected.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve recently learned about using file backed shared memory with mmap to do efficient interprocess communication. At the most basic level, you share data between two processes by writing that data to a file. The file can be made to look a lot like a normal region of memory using &lt;code&gt;mmap&lt;/code&gt;, a system call, and can be shared between multiple processes by giving &lt;code&gt;mmap&lt;/code&gt; the &lt;code&gt;MAP_SHARED&lt;/code&gt; flag. There&amp;rsquo;s a downside though, in that the data has to synced to the hard drive continuously. So, instead of sharing a file that is written to disk, I discovered that you can share a file on a RAM disk &amp;ndash; just a filesystem that is backed by RAM. On Linux, a large &lt;code&gt;tmpfs&lt;/code&gt; RAM disk filesystem is often mounted by default at &lt;code&gt;/dev/shm&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s some python that creates a NumPy array with &lt;code&gt;mmap&lt;/code&gt;. First, let&amp;rsquo;s get set up&amp;hellip;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;os&lt;/span&gt;
+&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;mmap&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;5e7&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;nb&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;8&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;filename&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;/dev/shm/abc&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Next, we need to make sure that the file is the correct size using &lt;code&gt;ftruncate&lt;/code&gt;. Finally, we memory map it into a numpy array. &lt;code&gt;np.frombuffer&lt;/code&gt; is a handy function when you already have a memory buffer and just want to &amp;ldquo;view&amp;rdquo; it as a numpy array without copying the memory.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;k&#34;&gt;with&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;open&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;filename&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;w+b&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;n&#34;&gt;os&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ftruncate&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fileno&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(),&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nb&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;n&#34;&gt;mem&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;mmap&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mmap&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fileno&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(),&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nb&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+
+&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;frombuffer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mem&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dtype&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;float64&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And for kicks, we&amp;rsquo;ll stick some random numbers in there&amp;hellip;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[:]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;random&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rand&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;array([ 0.84984349,  0.5928336 ,  0.34455741, ...,  0.45909949,  0.51389915,  0.36287542])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Looks like everything is working! Right? Okay, so now I&amp;rsquo;m going to create another array of the same size with random indexes into the first array.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;idx&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;random&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;randint&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And then, benchmark an indexing operation on &lt;code&gt;x&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;o&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;timeit&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;idx&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;1.39 s ± 92.1 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So, this is where it gets really interesting&amp;hellip; What if we copy &lt;code&gt;x&lt;/code&gt; and then do the benchmark again?&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;x2&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;copy&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;span class=&#34;o&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;timeit&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;idx&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;691 ms ± 117 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When I finally tracked down this performance bug, I was astonished. Why would copying an array make an indexing operation run almost twice as fast?! At first, I did a whole lot of mind-blown I-dont-undestand-this googling including lots of hopelessly nondescript attempts like &amp;ldquo;numpy copy speed up&amp;rdquo; or &amp;ldquo;copy speeds up indexing operation&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Eventually, I tried to think it through. If copying an array makes an operation faster, then by implication, not all memory is made equal. Some memory is faster to access or manipulate than other memory. I was already aware of NUMA (non-uniform memory access), a feature of multi-socket servers that means that cores can access certain chunks of memory several times faster than other &amp;ldquo;further&amp;rdquo; chunks. Maybe &lt;code&gt;mmap&lt;/code&gt; is less likely to allocate memory close to the core that needs it, thus causing NUMA issues? But, this copy-speeds-everything-up behavior happens on my laptop, so it can&amp;rsquo;t be a NUMA issue.&lt;/p&gt;
+&lt;p&gt;I thought the key must be in way I&amp;rsquo;ve created this particular chunk of memory. It&amp;rsquo;s is a bit out of the ordinary to be using mmap. Again, I tried searching all sorts of vague things about &amp;ldquo;mmap memory slower&amp;rdquo; or &amp;ldquo;mmap performance&amp;rdquo;, thinking that maybe something in the way mmap synchronizes to the RAM disk was causing the performance problems. Alas, no one on the internet seemed to be having these problems! At a loss, I just started fiddling around with the mmap flags to see if different options fixed the problem and I discovered a key clue.&lt;/p&gt;
+&lt;p&gt;Using &lt;code&gt;mmap&lt;/code&gt; with the &lt;code&gt;MAP_PRIVATE&lt;/code&gt; flag boosted performance of the indexing operation to the same speed as when I copied &lt;code&gt;x&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Around the same point, I had another thought. The current indexes are random. Random indexing of a 50 million element array is bound to cause some caching problems. Does copying speed up a sequential indexing operation? Say, we just skip every other element. Let&amp;rsquo;s try it!&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;idx_seq&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arange&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;o&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;timeit&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;idx_seq&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;62.8 ms ± 2.07 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;o&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;timeit&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;idx_seq&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;62.1 ms ± 1.47 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;First off, sequential indexing is much faster because it has much better cache utilization (actually, pretty much ideal cache utilization). I mean it&amp;rsquo;s just a copying operation! This is going to be a memory bandwidth bound operation, so let&amp;rsquo;s calculate really quickly what type of memory bandwidth my little laptop is achieving.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;t_sec&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.0621&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;total_bytes&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nbytes&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;idx_linear&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nbytes&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nbytes&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;total_bytes&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;t_sec&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1e9&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;GB/s&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;12.882447665056361 GB/s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Wow! I&amp;rsquo;m pretty sure that&amp;rsquo;s close to the peak memory bandwidth possible from this laptop.&lt;/p&gt;
+&lt;p&gt;Secondly, the linear memory access is just as fast for the &lt;code&gt;mmap&lt;/code&gt;-ed memory as it is for the memory obtained by &lt;code&gt;x.copy()&lt;/code&gt; (presumably deep inside numpy there&amp;rsquo;s a &lt;code&gt;malloc&lt;/code&gt; call). So, while it&amp;rsquo;s straightforward to say that a random memory access pattern is much slower than a sequential access pattern, there&amp;rsquo;s still the problem of what would make random access slower on some blocks of memory than others. Now, I had something more concrete to start googling&amp;hellip; &amp;ldquo;mmap slow random memory access&amp;rdquo;. And, finally, the first result was my &lt;a href=&#34;https://stackoverflow.com/questions/44001260/random-mmaped-memory-access-up-to-16-slower-than-heap-data-access/44152743&#34;&gt;salvation from stack overflow&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The random memory access on the &lt;code&gt;mmap&lt;/code&gt;-ed memory was slower because each access had to not only load the memory all the way from RAM rather than cache, but also had to load the physical location of that virtual memory from RAM rather than cache. This is because &lt;code&gt;mmap&lt;/code&gt;-ed shared memory defaults to using traditional 4kB memory pages while, for most recent Linux installation, &lt;code&gt;malloc&lt;/code&gt; default to using 2MB huge pages. The 4kB pages result in far more TLB (translation lookaside buffer) cache misses. Our 400MB chunk of memory would requires 100,000 page table entries with 4kb pages &amp;ndash; way more than fit in the TLB cache.&lt;/p&gt;
+&lt;p&gt;There was a whole bunch of jargon I didn&amp;rsquo;t define in that last paragraph. Maybe in a future post, I&amp;rsquo;ll go through the details of how virtual memory, the TLB, Huge Pages and Transparent Huge Pages all work. This &lt;a href=&#34;https://dzone.com/articles/memory-access-patterns-are&#34;&gt;page&lt;/a&gt; has some comprehensive descriptions. but just to finish this post out, I&amp;rsquo;ll show some performance counters demonstrating the TLB cache miss problem. The first example is using 4kB pages, while the second is using 2MB huge pages. There are 200x fewer TLB cache misses using huge pages.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;
+➜  examples git:(master) ✗ perf stat -e dTLB-load-misses python mmap_bench.py shmem 1
+shm square 0.4846489429473877
+
+ Performance counter stats for &amp;#39;python mmap_bench.py shmem 1&amp;#39;:
+
+        19,313,497      dTLB-load-misses                                            
+
+       1.159249907 seconds time elapsed
+
+➜  examples git:(master) ✗ perf stat -e dTLB-load-misses python mmap_bench.py shmemhuge 1
+shm square 0.2850306034088135
+
+ Performance counter stats for &amp;#39;python mmap_bench.py shmemhuge 1&amp;#39;:
+
+            91,545      dTLB-load-misses                                            
+
+       0.895894488 seconds time elapsed
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And let&amp;rsquo;s check our original problem by using a separate &lt;code&gt;hugetlbfs&lt;/code&gt; RAM disk using huge pages mounted at &lt;code&gt;/mnt/hugepages&lt;/code&gt; (remember before we used &lt;code&gt;/dev/shm&lt;/code&gt;).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;filename&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;/mnt/hugepages/abc&amp;#39;&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;page_size&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;2.0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;**&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;21&lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;# Using huge pages requires using a number bytes that is an exact multiply of the page size&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;nb_rounded_to_page_size&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;page_size&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ceil&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nb&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;page_size&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;with&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;open&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;filename&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;w+b&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;n&#34;&gt;os&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ftruncate&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fileno&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(),&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nb_rounded_to_page_size&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;n&#34;&gt;mem&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;mmap&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mmap&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fileno&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(),&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nb_rounded_to_page_size&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;frombuffer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mem&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dtype&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;float64&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;o&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;timeit&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;idx&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;657 ms ± 39.6 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Hurray! Success!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -263,9 +824,15 @@ py.test The py.test tool is handy for running a suite of tests in python. It&amp
       <pubDate>Sat, 02 Jul 2016 00:00:00 -0400</pubDate>
       
       <guid>http://tbenthompson.com/post/sparse_nbody/</guid>
-      <description>This is a sparsity plot of a matrix representing an approximate n-body interaction. The black dots are non-zeros in the matrix. Imagine 2000 stars, each exerting some gravitational pull on each of the other stars. This gravitational interaction could be represented by a dense matrix:
-$$ A_{ij} = \frac{G m_i m_j}{|\mathbf{x}_i - \mathbf{x}_j|^2} $$
-This works, but dense matrices can be slow when there are many stars. The cost of evaluating a matrix-vector product will scale like $O(n^2)$.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;http://tbenthompson.com/images/sparse_treecode_matrix.png&#34; alt=&#34;matrix&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This is a sparsity plot of a matrix representing an approximate n-body interaction. The black dots are non-zeros in the matrix. Imagine 2000 stars, each exerting some gravitational pull on each of the other stars. This gravitational interaction could be represented by a dense matrix:&lt;/p&gt;
+&lt;p&gt;$$
+A_{ij} = \frac{G m_i m_j}{|\mathbf{x}_i - \mathbf{x}_j|^2}
+$$&lt;/p&gt;
+&lt;p&gt;This works, but dense matrices can be slow when there are many stars. The cost of evaluating a matrix-vector product will scale like $O(n^2)$. Fortunately, the matrix can be represented in a different way if a little bit of error is okay. The interactions can be separated into those between nearby stars and the remaining interactions between stars that are far from each other. Groups of farfield interactions can be approximated. The result is a matrix that looks like what I&amp;rsquo;m showing above. The matrix has four distinct blocks. The upper left 2000x2000 block of the matrix represents the direct interaction that could not be approximated. The lower left and lower right represent the evaluation of the approximation coefficients. Both are super sparse! The upper right is the evaluation of the influence of the approximation coefficients on the points themselves. This part is less sparse.&lt;/p&gt;
+&lt;p&gt;Depending on exactly where the matrix coefficients are coming and how the approximation is done, this idea is called a tree-code, the fast multipole method, or a hierarchical matrix and results in an asymptotic complexity of either $O(n)$ or $O(n\log{n})$. The matrix in the figure is too small to show the impressive sparsification achievable with these methods. With a larger problem including 500,000 interacting points, I need &amp;lt;0.1% of the original number of matrix entries (250 billion vs 0.2 billion).&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m using this same idea for elastic interactions in the Earth&amp;rsquo;s crust. The interaction kernel is different, but the idea is fundamentally the same. I&amp;rsquo;m using a specific variant of the fast multipole method called the &lt;a href=&#34;http://www.mrl.nyu.edu/~harper/kifmm3d/documentation/publications.html&#34;&gt;kernel independent fast multipole method&lt;/a&gt;. This is a nice approach since the implementation is the same for each of the interaction kernels I deal with.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -274,7 +841,8 @@ This works, but dense matrices can be slow when there are many stars. The cost o
       <pubDate>Wed, 23 Dec 2015 00:00:00 -0500</pubDate>
       
       <guid>http://tbenthompson.com/post/serialize_fnc_cpp/</guid>
-      <description> </description>
+      <description>&lt;script src=&#34;https://gist.github.com/tbenthompson/94fd4095f89da23dec20.js&#34;&gt;&lt;/script&gt;
+</description>
     </item>
     
     <item>
@@ -283,8 +851,15 @@ This works, but dense matrices can be slow when there are many stars. The cost o
       <pubDate>Fri, 11 Dec 2015 00:00:00 -0500</pubDate>
       
       <guid>http://tbenthompson.com/post/setting_up_website/</guid>
-      <description>I have a website now. Since technical stuff is fun, I thought I&amp;rsquo;d share the way I set it up.
-The site is a set of statically served HTML pages. Hugo makes this really easy. Hugo is super fast and is written in Go. You can set up a few template pages and then write posts and pages in Markdown. Some layout is also done using Go templates. Running Hugo takes your templates and pages and concerts them into static HTML.</description>
+      <description>&lt;p&gt;I have a website now. Since technical stuff is fun, I thought I&amp;rsquo;d share the way I set it up.&lt;/p&gt;
+&lt;p&gt;The site is a set of statically served HTML pages. &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; makes this really easy. Hugo is super fast and is written in Go. You can set up a few template pages and then write posts and pages in Markdown. Some layout is also done using Go templates. Running Hugo takes your templates and pages and concerts them into static HTML. The pages can then be dropped into any web accessible folder and accessed remotely. This is nice, but a few additional steps makes everything even easier:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub Pages&lt;/a&gt; serves the pages from a git repository.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;https://themes.gohugo.io/kiss/&#34;&gt;Kiss template&lt;/a&gt; provided a nice starting theme. I modified it a bit aiming for a very simple layout and style.&lt;/li&gt;
+&lt;li&gt;This &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34;&gt;Hugo documentation on using it with GitHub&lt;/a&gt; has some good suggestions including a very helpful &lt;code&gt;deploy.sh&lt;/code&gt; script that makes deploying changes super easy.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can take a look at all this &lt;a href=&#34;https://github.com/tbenthompson/tbenthompson_site&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -293,8 +868,9 @@ The site is a set of statically served HTML pages. Hugo makes this really easy. 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/thanks/</guid>
-      <description>Thanks so much for subscribing! You should get an email confirming your subscription.
-It&amp;rsquo;d be awesome if you want to tell me a bit about yourself, what you&amp;rsquo;d like to read more of, and what you&amp;rsquo;ve been interested in lately? You can reply to the subscription confirmation email!</description>
+      <description>&lt;p&gt;Thanks so much for subscribing! You should get an email confirming your subscription.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;d be awesome if you want to tell me a bit about yourself, what you&amp;rsquo;d like to read more of, and what you&amp;rsquo;ve been interested in lately? You can reply to the subscription confirmation email!&lt;/p&gt;
+</description>
     </item>
     
   </channel>

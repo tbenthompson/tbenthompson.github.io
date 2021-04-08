@@ -6,18 +6,15 @@
     <description>Recent content in Projects on T. Ben Thompson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Jan 2010 00:00:00 -0500</lastBuildDate>
-    
-	<atom:link href="http://tbenthompson.com/project/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 01 Jan 2010 00:00:00 -0500</lastBuildDate><atom:link href="http://tbenthompson.com/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Machine learning engineering at QuantCo.</title>
       <link>http://tbenthompson.com/project/quantco/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/project/quantco/</guid>
-      <description>See my resume for some info on what I do at QuantCo.</description>
+      <description>&lt;p&gt;See &lt;a href=&#34;http://tbenthompson.com/resume.pdf&#34;&gt;my resume&lt;/a&gt; for some info on what I do at &lt;a href=&#34;https://quantco.com/&#34;&gt;QuantCo.&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -26,7 +23,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/project/cppimport/</guid>
-      <description></description>
+      <description>&lt;meta http-equiv=&#34;refresh&#34; content=&#34;0; url=https://github.com/tbenthompson/cppimport&#34; /&gt;
+</description>
     </item>
     
     <item>
@@ -35,8 +33,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/project/tectosaur/</guid>
-      <description>A recent paper outlining our Galerkin BEM approach.
-My tectonic and earthquake cycle research is supported by development of elastic boundary element software. This has required investigations into the best approaches for a wide range of computational and mathematical tasks: singular integration of Green&amp;rsquo;s functions, approximation of farfield Green&amp;rsquo;s function interactions with the fast multipole method, flexible treatment of equality and inequality constraints, and a big dose of computational geometry. These are a just a few of the components of this effort.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://eartharxiv.org/xzhuk/&#34;&gt;A recent paper outlining our Galerkin BEM approach.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;My tectonic and earthquake cycle research is supported by development of elastic boundary element software. This has required investigations into the best approaches for a wide range of computational and mathematical tasks: singular integration of Green&amp;rsquo;s functions, approximation of farfield Green&amp;rsquo;s function interactions with the fast multipole method, flexible treatment of equality and inequality constraints, and a big dose of computational geometry. These are a just a few of the components of this effort. This new software will be able to model arbitrary geometries including surface topography, complex data-derived fault geometries, and material boundaries. Models with millions of elements will be possible in two or three dimensions. Exciting!&lt;/p&gt;
+&lt;img src=&#34;http://tbenthompson.com/images/matrix.png&#34; style=&#34;width: 400px;&#34;/&gt;
+&lt;p&gt;&lt;em&gt;A visualization of the structure in a boundary element matrix with rotational symmetry.&lt;/em&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -45,8 +46,10 @@ My tectonic and earthquake cycle research is supported by development of elastic
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/project/quasidynamic/</guid>
-      <description>Paper
-The Cascadia subduction zone hosts great $\mathrm{M}_\mathrm{W} &amp;gt; 8.5$ earthquakes, but studying these events is hindered by our short observational record. Earthquake cycle simulation provides an alternative window into the behavior of the subduction zone. Here, we present simulations over 3,800 years, 14 ruptures and hundreds of slow slip events on a high-fidelity geometric representation of the Cascadia subduction zone beneath surface topography. The boundaries of these ruptures are defined by ephemeral stress barriers that last for several cycles but are eliminated by a barrier-crossing rupture.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://eartharxiv.org/3vuxw/&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Cascadia subduction zone hosts great $\mathrm{M}_\mathrm{W} &amp;gt; 8.5$ earthquakes, but studying these events is hindered by our short observational record. Earthquake cycle simulation provides an alternative window into the behavior of the subduction zone. Here, we present simulations over 3,800 years, 14 ruptures and hundreds of slow slip events on a high-fidelity geometric representation of the Cascadia subduction zone beneath surface topography. The boundaries of these ruptures are defined by ephemeral stress barriers that last for several cycles but are eliminated by a barrier-crossing rupture. Thus, it is possible that many real world rupture barriers are due to remnant stress shadows from previous slip events and may not persist over several earthquake cycles. In addition, we see &amp;ldquo;fast&amp;rdquo; slow slip events with $\mathrm{M}_\mathrm{W} \approx 8$. These events may occur in nature and reduce the seismically available moment for earthquakes.&lt;/p&gt;
+&lt;iframe width=&#34;600&#34; height=&#34;338&#34; src=&#34;https://www.youtube.com/embed/ieN-9MUhND8?start=112&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
     </item>
     
     <item>
@@ -55,8 +58,16 @@ The Cascadia subduction zone hosts great $\mathrm{M}_\mathrm{W} &amp;gt; 8.5$ ea
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/project/topography/</guid>
-      <description>Paper
-Images of earthquake slip typically rely on flat Earth physical models to link surface observations to fault activity at depth despite the extreme topographic relief (20%) in vicinity of recent great earthquakes (e.g., 2008 $M_w$=7.9 Wenchuan). Here we use a three-dimensional boundary element approach to characterize the effects of realistic topography on coseismic slip inversions and find that near the steepest topography, the flat Earth assumption may induce errors $&amp;gt;100%$ in imaged coseismic slip.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://osf.io/sp3bj/&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Images of earthquake slip typically rely on flat Earth physical models to link surface observations to fault activity at depth despite the extreme topographic relief (20%) in vicinity of recent great earthquakes (e.g., 2008 $M_w$=7.9 Wenchuan).
+Here we use a three-dimensional boundary element approach to characterize the effects of realistic topography on coseismic slip inversions and find that near the steepest topography, the flat Earth assumption may induce errors $&amp;gt;100%$ in imaged coseismic slip.
+Additionally, we show that the flat earth assumption even in regions with small topographic gradients (1-5% , 1992  $M_w$=7.3 Landers) can lead to the inaccurate inference of a shallow slip deficit.
+This illustrates how physical model errors can be amplified by an order of magnitude in estimating images of coseismic fault slip and that more physically realistic models may be required for accurate inference in an era of rapidly growing geodetic databases.&lt;/p&gt;
+&lt;img src=&#34;http://tbenthompson.com/images/wenchuan_model_3d.png&#34; style=&#34;width: 600px;&#34;/&gt;
+&lt;p&gt;&lt;em&gt;A view of the Wenchuan model looking south from high above the Earth&amp;rsquo;s surface at the fault model through transparent mountainous topography.&lt;/em&gt;&lt;/p&gt;
+&lt;img src=&#34;http://tbenthompson.com/images/landers_panels.png&#34; style=&#34;width: 600px;&#34;/&gt;
+&lt;p&gt;&lt;em&gt;The distribution of slip on the primary segments of the Landers rupture surface as inferred by our model including topographic effects.&lt;/em&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -65,7 +76,8 @@ Images of earthquake slip typically rely on flat Earth physical models to link s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/project/taskloaf/</guid>
-      <description>Task-based parallelism enables running complex parallel computations by describing them as a graph of tasks. Shared memory task-based parallelism has become an important tool as demonstrated by tools like Intel TBB, Cilk, and OpenMP v3. But, distributed memory task-based parallelism systems is still heavily researched to determine the most usable, efficient and scalable approach. Instead of waiting for the future holy grail of distributed task parallelism, I designed Taskloaf while visiting Oak Ridge National Lab in Fall 2015.</description>
+      <description>&lt;p&gt;Task-based parallelism enables running complex parallel computations by describing them as a graph of tasks. Shared memory task-based parallelism has become an important tool as demonstrated by tools like Intel TBB, Cilk, and OpenMP v3. But, distributed memory task-based parallelism systems is still heavily researched to determine the most usable, efficient and scalable approach. Instead of waiting for the future holy grail of distributed task parallelism, I designed Taskloaf while visiting Oak Ridge National Lab in Fall 2015. Taskloaf is a minimal but reasonably efficient and scalable task parallelism library. A primary goal with the library was to keep it small and easy to maintain. The codebase has less than 2k lines of code so that a skilled C++ programmer can learn the inner workings of the entire library in a day. The interface is based around &lt;a href=&#34;https://en.wikipedia.org/wiki/Futures_and_promises&#34;&gt;futures&lt;/a&gt;, a time-tested parallelism primitive. I use Taskloaf to parallelize my boundary element software.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -74,7 +86,9 @@ Images of earthquake slip typically rely on flat Earth physical models to link s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/project/visconn/</guid>
-      <description>The viscous behavior of the deep Earth results in slow surface motion continuing for many years after an earthquake. However, computing the physics of this behavior can be extremely expensive involving multi-dimensional inverse Laplace transforms and slowly-convergent series. We developed a basic feedforward neural network that is able to replicate the results of the analytic computation while running ~500x faster. Since the analytic function being approximated is already known, this is a sort of strange application of neural networks in that they are very explicitly being used in their role as universal function approximators for a high-dimensional function.</description>
+      <description>&lt;img src=&#34;http://tbenthompson.com/images/nn_grl.jpeg&#34;/&gt;
+&lt;p&gt;The viscous behavior of the deep Earth results in slow surface motion continuing for many years after an earthquake. However, computing the physics of this behavior can be extremely expensive involving multi-dimensional inverse Laplace transforms and slowly-convergent series. We developed a basic feedforward neural network that is able to replicate the results of the analytic computation while running ~500x faster. Since the analytic function being approximated is already known, this is a sort of strange application of neural networks in that they are very explicitly being used in their role as universal function approximators for a high-dimensional function. It works really well!&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -83,7 +97,11 @@ Images of earthquake slip typically rely on flat Earth physical models to link s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/project/himalaya_stress/</guid>
-      <description>Quantitative estimates of crustal stress magnitude and orientation are hard to come by. On the other hand, geodesy is providing an increasingly accurate picture of global tectonic motions. Field and laboratory analyses contribute fault slip rates and exhumation rates. Seismology yields estimates of stress from moment tensor analyses. I am working to combine these data sources with geometrically accurate elastic boundary element models to estimate the crustal stress field and the driving forces behind those stresses &amp;ndash; for example, mantle tractions on the base of the crust.</description>
+      <description>&lt;p&gt;Quantitative estimates of crustal stress magnitude and orientation are hard to come by. On the other hand, geodesy is providing an increasingly accurate picture of global tectonic motions. Field and laboratory analyses contribute fault slip rates and exhumation rates. Seismology yields estimates of stress from moment tensor analyses. I am working to combine these data sources with geometrically accurate elastic boundary element models to estimate the crustal stress field and the driving forces behind those stresses &amp;ndash; for example, mantle tractions on the base of the crust.&lt;/p&gt;
+&lt;p&gt;Currently, I am applying these methods to the Himalayan wedge in the vicinity of the 2015 Nepal earthquake. In the past, Coulomb wedge and elastic wedge models provided a qualitative picture of these stresses and the growth of mountain belts over long time scales. My work will make these models quantitative by constraining geometrically realistic wedge models with geodetic and geologic observations. An improved image of the stress in the crust will help answer several questions about active tectonics in the Himalayas. Are stress drops low or high compared to total stress? Is it reasonable that some stress in the Himalayas might be released as plastic strain rather than fault slip? What fault slip rates and directions are consistent with different hypotheses concerning the tectonic driving forces?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://tbenthompson.com/images/hrf_principal_stresses.png&#34; alt=&#34;HRF principal stresses&#34;&gt;
+&lt;em&gt;Principal stress orientations in a cross section of the Himalayan wedge including a frictional detachment and one internal MCT-like fault.&lt;/em&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -92,8 +110,11 @@ Images of earthquake slip typically rely on flat Earth physical models to link s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/project/longmenshan/</guid>
-      <description>GRL article.
-The Longmen Shan is the steepest topographic front at the India‐Asia collision zone and the site of the Mw 7.9 Wenchuan earthquake. To explain the interseismic GPS velocities across the greater Longmen Shan region, we developed a boundary element model including earthquake cycle effects, topography, the westward dipping Beichuan Fault and a ∼20 km deep, shallowly dipping, detachment, inferred from observed afterslip and from structural considerations. Prior analyses which had neglected the detachment and earthquake cycle effects found shortening rates near zero.</description>
+      <description>&lt;p&gt;&lt;em&gt;&lt;a href=&#34;http://onlinelibrary.wiley.com/doi/10.1002/2014GL062833/abstract&#34;&gt;GRL article&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The Longmen Shan is the steepest topographic front at the India‐Asia collision zone and the site of the Mw 7.9 Wenchuan earthquake. To explain the interseismic GPS velocities across the greater Longmen Shan region, we developed a boundary element model including earthquake cycle effects, topography, the westward dipping Beichuan Fault and a ∼20 km deep, shallowly dipping, detachment, inferred from observed afterslip and from structural considerations. Prior analyses which had neglected the detachment and earthquake cycle effects found shortening rates near zero. In contrast, we found that interseismic GPS data are consistent with a shortening rate of 5.7±1.5mm/yr and maximum surface slip‐deficit rate of 9.5±2.5mm/yr. This model unifies the interpretation of geodetic deformation throughout the earthquake cycle and suggests that the Longmen Shan is an active fold‐and‐thrust belt with Wenchuan‐like recurrence intervals as short as 600 years.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://tbenthompson.com/images/longmenshan.png&#34; /&gt;
+&lt;em&gt;A cross section of the Longmen Shan showing model-predicted velocities. Positive velocity is to the right/southwest.&lt;/em&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -102,7 +123,8 @@ The Longmen Shan is the steepest topographic front at the India‐Asia collision
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/project/shargyn/</guid>
-      <description>My undergraduate thesis. Western Mongolia has experienced four of the largest strike-slip earthquakes in recorded history. The Gobi-Altai fault system is a 500km long left-lateral slip zone. The Altai fault system is a 1000km long right-lateral slip zone. Combined these fault systems accomodate 10-15% of the shortening in the Indo-Eurasian collision. At the intersection, complex kinematics have created a 150 x 100km basin, called the Shargyn Basin. I propose an explanation for the kinematics of the ongoing formation of the basin.</description>
+      <description>&lt;p&gt;My undergraduate thesis. Western Mongolia has experienced four of the largest strike-slip earthquakes in recorded history. The Gobi-Altai fault system is a 500km long left-lateral slip zone. The Altai fault system is a 1000km long right-lateral slip zone. Combined these fault systems accomodate 10-15% of the shortening in the Indo-Eurasian collision. At the intersection, complex kinematics have created a 150 x 100km basin, called the Shargyn Basin. I propose an explanation for the kinematics of the ongoing formation of the basin. The main source of data is a 3 month field season in Mongolia.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -111,8 +133,11 @@ The Longmen Shan is the steepest topographic front at the India‐Asia collision
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/project/microscale/</guid>
-      <description>github
-For an undergraduate research project, I worked with Alejandra to automate a procedure to quantify finite strain on a microscale. On a certain surface, a sample is etched (like a microprocessor) with spaced dots. Then, on a microscope photograph, the dot positions are recorded before and after deformation. However, tracking hundreds of thousands of these dots by hand is impossible. So, I worked on an algorithm to determine the deformation function between the initial and final images by tracking the dot positions.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/tbenthompson/microdeform&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For an undergraduate research project, I worked with &lt;a href=&#34;https://scholar.google.com/citations?user=4uDVRD0AAAAJ&amp;amp;hl=en&#34;&gt;Alejandra&lt;/a&gt; to automate a procedure to quantify finite strain on a microscale. On a certain surface, a sample is etched (like a microprocessor) with spaced dots. Then, on a microscope photograph, the dot positions are recorded before and after deformation. However, tracking hundreds of thousands of these dots by hand is impossible. So, I worked on an algorithm to determine the deformation function between the initial and final images by tracking the dot positions.&lt;/p&gt;
+&lt;img src=&#34;http://tbenthompson.com/images/sample_centers.png&#34;/&gt;
+&lt;p&gt;&lt;em&gt;Identifying the centers (red) of the etched dots.&lt;/em&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -121,8 +146,9 @@ For an undergraduate research project, I worked with Alejandra to automate a pro
       <pubDate>Fri, 01 Jan 2010 00:00:00 -0500</pubDate>
       
       <guid>http://tbenthompson.com/project/therapycharts/</guid>
-      <description>homepage
-I worked for a while as the primary software developer for TherapyCharts, a web-based therapist records system. I developed a Python and PostgreSQL based backend and a ExtJS interface. I participated in two American Psychological Association conferences performing support and sales for TherapyCharts. TherapyCharts has now partnered with Wiley Publishing and is known as “Therascribe powered by TherapyCharts”.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.therapycharts.com/&#34;&gt;homepage&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I worked for a while as the primary software developer for TherapyCharts, a web-based therapist records system. I developed a Python and PostgreSQL based backend and a ExtJS interface. I participated in two American Psychological Association conferences performing support and sales for TherapyCharts. TherapyCharts has now partnered with Wiley Publishing and is known as “Therascribe powered by TherapyCharts”.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -131,7 +157,8 @@ I worked for a while as the primary software developer for TherapyCharts, a web-
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://tbenthompson.com/project/neuralnets/</guid>
-      <description>In high school, I was very interested in machine learning algorithms and investigated neural networks, support vector machines and unsupervised learning. I replicated various algorithms and tested their properties at different points in parameter space on the MNIST dataset which contains 60,000 handwritten numbers. Later, I used an unsupervised learning technique (Autoencoders, Hinton et. al 2006) to improve the performance of a support vector machine model in detecting Melanoma (skin cancer).</description>
+      <description>&lt;p&gt;In high school, I was very interested in machine learning algorithms and investigated neural networks, support vector machines and unsupervised learning. I replicated various algorithms and tested their properties at different points in parameter space on the MNIST dataset which contains 60,000 handwritten numbers. Later, I used an unsupervised learning technique (Autoencoders, Hinton et. al 2006) to improve the performance of a support vector machine model in detecting Melanoma (skin cancer). My technique had a false negative and positive rate similar to experienced doctors. I presented some of these results at ISEF 2007, 2008 and 2009.&lt;/p&gt;
+</description>
     </item>
     
   </channel>
