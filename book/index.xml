@@ -10,21 +10,26 @@
     <item>
       <title>Triangular dislocation elements with topography</title>
       <link>http://tbenthompson.com/book/tde_topo/</link>
-      <pubDate>Thu, 08 Apr 2021 00:00:00 -0400</pubDate>
+      <pubDate>Thu, 08 Apr 2021</pubDate>
       
       <guid>http://tbenthompson.com/book/tde_topo/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://tbenthompson.com/images/wenchuan_model_3d.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;hihi&lt;/p&gt;
-</description>
+      <description>
+        &lt;![CDATA[&lt;link rel=&#34;stylesheet&#34; href=&#34;http://tbenthompson.com/css/syntax.css&#34;&gt;]]&gt; 
+          &lt;p&gt;&lt;img src=&#34;http://tbenthompson.com/images/wenchuan_model_3d.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+
+      </description>
     </item>
     
     <item>
       <title>Matrix-free triangular dislocations</title>
       <link>http://tbenthompson.com/book/tde_matrix_free/</link>
-      <pubDate>Wed, 07 Apr 2021 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 07 Apr 2021</pubDate>
       
       <guid>http://tbenthompson.com/book/tde_matrix_free/</guid>
-      <description></description>
+      <description>
+        &lt;![CDATA[&lt;link rel=&#34;stylesheet&#34; href=&#34;http://tbenthompson.com/css/syntax.css&#34;&gt;]]&gt; 
+          
+      </description>
     </item>
     
   </channel>
