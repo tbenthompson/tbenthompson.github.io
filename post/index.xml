@@ -15,7 +15,7 @@
       <guid>http://tbenthompson.com/post/share_your_code/</guid>
       <description>&lt;p&gt;TL;DR: If you write a paper that involves complex code, share your code freely online. Don&amp;rsquo;t make it pretty. Don&amp;rsquo;t make it easy to use. Refuse to support the code. Just share it!&lt;/p&gt;
 &lt;p&gt;People have talked a lot already about why it&amp;rsquo;s a good idea to share code with your research. I want to address a specific component of this. The desire to share good, well-maintained code often becomes a barrier to sharing any code at all. So, here, I&amp;rsquo;d just like to say that we love you, and we love your code too no matter what it looks like.&lt;/p&gt;
-&lt;p&gt;&lt;sub&gt;This mostly comes from my experience at the computational methods and Earth science communities.&lt;/sub&gt;&lt;/p&gt;
+&lt;p&gt;Disclaimer: This mostly comes from my experience at the computational methods and Earth science communities.&lt;/p&gt;
 &lt;h2 id=&#34;no-you-cant-see-my-work&#34;&gt;No, you can’t see my work.&lt;/h2&gt;
 &lt;p&gt;I frequently ask people for the code they used to write a paper. The answer is often a deflection or just &amp;ldquo;No.&amp;rdquo; It&amp;rsquo;s depressing because seeing code is so incredibly useful. With a complex algorithm, I&amp;rsquo;m more likely to jump straight to the code if I can rather than trying to read the paper description carefully. The code is the truth. The writing is just the broad strokes. For technical work, there&amp;rsquo;s often dozens of tiny technical decisions that are never important enough to make it into the final published paper. But, at the same time, those little choices are what make or break an implementation. If I&amp;rsquo;m debugging why my implementation doesn&amp;rsquo;t work, I&amp;rsquo;m going to go read your code. I don&amp;rsquo;t need to be able to run it for this to be valuable. It doesn&amp;rsquo;t even need to be readable. If I care enough, I&amp;rsquo;ll spend hours just sifting through line by line.&lt;/p&gt;
 &lt;p&gt;Published papers are just a filter on the truth behind your research. In very literal fields like mathematics, the filter is very thin. The proofs and theorems are the truth and can be written literally in paper form. On the far other end, in some fields, the filter is thick. There&amp;rsquo;s no way to share the truth, the lab experiment. The experiment is over. But we can and should share the raw-est results possible and a precise procedure for repeating the experiment. Computational methods and modeling papers are much more on the math side of the spectrum. The truth is straightforwardly sharable in the form of code. But, we don&amp;rsquo;t do it!&lt;/p&gt;
@@ -31,7 +31,7 @@
 &lt;li&gt;Career incentives. They think their secret sauce code is their ticket to a job/tenure/grants/etc. Bummer!&lt;/li&gt;
 &lt;li&gt;The code doesn&amp;rsquo;t exist. Data analysis was done using an interactive system and haven&amp;rsquo;t saved the source. Scary!&lt;/li&gt;
 &lt;li&gt;Proprietary code. But then why is the paper not proprietary? Bummer!&lt;/li&gt;
-&lt;li&gt;The code only runs on (insert supercomputer here). See above, being able to just read the code is very valuable.&lt;/li&gt;
+&lt;li&gt;The code only runs on (insert supercomputer here). See above. Being able to just read the code is very valuable.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I&amp;rsquo;m not going to dive into these here, but it&amp;rsquo;s worth thinking about to train people and redesign incentive systems so that these aren&amp;rsquo;t issues.&lt;/p&gt;
 &lt;h2 id=&#34;some-useful-links&#34;&gt;Some useful links:&lt;/h2&gt;
@@ -41,7 +41,7 @@
 &lt;li&gt;&lt;a href=&#34;https://github.com/paperswithcode/releasing-research-code&#34;&gt;This set of guidelines&lt;/a&gt; for releasing machine learning research code.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://rescience.github.io/&#34;&gt;ReScience C&lt;/a&gt; is an open-access journal dedicated to reproduction of computational papers.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;sub&gt;*Thanks to Greg Wagner, Liz Santorella for helping out. If you want to chat please &lt;a href=&#34;mailto:t.ben.thompson@gmail.com&#34;&gt;get in touch&lt;/a&gt;!*&lt;/sub&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Thanks to Greg Wagner, Liz Santorella for helping out. If you want to chat please &lt;a href=&#34;mailto:t.ben.thompson@gmail.com&#34;&gt;get in touch&lt;/a&gt;!&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     
