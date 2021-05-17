@@ -29,7 +29,7 @@
 &lt;p&gt;There are a lot of other reasons someone would decline to share their code:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Career incentives. They think their secret sauce code is their ticket to a job/tenure/grants/etc. Bummer!&lt;/li&gt;
-&lt;li&gt;The code doesn&amp;rsquo;t exist. Data analysis was done using an interactive system and haven&amp;rsquo;t saved the source. Scary!&lt;/li&gt;
+&lt;li&gt;The code doesn&amp;rsquo;t exist. Data analysis was done using an interactive system and the original source is gone. Scary!&lt;/li&gt;
 &lt;li&gt;Proprietary code. But then why is the paper not proprietary? Bummer!&lt;/li&gt;
 &lt;li&gt;The code only runs on (insert supercomputer here). See above. Being able to just read the code is very valuable.&lt;/li&gt;
 &lt;/ul&gt;
