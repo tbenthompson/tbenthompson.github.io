@@ -191,7 +191,7 @@ This illustrates how physical model errors can be amplified by an order of magni
 &lt;h2 id=&#34;some-useful-links&#34;&gt;Some useful links:&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://faculty.washington.edu/rjl/pubs/topten/topten.pdf&#34;&gt;Randall LeVeque made a more extensive and better argument than me!&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.paperswithcode.com/&#34;&gt;Papers with Code&lt;/a&gt; is a great project linking for the machine learning world. It would be great to have something similar in other areas.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.paperswithcode.com/&#34;&gt;Papers with Code&lt;/a&gt; is a great project linking papers and their code repositories. It&amp;rsquo;s focused on the machine learning world. It would be great to have something similar in other areas.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/paperswithcode/releasing-research-code&#34;&gt;This set of guidelines&lt;/a&gt; for releasing machine learning research code.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://rescience.github.io/&#34;&gt;ReScience C&lt;/a&gt; is an open-access journal dedicated to reproduction of computational papers.&lt;/li&gt;
 &lt;/ul&gt;
