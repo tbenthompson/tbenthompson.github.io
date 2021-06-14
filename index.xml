@@ -162,7 +162,7 @@ This illustrates how physical model errors can be amplified by an order of magni
     </item>
     
     <item>
-      <title>Gaussian quadrature is not optimal.</title>
+      <title>Gaussian quadrature is not optimal</title>
       <link>http://tbenthompson.com/post/better_than_gauss/</link>
       <pubDate>Mon, 14 Jun 2021</pubDate>
       
@@ -274,7 +274,7 @@ g(s) &amp;amp;= \frac{1}{53089}(40320s + 6720s^3 + 3024s^5 + 1800s^7 + 1225s^9)
     </item>
     
     <item>
-      <title>Maybe we should stop using planar triangles for fault modeling.</title>
+      <title>Maybe we should stop using planar triangles for fault modeling</title>
       <link>http://tbenthompson.com/post/surface_representation/</link>
       <pubDate>Wed, 31 Mar 2021</pubDate>
       
@@ -334,7 +334,7 @@ g(s) &amp;amp;= \frac{1}{53089}(40320s + 6720s^3 + 3024s^5 + 1800s^7 + 1225s^9)
     </item>
     
     <item>
-      <title>Regularizing rate and state friction for numerical simulation.</title>
+      <title>Regularizing rate and state friction for numerical simulation</title>
       <link>http://tbenthompson.com/post/regularized_rate_state/</link>
       <pubDate>Mon, 19 Mar 2018</pubDate>
       
