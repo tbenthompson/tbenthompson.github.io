@@ -1,0 +1,31 @@
+{{ define "main" }}
+<h2>{{ .Title }}</h2>
+{{ if not .Params.menu }}
+<p>
+  <i>
+      {{ if eq .Section "project" }}
+      {{ .Params.when }}
+      {{ else }}
+      <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
+        {{ .Date.Format "02 Jan, 2006" }}
+      </time>
+      {{ end }}
+  </i>
+</p>
+{{ end }}
+<content>
+  {{ .Content }}
+</content>
+
+{{ .Scratch.Set "subscribeText" "If you enjoyed this, please subscribe here! You'll only get new posts from this \"BIE Book\" section of my website." }}
+{{ .Scratch.Set "subscribeType" "book" }}
+{{- partial "subscribe.html" . -}}
+
+<p>
+  {{ range (.GetTerms "tags") }}
+  <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+  {{ end }}
+</p>
+
+{{- partial "comments.html" . -}}
+{{ end }}
