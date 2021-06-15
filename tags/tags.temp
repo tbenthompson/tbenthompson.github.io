@@ -1,0 +1,38 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+convert	images/converttopng.py	/^def convert(file):$/;"	f
+gtag	404.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	page/2/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	page/3/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	page/4/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	post/automated_testing_for_science/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	post/block_slider/block_slider/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	post/block_slider/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	post/bs/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	post/bs3/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	post/cloudpickle_monkey_patching/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	post/how_i_test/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	post/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	post/regularized_rate_state/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	post/serialize_fnc_cpp/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	post/setting_up_website/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	post/sneaky-transparent-huge-pages/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	post/sparse_nbody/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	project/cppimport/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	project/himalaya_stress/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	project/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	project/longmenshan/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	project/microscale/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	project/neuralnets/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	project/quasidynamic/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	project/shargyn/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	project/taskloaf/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	project/tectosaur/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	project/therapycharts/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	project/topography/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+main	images/converttopng.py	/^def main():$/;"	f
