@@ -1,2 +1,2 @@
 User-Agent: *
-Sitemap: http://tbenthompson.com/sitemap.xml
+Sitemap: https://tbenthompson.com/sitemap.xml
