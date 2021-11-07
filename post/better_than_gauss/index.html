@@ -19,7 +19,7 @@
 <meta itemprop=name content="Gaussian quadrature is not optimal">
 <meta itemprop=description content="It&rsquo;s conventional wisdom that Gaussian quadrature is the most point-efficient quadrature formula for analytic functions. But, it&rsquo;s not true! &ldquo;New quadrature formulas from conformal maps&rdquo; by Hale and Trefethen (2008) demonstrates that it&rsquo;s possible to have quadrature formulas that converge about 50% faster for analytic functions. The paper is quite accessible and I encourage you to read it, but I also wanted to help bring attention to it since it seems like it should be more well-known."><meta itemprop=datePublished content="2021-06-14T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-06-14T00:00:00+00:00">
-<meta itemprop=wordCount content="578">
+<meta itemprop=wordCount content="606">
 <meta itemprop=keywords content>
 <meta name=referrer content="no-referrer-when-downgrade">
 <style>body{font-family:sans-serif;margin:auto;padding:20px;max-width:720px;text-align:left;background-color:#fff;word-wrap:break-word;overflow-wrap:break-word;line-height:1.5;color:#444}h1,h2,h3,h4,h5,h6,strong,b{color:#222}a{color:#3273dc}.title{text-decoration:none;border:0}.title span{font-weight:400}nav a{margin-right:10px}textarea{width:100%;font-size:16px}input{font-size:16px}content{line-height:1.6}table{width:100%}img{max-width:100%}code{padding:2px 5px;background-color:#f2f2f2}pre code{display:block;padding:5px;white-space:pre-wrap;font-size:13px}blockquote{border-left:1px solid #999;color:#222;padding-left:20px;font-style:italic}footer{padding:25px;text-align:center}.helptext{color:#777;font-size:small}.errorlist{color:#eba613;font-size:small}ul.blog-posts{list-style-type:none;padding:unset}ul.blog-posts li{display:flex}ul.blog-posts li span{flex:0 0 130px}ul.blog-posts li a:visited{color:#8b6fcb}code.has-jax{-webkit-font-smoothing:antialiased;background:inherit!important;border:none!important;font-size:100%}</style>
@@ -56,9 +56,9 @@
 <p>then there are $n$ points, $x_k$, and $n$ weights $w_k$. Solving a linear system for the points and weights that exactly integrate a polynomial results in a solvable linear system with $2n$ rows and columns. And a polynomial with order $2n-1$ has $2n$ coefficients, so Gaussian quadrature is clearly optimal in the order of polynomial integrable with $N$ points and weights (this isn&rsquo;t a rigorous proof).</p>
 <p>Because analytic functions can be represented as a polynomial series, it&rsquo;s tempting to extend the result from polynomials to analytic functions. But, it <em>does not follow</em> that the best quadrature rule for small polynomials is also the best possible quadrature rule for general analytic functions or even the best possible quadrature rule for polynomials with order greater than $2n - 1$. As the Hale and Trefethen paper demonstrates, Gaussian quadrature is suboptimal by approximately a factor of $\pi/2$ in terms of the number of quadrature points required for a given level of error.</p>
 <h3 id=just-give-me-a-quadrature-rule>Just give me a quadrature rule</h3>
-<p>There are several formulas in the paper, but this one is particularly
+<p>There are several formulas in the paper, but this one is particularly useful. If we have an existing Gaussian quadrature rule specified by $x_k$ and $w_k$, then we can derive a new mapped quadrature rule, $\tilde{x}_k$, $\tilde{w}_k$ with the formula:
 \begin{align}
-\tilde{I}_n(f) &= \sum_k^n \tilde{w}_k f(\tilde{x}_k) , ~~~ \tilde{x}_k = w_kg'(x_k), ~~~ \tilde{x}_k=g(x_k) \\<br>
+\tilde{I}_n(f) &= \sum_k^n \tilde{w}_k f(\tilde{x}_k) , ~~~ \tilde{w}_k = w_kg'(x_k), ~~~ \tilde{x}_k=g(x_k) \\
 g(s) &= \frac{1}{53089}(40320s + 6720s^3 + 3024s^5 + 1800s^7 + 1225s^9)
 \end{align}</p>
 <h3 id=why-does-this-work>Why does this work?</h3>
