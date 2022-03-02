@@ -3,8 +3,7 @@
 <meta http-equiv=x-clacks-overhead content="GNU Terry Pratchett">
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<title>50 suggestions on correctness and testing for scientific software for PDEs | T. Ben Thompson</title>
-<meta name=title content="50 suggestions on correctness and testing for scientific software for PDEs">
+<title>50 suggestions on correctness and testing for scientific software for PDEs | T. Ben Thompson</title><meta name=title content="50 suggestions on correctness and testing for scientific software for PDEs">
 <meta name=description content="I think testing and debugging is one of the harder aspects of scientific and numerical software. It&rsquo;s easy to get buried in giant pile of code and have no idea where to look for bugs. It&rsquo;s even harder when actually the bug isn&rsquo;t in the code but is in the concepts, math or data.
 The fundamental problem with testing and debugging scientific software is that we don&rsquo;t know correct intermediate values or even the correct final output.">
 <meta name=keywords content>
@@ -26,101 +25,30 @@ The fundamental problem with testing and debugging scientific software is that w
 <meta itemprop=wordCount content="944">
 <meta itemprop=keywords content>
 <meta name=referrer content="no-referrer-when-downgrade">
-<style>body{font-family:sans-serif;margin:auto;padding:20px;max-width:720px;text-align:left;background-color:#fff;word-wrap:break-word;overflow-wrap:break-word;line-height:1.5;color:#444}h1,h2,h3,h4,h5,h6,strong,b{color:#222}a{color:#3273dc}.title{text-decoration:none;border:0}.title span{font-weight:400}nav a{margin-right:10px}textarea{width:100%;font-size:16px}input{font-size:16px}content{line-height:1.6}table{width:100%}img{max-width:100%}code{padding:2px 5px;background-color:#f2f2f2}pre code{display:block;padding:5px;white-space:pre-wrap;font-size:13px}blockquote{border-left:1px solid #999;color:#222;padding-left:20px;font-style:italic}footer{padding:25px;text-align:center}.helptext{color:#777;font-size:small}.errorlist{color:#eba613;font-size:small}ul.blog-posts{list-style-type:none;padding:unset}ul.blog-posts li{display:flex}ul.blog-posts li span{flex:0 0 130px}ul.blog-posts li a:visited{color:#8b6fcb}code.has-jax{-webkit-font-smoothing:antialiased;background:inherit!important;border:none!important;font-size:100%}</style>
-<script src=/js/mathjax_setup.js></script>
+<style>body{font-family:sans-serif;margin:auto;padding:20px;max-width:720px;text-align:left;background-color:#fff;word-wrap:break-word;overflow-wrap:break-word;line-height:1.5;color:#444}h1,h2,h3,h4,h5,h6,strong,b{color:#222}a{color:#3273dc}.title{text-decoration:none;border:0}.title span{font-weight:400}nav a{margin-right:10px}textarea{width:100%;font-size:16px}input{font-size:16px}content{line-height:1.6}table{width:100%}img{max-width:100%}code{padding:2px 5px;background-color:#f2f2f2}pre code{display:block;padding:5px;white-space:pre-wrap;font-size:13px}blockquote{border-left:1px solid #999;color:#222;padding-left:20px;font-style:italic}footer{padding:25px;text-align:center}.helptext{color:#777;font-size:small}.errorlist{color:#eba613;font-size:small}ul.blog-posts{list-style-type:none;padding:unset}ul.blog-posts li{display:flex}ul.blog-posts li span{flex:0 0 130px}ul.blog-posts li a:visited{color:#8b6fcb}code.has-jax{-webkit-font-smoothing:antialiased;background:inherit!important;border:none!important;font-size:100%}</style><script src=/js/mathjax_setup.js></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script>MathJax={}</script>
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114592151-1"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-114592151-1')</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-114592151-1")</script>
 <link rel=stylesheet href=/css/syntax.css>
-</head>
-<body>
+</head><body>
 <header><nav><a href=/>Home</a>
 <a href=/whatido>Work with me</a>
 <a href=/post>Posts</a>
 <a href=/project>Past Projects</a>
 <a href=/book>BIE Tutorials</a>
-</nav>
-</header>
-<main>
-<h2>50 suggestions on correctness and testing for scientific software for PDEs</h2>
-<p>
+</nav></header><main>
+<h2>50 suggestions on correctness and testing for scientific software for PDEs</h2><p>
 <i>
 <time datetime=2021-07-09 pubdate>
 09 Jul, 2021
 </time>
 </i>
-</p>
-<content>
-<p>I think testing and debugging is one of the harder aspects of scientific and numerical software. It&rsquo;s easy to get buried in giant pile of code and have no idea where to look for bugs. It&rsquo;s even harder when actually the bug isn&rsquo;t in the code but is in the concepts, math or data.</p>
-<p>The fundamental problem with testing and debugging scientific software is that we don&rsquo;t know correct intermediate values or even the correct final output. <a href=https://tbenthompson.com/post/automated_testing_for_science/>I helped write a previous post on similar topics</a> but I wanted to write more on the topic. So, here are various suggestions that probably would&rsquo;ve helped me at some point. I&rsquo;d like to expand quite a bit more on individual points here in the future.</p>
-<ol>
-<li>Don&rsquo;t trust your code. Seriously, never trust your code.</li>
-<li>Treasure correct code and use version control. Don&rsquo;t lose your treasure.</li>
-<li>Use existing correct code to maximum value because it means you can check intermediate values that would otherwise be untestable.</li>
-<li>Hunt the internet for existing correct code. But don&rsquo;t trust it.</li>
-<li>Add one feature at a time.</li>
-<li>Define &ldquo;one feature&rdquo; as narrowly as possible.</li>
-<li>Edges cases shouldn&rsquo;t be an after thought. Sometimes solving an edge case can be informative about the common case.</li>
-<li>It&rsquo;s okay to spend a couple hours just thinking about how to design a test problem that tests only one new feature.</li>
-<li>Any time you can, compare with an analytical solution.</li>
-<li>The <a href="https://asmedigitalcollection.asme.org/fluidsengineering/article-abstract/124/1/4/462791/Code-Verification-by-the-Method-of-Manufactured?redirectedFrom=fulltext">method of manufactured solutions</a> (MMS) is amazing.</li>
-<li>Use MMS even if it requires implementing some extra features. It will be worth it.</li>
-<li>Check the order of accuracy/convergence rate!</li>
-<li>Even on problems where the true solution is unknown, it&rsquo;s possible to check for convergence rate by comparing with a very high accuracy solution.</li>
-<li>Be a more careful programmer. Sometimes, It&rsquo;s okay to spend thirty minutes just thinking through each line of code.</li>
-<li>Learn your debugging tools and IDE! Line-by-line step through debugging is incredibly helpful.</li>
-<li>Don&rsquo;t stay stuck for more than a couple hours. Try something different.</li>
-<li>When you notice that something looks wrong, try to encode the meaning of &ldquo;wrong&rdquo;.</li>
-<li>Be a faster programmer. Sometimes, just trying a bunch of things is the right approach.</li>
-<li>Use smaller and simpler test problems so that you can iterate really fast.</li>
-<li>Don&rsquo;t trust evaluation code. Look at the output. Bugs in evaluation code can make you waste a huge amount of time.</li>
-<li>Make lots of figures and videos. Visualizing a problem is often very effective for debugging.</li>
-<li>Test derivatives with finite differences.</li>
-<li>Test symmetries and invariances. Many problems are rotationally symmetric. Or invariant with respect to rigid body motion.</li>
-<li>Test more algorithmic properties. Optimization algorithms often guarantee a decrease in objective at each step!</li>
-<li>Log lots of info. It&rsquo;s okay to save a full matrix at each time step.</li>
-<li>Prototype! The first version of the code should not be well designed or fast.</li>
-<li>Write at least the first version in a language like Python or Julia where edit-(compile)-run cycles are on the order of a second.</li>
-<li>Doing the first phases of development in a Jupyter notebook (or similar) is really fast. Iteration time is extremely important.</li>
-<li>Write a second version from scratch, maybe in a different language or style, and compare the results. You might catch some bugs.</li>
-<li>Fast tests are more useful than slow tests.</li>
-<li><a href=https://www.goodreads.com/book/show/44919.Working_Effectively_with_Legacy_Code>Characterization</a> <a href=https://en.wikipedia.org/wiki/Characterization_test>tests</a> (aka &ldquo;golden master tests&rdquo;, aka &ldquo;freeze tests&rdquo;) are useful for preventing unexpected changes. But they can&rsquo;t define correctness and they are brittle.</li>
-<li>Robust tests are more useful than brittle tests. False alarms are a bummer.</li>
-<li>Automated tests are more useful than manual tests.</li>
-<li>Continuous integration is normally worth the effort.</li>
-<li>Remove randomness in testing by setting a random seed. Even if true randomness is necessary for correctness. Consistency in testing is very important.</li>
-<li>Use symbolic algebra tools to develop test cases. I frequently use <a href=https://doc.sagemath.org/html/en/tutorial/index.html>Sage</a> and <a href=https://docs.sympy.org/latest/tutorial/index.html>sympy</a>.</li>
-<li>Use multiprecision and arbitrary precision arithmetic to develop test cases. I&rsquo;ve used <a href=https://mpmath.org/>mpmath</a> and <a href=https://www.mpfr.org/>MPFR</a>.</li>
-<li>Sign errors can often be solved with guess and check. Verify with the math later! I&rsquo;ve found a lot of mild math errors or misunderstandings this way.</li>
-<li>Guess and check also works in some other areas. But, don&rsquo;t flail around in the dark for very long.</li>
-<li>Ablation testing: remove some component of your system and verify that the performance degrades as expected.</li>
-<li>Look for gaps or overlaps and other problems in your meshes.</li>
-<li>Check your normal vectors. Should they point inwards or outwards?</li>
-<li>Corners are scary. Start with something smooth like a circle or sphere.</li>
-<li>The math and theory is often more important than you think.</li>
-<li>Violating function space and regularity requirements can bite you. See &ldquo;corners&rdquo;.</li>
-<li>Start with direct linear solvers. Iterative solvers introduce a whole new class of problems with preconditioning.</li>
-<li>Check the condition number of your matrices.</li>
-<li>Use standard tools and libraries where they are sufficient.</li>
-<li>Test single threaded first. Then on two cores. Then many. And write the CPU version before the GPU version!</li>
-<li>Finally, remember not to trust your code.</li>
-</ol>
-<h5 id=footnotes-and-links>Footnotes and links</h5>
-<ul>
-<li>I&rsquo;ve also worked in machine learning, statistical software and deep learning a lot. I think a similar list would apply in those areas, but I&rsquo;d have to add and remove a few points.</li>
-<li><a href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best Practices for Scientific Computing</a></li>
-<li><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510">Good enough practices in scientific computing</a></li>
-<li><a href=https://tbenthompson.com/post/share_your_code/>Sharing your code feels related</a></li>
-<li><a href=https://scicomp.stackexchange.com/questions/206/is-it-worthwhile-to-write-unit-tests-for-scientific-research-codes>Is it worthwhile to write unit tests for scientific research codes?</a></li>
-<li><a href=https://stackoverflow.com/questions/3421469/how-to-test-scientific-software>How to test scientific software?</a></li>
-<li><a href=https://scicomp.stackexchange.com/questions/14825/how-to-write-integration-tests-for-numeric-simulation-software>How to write integration tests for numeric simulation software?</a></li>
-<li><a href=https://scicomp.stackexchange.com/questions/8481/strategies-for-unit-testing-and-test-driven-development>Strategies for unit testing and test-driven development</a></li>
-<li><a href=https://software-carpentry.org/blog/2014/10/why-we-dont-teach-testing.html>Why We Don&rsquo;t Teach Testing (Even Though We&rsquo;d Like To)</a></li>
-<li><a href=https://spinningup.openai.com/en/latest/spinningup/spinningup.html>Spinning Up as a Deep RL Reseacher (A great high-level summary of how to do effective research in Reinforcement Learning)</a></li>
-</ul>
-</content>
+</p><content>
+<p>I think testing and debugging is one of the harder aspects of scientific and numerical software. It&rsquo;s easy to get buried in giant pile of code and have no idea where to look for bugs. It&rsquo;s even harder when actually the bug isn&rsquo;t in the code but is in the concepts, math or data.</p><p>The fundamental problem with testing and debugging scientific software is that we don&rsquo;t know correct intermediate values or even the correct final output. <a href=https://tbenthompson.com/post/automated_testing_for_science/>I helped write a previous post on similar topics</a> but I wanted to write more on the topic. So, here are various suggestions that probably would&rsquo;ve helped me at some point. I&rsquo;d like to expand quite a bit more on individual points here in the future.</p><ol>
+<li>Don&rsquo;t trust your code. Seriously, never trust your code.</li><li>Treasure correct code and use version control. Don&rsquo;t lose your treasure.</li><li>Use existing correct code to maximum value because it means you can check intermediate values that would otherwise be untestable.</li><li>Hunt the internet for existing correct code. But don&rsquo;t trust it.</li><li>Add one feature at a time.</li><li>Define &ldquo;one feature&rdquo; as narrowly as possible.</li><li>Edges cases shouldn&rsquo;t be an after thought. Sometimes solving an edge case can be informative about the common case.</li><li>It&rsquo;s okay to spend a couple hours just thinking about how to design a test problem that tests only one new feature.</li><li>Any time you can, compare with an analytical solution.</li><li>The <a href="https://asmedigitalcollection.asme.org/fluidsengineering/article-abstract/124/1/4/462791/Code-Verification-by-the-Method-of-Manufactured?redirectedFrom=fulltext">method of manufactured solutions</a> (MMS) is amazing.</li><li>Use MMS even if it requires implementing some extra features. It will be worth it.</li><li>Check the order of accuracy/convergence rate!</li><li>Even on problems where the true solution is unknown, it&rsquo;s possible to check for convergence rate by comparing with a very high accuracy solution.</li><li>Be a more careful programmer. Sometimes, It&rsquo;s okay to spend thirty minutes just thinking through each line of code.</li><li>Learn your debugging tools and IDE! Line-by-line step through debugging is incredibly helpful.</li><li>Don&rsquo;t stay stuck for more than a couple hours. Try something different.</li><li>When you notice that something looks wrong, try to encode the meaning of &ldquo;wrong&rdquo;.</li><li>Be a faster programmer. Sometimes, just trying a bunch of things is the right approach.</li><li>Use smaller and simpler test problems so that you can iterate really fast.</li><li>Don&rsquo;t trust evaluation code. Look at the output. Bugs in evaluation code can make you waste a huge amount of time.</li><li>Make lots of figures and videos. Visualizing a problem is often very effective for debugging.</li><li>Test derivatives with finite differences.</li><li>Test symmetries and invariances. Many problems are rotationally symmetric. Or invariant with respect to rigid body motion.</li><li>Test more algorithmic properties. Optimization algorithms often guarantee a decrease in objective at each step!</li><li>Log lots of info. It&rsquo;s okay to save a full matrix at each time step.</li><li>Prototype! The first version of the code should not be well designed or fast.</li><li>Write at least the first version in a language like Python or Julia where edit-(compile)-run cycles are on the order of a second.</li><li>Doing the first phases of development in a Jupyter notebook (or similar) is really fast. Iteration time is extremely important.</li><li>Write a second version from scratch, maybe in a different language or style, and compare the results. You might catch some bugs.</li><li>Fast tests are more useful than slow tests.</li><li><a href=https://www.goodreads.com/book/show/44919.Working_Effectively_with_Legacy_Code>Characterization</a> <a href=https://en.wikipedia.org/wiki/Characterization_test>tests</a> (aka &ldquo;golden master tests&rdquo;, aka &ldquo;freeze tests&rdquo;) are useful for preventing unexpected changes. But they can&rsquo;t define correctness and they are brittle.</li><li>Robust tests are more useful than brittle tests. False alarms are a bummer.</li><li>Automated tests are more useful than manual tests.</li><li>Continuous integration is normally worth the effort.</li><li>Remove randomness in testing by setting a random seed. Even if true randomness is necessary for correctness. Consistency in testing is very important.</li><li>Use symbolic algebra tools to develop test cases. I frequently use <a href=https://doc.sagemath.org/html/en/tutorial/index.html>Sage</a> and <a href=https://docs.sympy.org/latest/tutorial/index.html>sympy</a>.</li><li>Use multiprecision and arbitrary precision arithmetic to develop test cases. I&rsquo;ve used <a href=https://mpmath.org/>mpmath</a> and <a href=https://www.mpfr.org/>MPFR</a>.</li><li>Sign errors can often be solved with guess and check. Verify with the math later! I&rsquo;ve found a lot of mild math errors or misunderstandings this way.</li><li>Guess and check also works in some other areas. But, don&rsquo;t flail around in the dark for very long.</li><li>Ablation testing: remove some component of your system and verify that the performance degrades as expected.</li><li>Look for gaps or overlaps and other problems in your meshes.</li><li>Check your normal vectors. Should they point inwards or outwards?</li><li>Corners are scary. Start with something smooth like a circle or sphere.</li><li>The math and theory is often more important than you think.</li><li>Violating function space and regularity requirements can bite you. See &ldquo;corners&rdquo;.</li><li>Start with direct linear solvers. Iterative solvers introduce a whole new class of problems with preconditioning.</li><li>Check the condition number of your matrices.</li><li>Use standard tools and libraries where they are sufficient.</li><li>Test single threaded first. Then on two cores. Then many. And write the CPU version before the GPU version!</li><li>Finally, remember not to trust your code.</li></ol><h5 id=footnotes-and-links>Footnotes and links</h5><ul>
+<li>I&rsquo;ve also worked in machine learning, statistical software and deep learning a lot. I think a similar list would apply in those areas, but I&rsquo;d have to add and remove a few points.</li><li><a href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best Practices for Scientific Computing</a></li><li><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510">Good enough practices in scientific computing</a></li><li><a href=https://tbenthompson.com/post/share_your_code/>Sharing your code feels related</a></li><li><a href=https://scicomp.stackexchange.com/questions/206/is-it-worthwhile-to-write-unit-tests-for-scientific-research-codes>Is it worthwhile to write unit tests for scientific research codes?</a></li><li><a href=https://stackoverflow.com/questions/3421469/how-to-test-scientific-software>How to test scientific software?</a></li><li><a href=https://scicomp.stackexchange.com/questions/14825/how-to-write-integration-tests-for-numeric-simulation-software>How to write integration tests for numeric simulation software?</a></li><li><a href=https://scicomp.stackexchange.com/questions/8481/strategies-for-unit-testing-and-test-driven-development>Strategies for unit testing and test-driven development</a></li><li><a href=https://software-carpentry.org/blog/2014/10/why-we-dont-teach-testing.html>Why We Don&rsquo;t Teach Testing (Even Though We&rsquo;d Like To)</a></li><li><a href=https://spinningup.openai.com/en/latest/spinningup/spinningup.html>Spinning Up as a Deep RL Reseacher (A great high-level summary of how to do effective research in Reinforcement Learning)</a></li></ul></content>
 <link href=//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css rel=stylesheet type=text/css>
 <div id=mc_embed_signup style="padding:20px 0">
 <form action="https://tbenthompson.us1.list-manage.com/subscribe/post?u=be25bc8a8ab56f1fb3e6651c2&id=b407942450" method=post id=mc-embedded-subscribe-form name=mc-embedded-subscribe-form class=validate target=_blank novalidate>
@@ -130,28 +58,14 @@ The fundamental problem with testing and debugging scientific software is that w
 <div style=display:none>
 <input type=checkbox value=1 name=group[377262][1] id=mce-group[377262]-377262-0 checked>Posts
 <input type=checkbox value=2 name=group[377262][2] id=mce-group[377262]-377262-1>BIEBook
-</div>
-<div style=position:absolute;left:-5000px aria-hidden=true><input type=text name=b_be25bc8a8ab56f1fb3e6651c2_b407942450 tabindex=-1></div>
-<div class=clear><input type=submit value=Subscribe name=subscribe id=mc-embedded-subscribe class=button></div>
-</div>
-</form>
-</div>
-<p>
-</p>
-</main>
-<footer><hr>
+</div><div style=position:absolute;left:-5000px aria-hidden=true><input type=text name=b_be25bc8a8ab56f1fb3e6651c2_b407942450 tabindex=-1></div><div class=clear><input type=submit value=Subscribe name=subscribe id=mc-embedded-subscribe class=button></div></div></form></div><p>
+</p></main><footer><hr>
 <div class="container has-text-centered">
 <div class=accounts>
 <a href=/resume.pdf>Resume</a> • <a href="https://scholar.google.com/citations?user=ED9oDz8AAAAJ&hl=en">Google Scholar</a> • <a href=https://github.com/tbenthompson>GitHub</a> • <a href=https://www.linkedin.com/in/ben-thompson-645292125/>LinkedIn</a> • <a href=https://twitter.com/tbenthompson>Twitter</a> • <a href=mailto:t.ben.thompson@gmail.com>Email</a>
-</div>
-<div class=accounts>
+</div><div class=accounts>
 <a href=http://esantorella.com/>My wife is really smart!</a>
-</div>
-<div class=accounts>
+</div><div class=accounts>
 <a href=https://www.instagram.com/wish.and.bean>My dogs have more social media presence than
 I do.</a>
-</div>
-</div>
-</footer>
-</body>
-</html>
+</div></div></footer></body></html>

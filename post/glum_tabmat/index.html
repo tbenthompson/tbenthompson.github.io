@@ -3,8 +3,7 @@
 <meta http-equiv=x-clacks-overhead content="GNU Terry Pratchett">
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<title>Open source release! Generalized linear modeling with glum and tabmat. | T. Ben Thompson</title>
-<meta name=title content="Open source release! Generalized linear modeling with glum and tabmat.">
+<title>Open source release! Generalized linear modeling with glum and tabmat. | T. Ben Thompson</title><meta name=title content="Open source release! Generalized linear modeling with glum and tabmat.">
 <meta name=description content="I&rsquo;m super excited to announce the release of glum and tabmat. These are the first two open source projects that QuantCo has released! Hopefully there will be many more. glum is a efficient and featureful Python-first library for generalized linear model (GLM) estimation built with an sklearn-style API. We focused a ton on correctness, performance and satisfying a wide range of feature requirements.
 While working on this project, my coworkers and I heard repeatedly from folks on other data science or economics teams that they either struggled with the same GLM software problems we had or they had built their own internal GLM tool similar to glum.">
 <meta name=keywords content>
@@ -26,48 +25,30 @@ While working on this project, my coworkers and I heard repeatedly from folks on
 <meta itemprop=wordCount content="444">
 <meta itemprop=keywords content>
 <meta name=referrer content="no-referrer-when-downgrade">
-<style>body{font-family:sans-serif;margin:auto;padding:20px;max-width:720px;text-align:left;background-color:#fff;word-wrap:break-word;overflow-wrap:break-word;line-height:1.5;color:#444}h1,h2,h3,h4,h5,h6,strong,b{color:#222}a{color:#3273dc}.title{text-decoration:none;border:0}.title span{font-weight:400}nav a{margin-right:10px}textarea{width:100%;font-size:16px}input{font-size:16px}content{line-height:1.6}table{width:100%}img{max-width:100%}code{padding:2px 5px;background-color:#f2f2f2}pre code{display:block;padding:5px;white-space:pre-wrap;font-size:13px}blockquote{border-left:1px solid #999;color:#222;padding-left:20px;font-style:italic}footer{padding:25px;text-align:center}.helptext{color:#777;font-size:small}.errorlist{color:#eba613;font-size:small}ul.blog-posts{list-style-type:none;padding:unset}ul.blog-posts li{display:flex}ul.blog-posts li span{flex:0 0 130px}ul.blog-posts li a:visited{color:#8b6fcb}code.has-jax{-webkit-font-smoothing:antialiased;background:inherit!important;border:none!important;font-size:100%}</style>
-<script src=/js/mathjax_setup.js></script>
+<style>body{font-family:sans-serif;margin:auto;padding:20px;max-width:720px;text-align:left;background-color:#fff;word-wrap:break-word;overflow-wrap:break-word;line-height:1.5;color:#444}h1,h2,h3,h4,h5,h6,strong,b{color:#222}a{color:#3273dc}.title{text-decoration:none;border:0}.title span{font-weight:400}nav a{margin-right:10px}textarea{width:100%;font-size:16px}input{font-size:16px}content{line-height:1.6}table{width:100%}img{max-width:100%}code{padding:2px 5px;background-color:#f2f2f2}pre code{display:block;padding:5px;white-space:pre-wrap;font-size:13px}blockquote{border-left:1px solid #999;color:#222;padding-left:20px;font-style:italic}footer{padding:25px;text-align:center}.helptext{color:#777;font-size:small}.errorlist{color:#eba613;font-size:small}ul.blog-posts{list-style-type:none;padding:unset}ul.blog-posts li{display:flex}ul.blog-posts li span{flex:0 0 130px}ul.blog-posts li a:visited{color:#8b6fcb}code.has-jax{-webkit-font-smoothing:antialiased;background:inherit!important;border:none!important;font-size:100%}</style><script src=/js/mathjax_setup.js></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script>MathJax={}</script>
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114592151-1"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-114592151-1')</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-114592151-1")</script>
 <link rel=stylesheet href=/css/syntax.css>
-</head>
-<body>
+</head><body>
 <header><nav><a href=/>Home</a>
 <a href=/whatido>Work with me</a>
 <a href=/post>Posts</a>
 <a href=/project>Past Projects</a>
 <a href=/book>BIE Tutorials</a>
-</nav>
-</header>
-<main>
-<h2>Open source release! Generalized linear modeling with glum and tabmat.</h2>
-<p>
+</nav></header><main>
+<h2>Open source release! Generalized linear modeling with glum and tabmat.</h2><p>
 <i>
 <time datetime=2021-10-11 pubdate>
 11 Oct, 2021
 </time>
 </i>
-</p>
-<content>
-<p>I&rsquo;m super excited to announce the release of <a href=https://github.com/Quantco/glum/>glum</a> and <a href=https://github.com/Quantco/tabmat/>tabmat</a>. These are the first two open source projects that QuantCo has released! Hopefully there will be many more. <code>glum</code> is a efficient and featureful Python-first library for generalized linear model (GLM) estimation built with an sklearn-style API. We focused a ton on correctness, performance and satisfying a wide range of feature requirements.</p>
-<p>While working on this project, my coworkers and I heard repeatedly from folks on other data science or economics teams that they either struggled with the same GLM software problems we had or they had built their own internal GLM tool similar to <code>glum</code>. I&rsquo;m really happy to be able to help rectify this situation and release something that the whole community can use.</p>
-<p>We started working on <code>glum</code> in March 2020 and it&rsquo;s been in heavy use within QuantCo since July 2020. During that same timeframe, <code>tabmat</code> grew out of our efforts to make <code>glum</code> <a href=https://glum.readthedocs.io/en/latest/benchmarks.html>as fast as possible</a> when we realized that a key performance issue was <a href=https://tabmat.readthedocs.io/en/latest/benchmarks.html>efficiently handling a mix of dense, sparse and categorical subcomponents</a>. You can read a lot more about <a href=https://glum.readthedocs.io/en/latest/motivation.html>the story behind <code>glum</code></a>.</p>
-<p><img src=/images/glum_benchmark.png alt="Performance against glmnet and h2o"></p>
-<p><code>glum</code> is at least as feature-complete as <code>glmnet</code> and <code>h2o</code>, two of the most popular existing GLM tools. On top of the capabilities that you know and love from those packages like elastic net regularization, regularization paths and automatic cross validation, we have some additional features that might get people excited:</p>
-<ul>
-<li><strong>Variable L1</strong> and elastic net penalties and <strong>variable matrix-valued Tikhonov matrices</strong>. This means you can choose how much to regularize each parameter and, in the L2-case, each pair of parameters. We&rsquo;ve used this to do things like spatial smoothing for zipcode fixed effects. Check out this example figure</li>
-<li><strong>Linear inequality constraints</strong> on parameters. We&rsquo;ve faced several situations in insurance pricing where we need to enforce constraints on a linear combination of parameters. This is not a commonly available feature because it makes</li>
-<li>Handling <strong>extremely wide categorical problems</strong>. Because <code>tabmat</code> handles categorical matrices very efficiently, we can smoothly work with problems that have hundreds of thousands or millions of indicator variables.</li>
-<li><strong>Arbitrary distributions and link functions</strong>. We work with Tweedie and Gamma distributions a lot in our insurance work. Lack of support for these distributions motivated us to make sure that users can extend <code>glum</code> to work with whatever distributional assumptions they want so long as the choices still <a href=https://glum.readthedocs.io/en/latest/background.html>fit within the framework of a GLM</a>.</li>
-</ul>
-<p>If you&rsquo;re interested in using <code>glum</code>, check out the <a href=https://glum.readthedocs.io/en/latest/getting_started/getting_started.html>getting started guide</a> and <a href=https://glum.readthedocs.io/en/latest/tutorials/tutorials.html>the tutorials</a>!</p>
-<p>Different levels of smoothing between adjacent zip-codes when predicting home prices. <a href=https://glum.readthedocs.io/en/latest/tutorials/regularization_housing_data/regularization_housing.html>There&rsquo;s a full tutorial showing how to do this!</a>
-<img src=/images/zipcode_regularization.png alt="Tikhonov smoothing with zipcodes"></p>
-</content>
+</p><content>
+<p>I&rsquo;m super excited to announce the release of <a href=https://github.com/Quantco/glum/>glum</a> and <a href=https://github.com/Quantco/tabmat/>tabmat</a>. These are the first two open source projects that QuantCo has released! Hopefully there will be many more. <code>glum</code> is a efficient and featureful Python-first library for generalized linear model (GLM) estimation built with an sklearn-style API. We focused a ton on correctness, performance and satisfying a wide range of feature requirements.</p><p>While working on this project, my coworkers and I heard repeatedly from folks on other data science or economics teams that they either struggled with the same GLM software problems we had or they had built their own internal GLM tool similar to <code>glum</code>. I&rsquo;m really happy to be able to help rectify this situation and release something that the whole community can use.</p><p>We started working on <code>glum</code> in March 2020 and it&rsquo;s been in heavy use within QuantCo since July 2020. During that same timeframe, <code>tabmat</code> grew out of our efforts to make <code>glum</code> <a href=https://glum.readthedocs.io/en/latest/benchmarks.html>as fast as possible</a> when we realized that a key performance issue was <a href=https://tabmat.readthedocs.io/en/latest/benchmarks.html>efficiently handling a mix of dense, sparse and categorical subcomponents</a>. You can read a lot more about <a href=https://glum.readthedocs.io/en/latest/motivation.html>the story behind <code>glum</code></a>.</p><p><img src=/images/glum_benchmark.png alt="Performance against glmnet and h2o"></p><p><code>glum</code> is at least as feature-complete as <code>glmnet</code> and <code>h2o</code>, two of the most popular existing GLM tools. On top of the capabilities that you know and love from those packages like elastic net regularization, regularization paths and automatic cross validation, we have some additional features that might get people excited:</p><ul>
+<li><strong>Variable L1</strong> and elastic net penalties and <strong>variable matrix-valued Tikhonov matrices</strong>. This means you can choose how much to regularize each parameter and, in the L2-case, each pair of parameters. We&rsquo;ve used this to do things like spatial smoothing for zipcode fixed effects. Check out this example figure</li><li><strong>Linear inequality constraints</strong> on parameters. We&rsquo;ve faced several situations in insurance pricing where we need to enforce constraints on a linear combination of parameters. This is not a commonly available feature because it makes</li><li>Handling <strong>extremely wide categorical problems</strong>. Because <code>tabmat</code> handles categorical matrices very efficiently, we can smoothly work with problems that have hundreds of thousands or millions of indicator variables.</li><li><strong>Arbitrary distributions and link functions</strong>. We work with Tweedie and Gamma distributions a lot in our insurance work. Lack of support for these distributions motivated us to make sure that users can extend <code>glum</code> to work with whatever distributional assumptions they want so long as the choices still <a href=https://glum.readthedocs.io/en/latest/background.html>fit within the framework of a GLM</a>.</li></ul><p>If you&rsquo;re interested in using <code>glum</code>, check out the <a href=https://glum.readthedocs.io/en/latest/getting_started/getting_started.html>getting started guide</a> and <a href=https://glum.readthedocs.io/en/latest/tutorials/tutorials.html>the tutorials</a>!</p><p>Different levels of smoothing between adjacent zip-codes when predicting home prices. <a href=https://glum.readthedocs.io/en/latest/tutorials/regularization_housing_data/regularization_housing.html>There&rsquo;s a full tutorial showing how to do this!</a>
+<img src=/images/zipcode_regularization.png alt="Tikhonov smoothing with zipcodes"></p></content>
 <link href=//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css rel=stylesheet type=text/css>
 <div id=mc_embed_signup style="padding:20px 0">
 <form action="https://tbenthompson.us1.list-manage.com/subscribe/post?u=be25bc8a8ab56f1fb3e6651c2&id=b407942450" method=post id=mc-embedded-subscribe-form name=mc-embedded-subscribe-form class=validate target=_blank novalidate>
@@ -77,28 +58,14 @@ While working on this project, my coworkers and I heard repeatedly from folks on
 <div style=display:none>
 <input type=checkbox value=1 name=group[377262][1] id=mce-group[377262]-377262-0 checked>Posts
 <input type=checkbox value=2 name=group[377262][2] id=mce-group[377262]-377262-1>BIEBook
-</div>
-<div style=position:absolute;left:-5000px aria-hidden=true><input type=text name=b_be25bc8a8ab56f1fb3e6651c2_b407942450 tabindex=-1></div>
-<div class=clear><input type=submit value=Subscribe name=subscribe id=mc-embedded-subscribe class=button></div>
-</div>
-</form>
-</div>
-<p>
-</p>
-</main>
-<footer><hr>
+</div><div style=position:absolute;left:-5000px aria-hidden=true><input type=text name=b_be25bc8a8ab56f1fb3e6651c2_b407942450 tabindex=-1></div><div class=clear><input type=submit value=Subscribe name=subscribe id=mc-embedded-subscribe class=button></div></div></form></div><p>
+</p></main><footer><hr>
 <div class="container has-text-centered">
 <div class=accounts>
 <a href=/resume.pdf>Resume</a> • <a href="https://scholar.google.com/citations?user=ED9oDz8AAAAJ&hl=en">Google Scholar</a> • <a href=https://github.com/tbenthompson>GitHub</a> • <a href=https://www.linkedin.com/in/ben-thompson-645292125/>LinkedIn</a> • <a href=https://twitter.com/tbenthompson>Twitter</a> • <a href=mailto:t.ben.thompson@gmail.com>Email</a>
-</div>
-<div class=accounts>
+</div><div class=accounts>
 <a href=http://esantorella.com/>My wife is really smart!</a>
-</div>
-<div class=accounts>
+</div><div class=accounts>
 <a href=https://www.instagram.com/wish.and.bean>My dogs have more social media presence than
 I do.</a>
-</div>
-</div>
-</footer>
-</body>
-</html>
+</div></div></footer></body></html>

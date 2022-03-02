@@ -3,8 +3,7 @@
 <meta http-equiv=x-clacks-overhead content="GNU Terry Pratchett">
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<title>Regularizing rate and state friction for numerical simulation | T. Ben Thompson</title>
-<meta name=title content="Regularizing rate and state friction for numerical simulation">
+<title>Regularizing rate and state friction for numerical simulation | T. Ben Thompson</title><meta name=title content="Regularizing rate and state friction for numerical simulation">
 <meta name=description content="The standard form for rate and state friction produces undefined results for $V = 0$. Some algebra and calculus and microphysics lead to the commonly used regularized form that is still valid at $V=0$. This is based on the presentation in Rice and Ben-Zion 1996 and Lapusta et. al 2000. There&rsquo;s nothing novel here, but the details of this sort of thing are often glossed over in the literature. So, while working it out for myself, I figured I&rsquo;d write it up!">
 <meta name=keywords content>
 <meta property="og:title" content="Regularizing rate and state friction for numerical simulation">
@@ -22,95 +21,61 @@
 <meta itemprop=wordCount content="536">
 <meta itemprop=keywords content>
 <meta name=referrer content="no-referrer-when-downgrade">
-<style>body{font-family:sans-serif;margin:auto;padding:20px;max-width:720px;text-align:left;background-color:#fff;word-wrap:break-word;overflow-wrap:break-word;line-height:1.5;color:#444}h1,h2,h3,h4,h5,h6,strong,b{color:#222}a{color:#3273dc}.title{text-decoration:none;border:0}.title span{font-weight:400}nav a{margin-right:10px}textarea{width:100%;font-size:16px}input{font-size:16px}content{line-height:1.6}table{width:100%}img{max-width:100%}code{padding:2px 5px;background-color:#f2f2f2}pre code{display:block;padding:5px;white-space:pre-wrap;font-size:13px}blockquote{border-left:1px solid #999;color:#222;padding-left:20px;font-style:italic}footer{padding:25px;text-align:center}.helptext{color:#777;font-size:small}.errorlist{color:#eba613;font-size:small}ul.blog-posts{list-style-type:none;padding:unset}ul.blog-posts li{display:flex}ul.blog-posts li span{flex:0 0 130px}ul.blog-posts li a:visited{color:#8b6fcb}code.has-jax{-webkit-font-smoothing:antialiased;background:inherit!important;border:none!important;font-size:100%}</style>
-<script src=/js/mathjax_setup.js></script>
+<style>body{font-family:sans-serif;margin:auto;padding:20px;max-width:720px;text-align:left;background-color:#fff;word-wrap:break-word;overflow-wrap:break-word;line-height:1.5;color:#444}h1,h2,h3,h4,h5,h6,strong,b{color:#222}a{color:#3273dc}.title{text-decoration:none;border:0}.title span{font-weight:400}nav a{margin-right:10px}textarea{width:100%;font-size:16px}input{font-size:16px}content{line-height:1.6}table{width:100%}img{max-width:100%}code{padding:2px 5px;background-color:#f2f2f2}pre code{display:block;padding:5px;white-space:pre-wrap;font-size:13px}blockquote{border-left:1px solid #999;color:#222;padding-left:20px;font-style:italic}footer{padding:25px;text-align:center}.helptext{color:#777;font-size:small}.errorlist{color:#eba613;font-size:small}ul.blog-posts{list-style-type:none;padding:unset}ul.blog-posts li{display:flex}ul.blog-posts li span{flex:0 0 130px}ul.blog-posts li a:visited{color:#8b6fcb}code.has-jax{-webkit-font-smoothing:antialiased;background:inherit!important;border:none!important;font-size:100%}</style><script src=/js/mathjax_setup.js></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script>MathJax={}</script>
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114592151-1"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-114592151-1')</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-114592151-1")</script>
 <link rel=stylesheet href=/css/syntax.css>
-</head>
-<body>
+</head><body>
 <header><nav><a href=/>Home</a>
 <a href=/whatido>Work with me</a>
 <a href=/post>Posts</a>
 <a href=/project>Past Projects</a>
 <a href=/book>BIE Tutorials</a>
-</nav>
-</header>
-<main>
-<h2>Regularizing rate and state friction for numerical simulation</h2>
-<p>
+</nav></header><main>
+<h2>Regularizing rate and state friction for numerical simulation</h2><p>
 <i>
 <time datetime=2018-03-19 pubdate>
 19 Mar, 2018
 </time>
 </i>
-</p>
-<content>
-<p>The standard form for rate and state friction produces undefined results for $V = 0$. Some algebra and calculus and microphysics lead to the commonly used regularized form that is still valid at $V=0$. This is based on the presentation in Rice and Ben-Zion 1996 and Lapusta et. al 2000. There&rsquo;s nothing novel here, but the details of this sort of thing are often glossed over in the literature. So, while working it out for myself, I figured I&rsquo;d write it up!</p>
-<p>Let&rsquo;s start with the common, empirically-derived rate and state friction with the aging law for state evolution.</p>
-<p>\begin{equation}
+</p><content>
+<p>The standard form for rate and state friction produces undefined results for $V = 0$. Some algebra and calculus and microphysics lead to the commonly used regularized form that is still valid at $V=0$. This is based on the presentation in Rice and Ben-Zion 1996 and Lapusta et. al 2000. There&rsquo;s nothing novel here, but the details of this sort of thing are often glossed over in the literature. So, while working it out for myself, I figured I&rsquo;d write it up!</p><p>Let&rsquo;s start with the common, empirically-derived rate and state friction with the aging law for state evolution.</p><p>\begin{equation}
 \tau = \sigma_n (f_0 + a \log(V/V_0) + b \log(V_0\theta/D_c))
 \label{rsorig}
-\end{equation}</p>
-<p>\begin{equation}
+\end{equation}</p><p>\begin{equation}
 \dot{\theta} = 1 - V\theta / D_c
 \label{agingorig}
-\end{equation}</p>
-<p>First, I&rsquo;ll transform to use a somewhat different state variable. $\theta$ is hard to intuitively understand, while $\Psi$ is much more intuitive &ndash; it&rsquo;s just the current absolute offset of the friction coefficient.</p>
-<p>\begin{equation}
+\end{equation}</p><p>First, I&rsquo;ll transform to use a somewhat different state variable. $\theta$ is hard to intuitively understand, while $\Psi$ is much more intuitive &ndash; it&rsquo;s just the current absolute offset of the friction coefficient.</p><p>\begin{equation}
 \Psi = f_0 + b \log(V_0\theta/D_c)
 \label{transform}
-\end{equation}</p>
-<p>or, for the inverse transformation:</p>
-<p>\begin{equation}
+\end{equation}</p><p>or, for the inverse transformation:</p><p>\begin{equation}
 \theta = \frac{D_c}{V_0}\exp(\frac{\Psi - f_0}{b})
 \label{invtransform}
-\end{equation}</p>
-<p>With this transformation, $\ref{rsorig}$ becomes:</p>
-<p>\begin{equation}
+\end{equation}</p><p>With this transformation, $\ref{rsorig}$ becomes:</p><p>\begin{equation}
 \tau = \sigma_n (\Psi + a \log(V/V_0))
 \label{rstransform}
-\end{equation}</p>
-<p>For me, this is nicer in that I can understand the new &ldquo;state&rdquo; parameter, $\Psi$, as the current strength of friction when $V = V_0$.</p>
-<p>Now, I&rsquo;ll get the aging law in terms of $\Psi$. Differentiating \ref{transform}:</p>
-<p>\begin{equation}
+\end{equation}</p><p>For me, this is nicer in that I can understand the new &ldquo;state&rdquo; parameter, $\Psi$, as the current strength of friction when $V = V_0$.</p><p>Now, I&rsquo;ll get the aging law in terms of $\Psi$. Differentiating \ref{transform}:</p><p>\begin{equation}
 \dot{\Psi} = b \dot{\theta}/\theta
-\end{equation}</p>
-<p>and plugging in for $\dot{\theta}$ from \ref{agingorig}:</p>
-<p>\begin{equation}
+\end{equation}</p><p>and plugging in for $\dot{\theta}$ from \ref{agingorig}:</p><p>\begin{equation}
 \dot{\Psi} = b/\theta - bV / D_c
-\end{equation}</p>
-<p>Finally, plug in for $\theta$ from \ref{invtransform}, I get the aging law in terms of $\Psi$.</p>
-<p>\begin{equation}
+\end{equation}</p><p>Finally, plug in for $\theta$ from \ref{invtransform}, I get the aging law in terms of $\Psi$.</p><p>\begin{equation}
 \dot{\Psi} = \frac{bV_0}{D_c}(\exp(\frac{f_0 - \Psi}{b}) - \frac{V}{V_0})
 \label{aging01}
-\end{equation}</p>
-<p>With that done, the second step is to actually do the regularization at $V=0$. Solving $\ref{rstransform}$ for $V$:</p>
-<p>\begin{equation}
+\end{equation}</p><p>With that done, the second step is to actually do the regularization at $V=0$. Solving $\ref{rstransform}$ for $V$:</p><p>\begin{equation}
 V = V_0 \exp(\frac{\tau}{a\sigma_n})\exp(-\frac{\Psi}{a})
-\end{equation}</p>
-<p>The trouble here is that the $\exp(\frac{\tau}{a\sigma_n})$ term can never be 0 and as a result $V=0$ is impossible. Quoting Lapusta et. al 2000:</p>
-<blockquote>
-<p>A drawback of the logarithmic form (28a) is that the stress is not defined for V = 0. The logarithmic form was derived from purely empirical considerations to match experimental observations (Dieterich, 1979, 1981; Ruina, 1983). However, it has a theoretical basis, in that such a form would result if the direct velocity effect is due to stress biasing of the activation energy in an Arrhenius rate process at contact junctions, at least in the range for which forward microscopic jumps, in the direction of shear stress, are overwhelmingly more frequent than backward jumps.</p>
-</blockquote>
-<p>So, the $\exp(\frac{\tau}{a\sigma_n})$ term represents the frequency of forward microscopic jumps. What about backward microscopic jumps? They happen too, especially near $V=0$. That suggests adding another term like $-\exp(\frac{-\tau}{a\sigma_n})$ to represent backward microscopic jumps:</p>
-<p>\begin{equation}
+\end{equation}</p><p>The trouble here is that the $\exp(\frac{\tau}{a\sigma_n})$ term can never be 0 and as a result $V=0$ is impossible. Quoting Lapusta et. al 2000:</p><blockquote>
+<p>A drawback of the logarithmic form (28a) is that the stress is not defined for V = 0. The logarithmic form was derived from purely empirical considerations to match experimental observations (Dieterich, 1979, 1981; Ruina, 1983). However, it has a theoretical basis, in that such a form would result if the direct velocity effect is due to stress biasing of the activation energy in an Arrhenius rate process at contact junctions, at least in the range for which forward microscopic jumps, in the direction of shear stress, are overwhelmingly more frequent than backward jumps.</p></blockquote><p>So, the $\exp(\frac{\tau}{a\sigma_n})$ term represents the frequency of forward microscopic jumps. What about backward microscopic jumps? They happen too, especially near $V=0$. That suggests adding another term like $-\exp(\frac{-\tau}{a\sigma_n})$ to represent backward microscopic jumps:</p><p>\begin{equation}
 V = V_0 (\exp(\frac{\tau}{a\sigma_n}) - \exp(\frac{-\tau}{a\sigma_n}))\exp(-\frac{\Psi}{a}) = 2 V_0 \sinh(\frac{\tau}{a\sigma_n})\exp(-\frac{\Psi}{a})
-\end{equation}</p>
-<p>Solving for $\tau$ and I get the regularized rate-state friction system:</p>
-<p>\begin{equation}
+\end{equation}</p><p>Solving for $\tau$ and I get the regularized rate-state friction system:</p><p>\begin{equation}
 \tau = \sigma_n a \sinh^{-1}(\frac{V}{2V_0}\exp(\Psi/a))
 \label{rsreg}
-\end{equation}</p>
-<p>\begin{equation}
+\end{equation}</p><p>\begin{equation}
 \dot{\Psi} = \frac{bV_0}{D_c}(\exp(\frac{f_0 - \Psi}{b}) - \frac{V}{V_0})
 \label{aging01-2}
-\end{equation}</p>
-<p>In my numerical quasidynamic models, I am using equations \ref{rsreg} and \ref{aging01-2}, rather than the more traditional \ref{rsorig} and \ref{agingorig}. Most other rate and state friction implementations (both fully dynamic and quasidynamic) that I have read about also use the regularized forms.</p>
-</content>
+\end{equation}</p><p>In my numerical quasidynamic models, I am using equations \ref{rsreg} and \ref{aging01-2}, rather than the more traditional \ref{rsorig} and \ref{agingorig}. Most other rate and state friction implementations (both fully dynamic and quasidynamic) that I have read about also use the regularized forms.</p></content>
 <link href=//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css rel=stylesheet type=text/css>
 <div id=mc_embed_signup style="padding:20px 0">
 <form action="https://tbenthompson.us1.list-manage.com/subscribe/post?u=be25bc8a8ab56f1fb3e6651c2&id=b407942450" method=post id=mc-embedded-subscribe-form name=mc-embedded-subscribe-form class=validate target=_blank novalidate>
@@ -120,28 +85,14 @@ V = V_0 (\exp(\frac{\tau}{a\sigma_n}) - \exp(\frac{-\tau}{a\sigma_n}))\exp(-\fra
 <div style=display:none>
 <input type=checkbox value=1 name=group[377262][1] id=mce-group[377262]-377262-0 checked>Posts
 <input type=checkbox value=2 name=group[377262][2] id=mce-group[377262]-377262-1>BIEBook
-</div>
-<div style=position:absolute;left:-5000px aria-hidden=true><input type=text name=b_be25bc8a8ab56f1fb3e6651c2_b407942450 tabindex=-1></div>
-<div class=clear><input type=submit value=Subscribe name=subscribe id=mc-embedded-subscribe class=button></div>
-</div>
-</form>
-</div>
-<p>
-</p>
-</main>
-<footer><hr>
+</div><div style=position:absolute;left:-5000px aria-hidden=true><input type=text name=b_be25bc8a8ab56f1fb3e6651c2_b407942450 tabindex=-1></div><div class=clear><input type=submit value=Subscribe name=subscribe id=mc-embedded-subscribe class=button></div></div></form></div><p>
+</p></main><footer><hr>
 <div class="container has-text-centered">
 <div class=accounts>
 <a href=/resume.pdf>Resume</a> • <a href="https://scholar.google.com/citations?user=ED9oDz8AAAAJ&hl=en">Google Scholar</a> • <a href=https://github.com/tbenthompson>GitHub</a> • <a href=https://www.linkedin.com/in/ben-thompson-645292125/>LinkedIn</a> • <a href=https://twitter.com/tbenthompson>Twitter</a> • <a href=mailto:t.ben.thompson@gmail.com>Email</a>
-</div>
-<div class=accounts>
+</div><div class=accounts>
 <a href=http://esantorella.com/>My wife is really smart!</a>
-</div>
-<div class=accounts>
+</div><div class=accounts>
 <a href=https://www.instagram.com/wish.and.bean>My dogs have more social media presence than
 I do.</a>
-</div>
-</div>
-</footer>
-</body>
-</html>
+</div></div></footer></body></html>
